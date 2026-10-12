@@ -340,6 +340,15 @@ button,input{font-family:inherit}
 .unit li::before{content:"◆";position:absolute;right:0;color:var(--brand);font-size:10px;top:6px}
 
 /* ---------- تحضيرات الدروس ---------- */
+.day-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.day-btn{
+  border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;
+  padding:9px 18px;border-radius:999px;font-weight:700;font-size:14px;transition:.25s
+}
+.day-btn:hover{border-color:var(--brand);color:var(--brand)}
+.day-btn.on,.day-btn.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(91,61,245,.28)}
+.day-panel{display:none}
+.day-panel.active{display:block;animation:fade .4s ease}
 .unit-filter{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:20px}
 .unit-filter button{
   border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;
