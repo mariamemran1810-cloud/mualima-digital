@@ -349,6 +349,36 @@ button,input{font-family:inherit}
 .unit-filter button.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(91,61,245,.28)}
 .lesson-count{text-align:center;color:var(--muted);font-size:14px;margin-bottom:14px}
 .lesson-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+
+/* ---------- المنهج الليبي ---------- */
+.curriculum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.curr-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:20px;
+  padding:24px 22px 22px;position:relative;overflow:hidden;transition:.3s
+}
+.curr-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--brand)}
+.curr-card.prepared{border-color:rgba(91,61,245,.4)}
+.curr-chip{
+  position:absolute;top:0;left:0;background:var(--grad);color:#fff;
+  font-size:12px;font-weight:700;padding:6px 15px;border-radius:0 0 16px 0;letter-spacing:.2px
+}
+.curr-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px;padding-top:6px}
+.curr-head h4{font-size:18px;color:var(--text);margin:0;line-height:1.5}
+.curr-badge{font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;flex-shrink:0}
+.curr-badge.prepared{background:rgba(16,185,129,.15);color:#059669}
+.curr-badge.soon{background:rgba(245,158,11,.16);color:#b45309}
+.curr-weeks{font-size:13px;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:5px}
+.curr-topics{list-style:none;display:flex;flex-direction:column;gap:9px;margin:0}
+.curr-topics li{font-size:14px;color:var(--muted);padding-right:22px;position:relative;line-height:1.7}
+.curr-topics li::before{content:"";position:absolute;right:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--brand-2)}
+.curr-card.soon .curr-topics li::before{background:var(--line)}
+.curriculum-note{
+  display:flex;gap:12px;align-items:flex-start;margin-top:28px;
+  background:var(--surface);border:1px dashed var(--line);border-radius:16px;padding:18px 20px
+}
+.curriculum-note span{font-size:22px}
+.curriculum-note p{color:var(--muted);font-size:14px;line-height:1.8;margin:0}
+@media(max-width:520px){.curriculum-grid{grid-template-columns:1fr}}
 .lesson-head h3{font-size:22px}
 .chip{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);padding:5px 16px;border-radius:999px;font-size:13.5px;font-weight:700}
 .objectives{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0}
