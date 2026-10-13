@@ -364,6 +364,19 @@ button,input{font-family:inherit}
 }
 .guide-chip:hover{background:var(--grad);color:#fff;border-color:transparent}
 
+/* أقسام التحضير المثرّى */
+.aid-block{background:linear-gradient(135deg,rgba(255,179,0,.08),rgba(255,179,0,.02));border-inline-start:4px solid var(--gold)}
+.ex-block{background:rgba(16,184,120,.06);border-inline-start:4px solid #10b878}
+.ex-block .check-list.ex li{background:rgba(16,184,120,.07);border-radius:10px;padding:10px 14px;margin-bottom:7px}
+.ex-block .check-list.ex li b{color:#0e9e66;margin-inline-end:4px}
+.game-block{
+  background:linear-gradient(135deg,rgba(91,61,245,.1),rgba(245,116,245,.08));
+  border:1px dashed rgba(91,61,245,.45)
+}
+.game-block h4{color:var(--brand)}
+.diff-block{background:rgba(155,81,224,.08);border-inline-start:4px solid #9b51e0}
+.diff-block p{font-weight:600}
+
 /* ---------- المنهج الليبي ---------- */
 .guide-card{
   display:block;background:var(--surface);border:1px solid var(--line);border-radius:20px;
