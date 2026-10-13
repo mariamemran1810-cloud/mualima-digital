@@ -1,0 +1,3095 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كرّاسة التحضير | المعلمة الرقمية — مريم عمران</title>
+<meta name="description" content="كرّاسة تحضير المعلمة الرقمية — مادة الرياضيات، الصف الثامن، الفصل الدراسي الأول 2025/2026 — مدرسة الإسراء للتعليم الأساسي، زليتن - ليبيا.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* ================= كرّاسة التحضير — المعلمة الرقمي ================= */
+:root{
+  --bg:#f6f7fb;
+  --bg-alt:#eef1fa;
+  --surface:#ffffff;
+  --surface-2:#f9faff;
+  --text:#1c2237;
+  --muted:#5c6580;
+  --line:rgba(28,34,55,.10);
+  --brand:#5b3df5;
+  --brand-2:#7c3aed;
+  --accent:#0ea5a4;
+  --gold:#f59e0b;
+  --pink:#ec4899;
+  --shadow:0 10px 30px rgba(28,34,55,.10);
+  --shadow-lg:0 20px 50px rgba(28,34,55,.16);
+  --radius:18px;
+  --grad:linear-gradient(135deg,#5b3df5 0%,#7c3aed 45%,#0ea5a4 100%);
+}
+[data-theme="dark"]{
+  --bg:#0d1020;
+  --bg-alt:#111531;
+  --surface:#161a35;
+  --surface-2:#1b2044;
+  --text:#eef0ff;
+  --muted:#a5adcc;
+  --line:rgba(255,255,255,.10);
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg:0 20px 50px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{
+  font-family:"Tajawal","Segoe UI",Tahoma,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.85;
+  transition:background .35s,color .35s;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.brand-text strong{font-family:"Cairo","Tajawal",sans-serif;font-weight:800;line-height:1.5}
+img{max-width:100%}
+button,input{font-family:inherit}
+.container{width:min(1180px,92%);margin-inline:auto}
+
+/* ---------- شريط التقدّم ---------- */
+.progress-bar{position:fixed;top:0;right:0;height:4px;width:0;background:var(--grad);z-index:120;border-radius:0 0 0 4px}
+
+/* ---------- الهيدر ---------- */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb,var(--surface) 82%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;gap:18px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.brand-logo{
+  width:44px;height:44px;display:grid;place-items:center;border-radius:14px;
+  background:var(--grad);color:#fff;font-size:24px;font-weight:900;
+  box-shadow:0 8px 20px rgba(91,61,245,.35)
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.3}
+.brand-text small{color:var(--muted);font-size:11.5px}
+.main-nav{display:flex;gap:4px;flex:1;justify-content:center;flex-wrap:wrap}
+.main-nav a{
+  text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;
+  padding:7px 11px;border-radius:10px;transition:.25s;white-space:nowrap
+}
+.main-nav a:hover{color:var(--brand);background:color-mix(in srgb,var(--brand) 10%,transparent)}
+.main-nav a.active{color:var(--brand);background:color-mix(in srgb,var(--brand) 14%,transparent);font-weight:700}
+.header-actions{display:flex;gap:8px;align-items:center}
+.icon-btn{
+  width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
+  background:var(--surface-2);cursor:pointer;font-size:17px;display:grid;place-items:center;transition:.25s
+}
+.icon-btn:hover{border-color:var(--brand);transform:translateY(-2px)}
+.ic-sun{display:none}
+[data-theme="dark"] .ic-moon{display:none}
+[data-theme="dark"] .ic-sun{display:inline}
+.nav-toggle{display:none;flex-direction:column;gap:4px}
+.nav-toggle span{width:20px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
+
+/* ---------- الواجهة الرئيسية ---------- */
+.hero{
+  position:relative;padding:80px 0 70px;overflow:hidden;
+  background:
+    radial-gradient(700px 380px at 85% -10%,color-mix(in srgb,var(--brand) 22%,transparent),transparent 70%),
+    radial-gradient(600px 340px at 10% 0%,color-mix(in srgb,var(--accent) 20%,transparent),transparent 70%),
+    var(--bg-alt);
+}
+.hero-shapes .shape{
+  position:absolute;font-size:44px;font-weight:900;color:color-mix(in srgb,var(--brand) 26%,transparent);
+  animation:float 9s ease-in-out infinite;user-select:none
+}
+.s1{top:12%;right:8%;animation-delay:0s}.s2{top:26%;left:10%;animation-delay:1.1s;font-size:34px}
+.s3{top:64%;right:14%;animation-delay:2.2s;font-size:56px}.s4{top:70%;left:16%;animation-delay:.6s}
+.s5{top:44%;left:46%;animation-delay:1.7s;font-size:30px;opacity:.6}.s6{top:8%;left:38%;animation-delay:2.6s;font-size:30px}
+.s7{bottom:8%;right:38%;animation-delay:1.4s;font-size:36px}.s8{top:50%;right:4%;animation-delay:3s;font-size:32px;opacity:.6}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-26px) rotate(10deg)}}
+.hero-inner{position:relative;text-align:center;display:grid;gap:22px;justify-items:center}
+.hero-badge{
+  background:color-mix(in srgb,var(--gold) 16%,transparent);color:var(--gold);
+  border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);
+  padding:7px 20px;border-radius:999px;font-weight:700;font-size:15px
+}
+.hero-title{font-size:clamp(30px,5.2vw,56px)}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{max-width:720px;color:var(--muted);font-size:clamp(15px,2vw,18px)}
+.glass{
+  background:color-mix(in srgb,var(--surface) 72%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)
+}
+.teacher-card{padding:22px;width:100%;max-width:980px;position:relative}
+.teacher-avatar{
+  position:absolute;top:-26px;right:26px;width:62px;height:62px;border-radius:20px;
+  background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:900;font-size:20px;
+  border:4px solid var(--surface);box-shadow:var(--shadow)
+}
+.teacher-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.t-item{display:flex;flex-direction:column;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.t-item span{color:var(--muted);font-size:12.5px}
+.t-item strong{font-size:15px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:14px;
+  border:none;cursor:pointer;font-weight:700;font-size:15.5px;text-decoration:none;transition:.28s
+}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 12px 26px rgba(91,61,245,.32)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(91,61,245,.42)}
+.btn-primary:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn-ghost{background:transparent;color:var(--brand);border:1.5px solid color-mix(in srgb,var(--brand) 45%,transparent)}
+.btn-ghost:hover{background:color-mix(in srgb,var(--brand) 10%,transparent)}
+.btn-download{
+  background:linear-gradient(135deg,#10b878,#0d9260);color:#fff;
+  box-shadow:0 12px 26px rgba(16,184,120,.32);border:1.5px solid transparent
+}
+.btn-download:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(16,184,120,.42)}
+
+.stats-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+.stat{padding:14px 22px;text-align:center;min-width:120px}
+.stat b{display:block;font-size:30px;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--muted);font-size:13px}
+
+/* ---------- الأقسام ---------- */
+.section{padding:82px 0}
+.section.alt{background:var(--bg-alt)}
+.section-head{text-align:center;max-width:760px;margin:0 auto 40px}
+.kicker{color:var(--brand);font-weight:800;letter-spacing:.4px;margin-bottom:6px}
+.section-head h2{font-size:clamp(24px,3.6vw,38px);margin-bottom:10px}
+.section-desc{color:var(--muted)}
+.mt-lg{margin-top:26px}
+.gap-lg{gap:22px}
+.two-col{display:grid;grid-template-columns:1fr 1fr}
+
+/* بطاقات الخطوات */
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:s;list-style:none}
+.step-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 20px;box-shadow:var(--shadow);transition:.3s;position:relative;overflow:hidden
+}
+.step-card::after{content:"";position:absolute;inset:auto 0 0 0;height:4px;background:var(--grad);transform:scaleX(0);transform-origin:right;transition:.35s}
+.step-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.step-card:hover::after{transform:scaleX(1)}
+.step-num{
+  width:44px;height:44px;display:grid;place-items:center;border-radius:14px;
+  background:color-mix(in srgb,var(--brand) 12%,transparent);color:var(--brand);
+  font-weight:900;font-size:19px;margin-bottom:12px
+}
+.step-card h3{font-size:18px;margin-bottom:6px}
+.step-card p{color:var(--muted);font-size:14.5px}
+
+/* اللوحات */
+.panel{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;box-shadow:var(--shadow)
+}
+.panel-title{font-size:19px;margin-bottom:14px;color:var(--brand)}
+.lead{color:var(--muted);margin-bottom:16px}
+.check-list{list-style:none;display:grid;gap:10px}
+.check-list li{position:relative;padding-right:30px;font-size:15px}
+.check-list li::before{
+  content:"✓";position:absolute;right:0;top:2px;width:21px;height:21px;border-radius:7px;
+  background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);
+  display:grid;place-items:center;font-size:12px;font-weight:900
+}
+.check-list.gold li::before{content:"★";background:color-mix(in srgb,var(--gold) 18%,transparent);color:var(--gold)}
+.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.pill{
+  background:var(--surface-2);border:1px solid var(--line);border-radius:999px;
+  padding:7px 16px;font-size:14px;font-weight:500
+}
+.type-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.type-card{background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:18px}
+.type-card h4{color:var(--accent);margin-bottom:6px;font-size:16.5px}
+.type-card p{color:var(--muted);font-size:14.5px}
+.note{
+  margin-top:16px;padding:14px 18px;border-radius:14px;font-size:14.5px;
+  background:color-mix(in srgb,var(--gold) 10%,transparent);
+  border:1px dashed color-mix(in srgb,var(--gold) 45%,transparent)
+}
+
+/* ---------- التبويبات ---------- */
+.tabs{background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.tab-bar{display:flex;gap:6px;padding:12px;border-bottom:1px solid var(--line);background:var(--surface-2);overflow-x:auto}
+.tab-bar.scrollable{scrollbar-width:thin}
+.tab-btn{
+  border:1px solid transparent;background:transparent;color:var(--muted);cursor:pointer;
+  padding:10px 20px;border-radius:12px;font-weight:700;font-size:15px;white-space:nowrap;transition:.25s
+}
+.tab-btn:hover{color:var(--brand)}
+.tab-btn.active{background:var(--grad);color:#fff;box-shadow:0 8px 18px rgba(91,61,245,.3)}
+.tab-panel{display:none;padding:28px;animation:fade .4s ease}
+.tab-panel.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.stage-content{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
+.stage-icon{
+  width:78px;height:78px;border-radius:24px;display:grid;place-items:center;font-size:38px;
+  background:color-mix(in srgb,var(--brand) 12%,transparent)
+}
+.stage-content h3{font-size:21px;margin-bottom:6px}
+.stage-content p{color:var(--muted);margin-bottom:12px}
+
+/* ---------- التمهيد ---------- */
+.idea-picker{display:grid;gap:16px;justify-items:center;margin-bottom:36px}
+.idea-card{
+  padding:22px 26px;width:min(720px,100%);text-align:center;position:relative;transition:.35s
+}
+.idea-card.shake{animation:shake .5s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-9px)}75%{transform:translateX(9px)}}
+.idea-tag{
+  display:inline-block;background:var(--grad);color:#fff;font-size:12px;font-weight:700;
+  padding:4px 14px;border-radius:999px;margin-bottom:10px
+}
+.idea-card h3{color:var(--brand);font-size:20px;margin-bottom:6px}
+.idea-card p{color:var(--muted);font-size:15px}
+
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
+.warm-card,.tool-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;box-shadow:var(--shadow);transition:.3s;cursor:default
+}
+.warm-card:hover,.tool-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:color-mix(in srgb,var(--brand) 40%,transparent)}
+.warm-card .w-ic{font-size:26px;display:block;margin-bottom:8px}
+.warm-card h4{font-size:16.5px;margin-bottom:6px}
+.warm-card p{color:var(--muted);font-size:14px}
+.warm-card.flash{background:color-mix(in srgb,var(--brand) 14%,var(--surface))}
+
+/* ---------- الأكورديون ---------- */
+.accordion{display:grid;gap:14px}
+.acc-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.acc-head{
+  width:100%;display:flex;align-items:center;gap:14px;padding:18px 22px;cursor:pointer;
+  background:transparent;border:none;color:var(--text);text-align:right;transition:.25s
+}
+.acc-head:hover{background:var(--surface-2)}
+.acc-head .acc-n{
+  width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:12px;
+  background:var(--grad);color:#fff;font-weight:900
+}
+.acc-head h3{flex:1;font-size:17.5px}
+.acc-head .acc-arrow{transition:.3s;color:var(--brand);font-size:19px}
+.acc-item.open .acc-arrow{transform:rotate(-180deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.acc-inner{padding:0 22px 22px;border-top:1px dashed var(--line);padding-top:16px}
+.acc-inner .check-list{grid-template-columns:1fr}
+.acc-inner li{font-size:14.5px}
+
+/* ---------- المؤقّت ---------- */
+.timer-wrap{display:grid;place-items:center}
+.timer-box{
+  position:relative;width:min(430px,100%);padding:26px;text-align:center;display:grid;gap:14px;justify-items:center
+}
+.timer-box h3{font-size:18px}
+.timer-ring{width:190px;height:190px;transform:rotate(-90deg);position:absolute;top:78px;pointer-events:none}
+.ring-bg,.ring-fg{fill:none;stroke-width:8;stroke-linecap:round}
+.ring-bg{stroke:color-mix(in srgb,var(--brand) 14%,transparent)}
+.ring-fg{stroke:url(#none);stroke:var(--brand);stroke-dasharray:339.3;stroke-dashoffset:0;transition:stroke-dashoffset 1s linear}
+.timer-display{font-family:"Cairo",sans-serif;font-size:52px;font-weight:900;letter-spacing:3px;position:relative;z-index:1;margin-top:14px}
+.timer-phase{color:var(--brand);font-weight:700;min-height:24px}
+.timer-controls{display:flex;gap:10px}
+.timer-presets{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.timer-presets button{
+  border:1px solid var(--line);background:var(--surface-2);color:var(--text);
+  padding:7px 14px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:600;transition:.25s
+}
+.timer-presets button:hover{border-color:var(--brand);color:var(--brand)}
+.timer-presets button.on{background:var(--grad);color:#fff;border-color:transparent}
+.timer-box.done .timer-display{color:var(--gold);animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+/* خطوات الخطة الفصلية */
+.flow-steps{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.flow-steps li{
+  display:flex;align-items:center;gap:12px;background:var(--surface-2);
+  border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:14.5px
+}
+.flow-steps span{
+  width:32px;height:32px;flex:0 0 32px;display:grid;place-items:center;border-radius:10px;
+  background:var(--grad);color:#fff;font-weight:900
+}
+
+/* ---------- الخطة الأسبوعية ---------- */
+.plan-toolbar{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:22px}
+.month-filter{display:flex;gap:8px;flex-wrap:wrap}
+.month-filter button{
+  border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;
+  padding:8px 18px;border-radius:999px;font-weight:700;font-size:14px;transition:.25s
+}
+.month-filter button.on{background:var(--grad);color:#fff;border-color:transparent}
+.month-filter button:hover{border-color:var(--brand)}
+.plan-progress{display:flex;align-items:center;gap:10px;font-size:14px}
+.plan-progress .bar{width:150px;height:9px;border-radius:99px;background:color-mix(in srgb,var(--brand) 14%,transparent);overflow:hidden}
+.plan-progress .bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px;transition:width .5s}
+.mini-btn{
+  border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;
+  padding:6px 14px;border-radius:10px;font-size:13px;transition:.25s
+}
+.mini-btn:hover{color:var(--brand);border-color:var(--brand)}
+
+.weeks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.week-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:flex-start;transition:.3s
+}
+.week-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.week-card.hidden{display:none}
+.week-check{
+  width:26px;height:26px;flex:0 0 26px;border-radius:9px;border:2px solid var(--line);
+  background:transparent;cursor:pointer;display:grid;place-items:center;color:#fff;font-size:13px;transition:.25s;margin-top:3px
+}
+.week-card.done .week-check{background:var(--accent);border-color:var(--accent)}
+.week-card.done{opacity:.62}
+.week-card.done .w-topic{text-decoration:line-through}
+.week-meta{display:flex;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.w-month{background:color-mix(in srgb,var(--gold) 16%,transparent);color:var(--gold);font-size:12px;font-weight:700;padding:2px 10px;border-radius:99px}
+.w-num{background:color-mix(in srgb,var(--brand) 12%,transparent);color:var(--brand);font-size:12px;font-weight:700;padding:2px 10px;border-radius:99px}
+.w-topic{font-weight:700;font-size:15px}
+
+.units-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.unit{background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:18px}
+.unit h4{color:var(--accent);margin-bottom:10px;font-size:16px}
+.unit ul{list-style:none;display:grid;gap:7px}
+.unit li{font-size:14px;padding-right:18px;position:relative;color:var(--muted)}
+.unit li::before{content:"◆";position:absolute;right:0;color:var(--brand);font-size:10px;top:6px}
+
+/* ---------- تحضيرات الدروس ---------- */
+.day-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.day-btn{
+  border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;
+  padding:9px 18px;border-radius:999px;font-weight:700;font-size:14px;transition:.25s
+}
+.day-btn:hover{border-color:var(--brand);color:var(--brand)}
+.day-btn.on,.day-btn.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(91,61,245,.28)}
+.day-panel{display:none}
+.day-panel.active{display:block;animation:fade .4s ease}
+.unit-filter{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:20px}
+.unit-filter button{
+  border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;
+  padding:9px 18px;border-radius:999px;font-weight:700;font-size:14px;transition:.25s
+}
+.unit-filter button:hover{border-color:var(--brand);color:var(--brand)}
+.unit-filter button.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(91,61,245,.28)}
+.lesson-count{text-align:center;color:var(--muted);font-size:14px;margin-bottom:14px}
+.lesson-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+.guide-chip{
+  background:rgba(91,61,245,.1);border:1px solid rgba(91,61,245,.35);color:var(--brand);
+  font-weight:700;cursor:pointer;text-decoration:none;transition:.2s
+}
+.guide-chip:hover{background:var(--grad);color:#fff;border-color:transparent}
+
+/* أقسام التحضير المثرّى */
+.aid-block{background:linear-gradient(135deg,rgba(255,179,0,.08),rgba(255,179,0,.02));border-inline-start:4px solid var(--gold)}
+.ex-block{background:rgba(16,184,120,.06);border-inline-start:4px solid #10b878}
+.ex-block .check-list.ex li{background:rgba(16,184,120,.07);border-radius:10px;padding:10px 14px;margin-bottom:7px}
+.ex-block .check-list.ex li b{color:#0e9e66;margin-inline-end:4px}
+.game-block{
+  background:linear-gradient(135deg,rgba(91,61,245,.1),rgba(245,116,245,.08));
+  border:1px dashed rgba(91,61,245,.45)
+}
+.game-block h4{color:var(--brand)}
+.diff-block{background:rgba(155,81,224,.08);border-inline-start:4px solid #9b51e0}
+.diff-block p{font-weight:600}
+.assess-block{background:rgba(59,130,246,.07);border-inline-start:4px solid #3b82f6}
+.assess-block .check-list.assess li{background:rgba(59,130,246,.06);border-radius:10px;padding:9px 13px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.assess-block .tick{color:#3b82f6;font-weight:800;font-size:15px}
+.assess-note{color:var(--muted);font-size:12.5px;font-style:italic;margin:8px 0 0;line-height:1.6}
+.exit-block{
+  background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(245,158,11,.04));
+  border:2px dashed rgba(245,158,11,.55);position:relative
+}
+.exit-block h4{color:#b45309}
+.exit-q{font-weight:800;font-size:16px;color:var(--text);background:rgba(255,255,255,.6);padding:12px 16px;border-radius:12px;margin:0}
+
+/* ---------- المنهج الليبي ---------- */
+.guide-card{
+  display:block;background:var(--surface);border:1px solid var(--line);border-radius:20px;
+  padding:22px 24px;margin-bottom:26px;text-decoration:none;color:inherit;transition:.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,.06)
+}
+.guide-card:hover{border-color:var(--brand);transform:translateY(-3px);box-shadow:0 16px 34px rgba(91,61,245,.16)}
+.guide-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.guide-emoji{font-size:34px;line-height:1}
+.guide-headings{flex:1;min-width:220px}
+.guide-headings h3{margin:0 0 6px;font-size:19px;font-weight:800}
+.guide-headings p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.guide-open{background:var(--grad);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;white-space:nowrap}
+.guide-toc{list-style:none;margin:16px 0 0;padding:16px 0 0;border-top:1px dashed var(--line);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.guide-toc li{font-size:13.5px;color:var(--muted);line-height:1.6;background:rgba(91,61,245,.05);padding:8px 12px;border-radius:10px}
+.guide-toc b{color:var(--brand);font-weight:800;margin-inline-end:6px}
+.curriculum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.curr-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:20px;
+  padding:24px 22px 22px;position:relative;overflow:hidden;transition:.3s
+}
+.curr-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--brand)}
+.curr-card.prepared{border-color:rgba(91,61,245,.4)}
+.curr-chip{
+  position:absolute;top:0;left:0;background:var(--grad);color:#fff;
+  font-size:12px;font-weight:700;padding:6px 15px;border-radius:0 0 16px 0;letter-spacing:.2px
+}
+.curr-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px;padding-top:6px}
+.curr-head h4{font-size:18px;color:var(--text);margin:0;line-height:1.5}
+.curr-badge{font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap;flex-shrink:0}
+.curr-badge.prepared{background:rgba(16,185,129,.15);color:#059669}
+.curr-badge.soon{background:rgba(245,158,11,.16);color:#b45309}
+.curr-weeks{font-size:13px;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:5px}
+.curr-topics{list-style:none;display:flex;flex-direction:column;gap:9px;margin:0}
+.curr-topics li{font-size:14px;color:var(--muted);padding-right:22px;position:relative;line-height:1.7}
+.curr-topics li::before{content:"";position:absolute;right:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--brand-2)}
+.curr-card.soon .curr-topics li::before{background:var(--line)}
+.curriculum-note{
+  display:flex;gap:12px;align-items:flex-start;margin-top:28px;
+  background:var(--surface);border:1px dashed var(--line);border-radius:16px;padding:18px 20px
+}
+.curriculum-note span{font-size:22px}
+.curriculum-note p{color:var(--muted);font-size:14px;line-height:1.8;margin:0}
+@media(max-width:520px){.curriculum-grid{grid-template-columns:1fr}}
+.lesson-head h3{font-size:22px}
+.chip{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);padding:5px 16px;border-radius:999px;font-size:13.5px;font-weight:700}
+.objectives{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0}
+.obj{border-radius:16px;padding:16px;border:1px solid var(--line)}
+.obj h4{font-size:15.5px;margin-bottom:5px}
+.obj p{font-size:14px;color:var(--muted)}
+.obj.k{background:color-mix(in srgb,var(--brand) 9%,transparent);border-color:color-mix(in srgb,var(--brand) 30%,transparent)}
+.obj.s{background:color-mix(in srgb,var(--accent) 9%,transparent);border-color:color-mix(in srgb,var(--accent) 30%,transparent)}
+.obj.a{background:color-mix(in srgb,var(--pink) 9%,transparent);border-color:color-mix(in srgb,var(--pink) 30%,transparent)}
+.lesson-block{margin-top:16px}
+.lesson-block h4{font-size:16.5px;color:var(--brand);margin-bottom:8px}
+.lesson-block p,.lesson-block li{font-size:14.8px;color:var(--muted)}
+table.session-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14.5px}
+table.session-table th,table.session-table td{border:1px solid var(--line);padding:10px 12px;text-align:right}
+table.session-table th{background:var(--surface-2);color:var(--brand);font-family:"Cairo",sans-serif}
+table.session-table tr:nth-child(even) td{background:color-mix(in srgb,var(--surface-2) 55%,transparent)}
+
+/* معمل المعادلات */
+.lab{margin-top:34px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}
+.lab-head{text-align:center;margin-bottom:18px}
+.lab-head h3{font-size:20px}
+.lab-head p{color:var(--muted);font-size:14.5px}
+.lab-body{display:grid;grid-template-columns:270px 1fr;gap:18px}
+.lab-list{display:grid;gap:8px;align-content:start}
+.lab-list button{
+  text-align:right;border:1px solid var(--line);background:var(--surface-2);color:var(--text);
+  padding:11px 14px;border-radius:12px;cursor:pointer;font-weight:600;transition:.25s;font-size:14.5px
+}
+.lab-list button.on{background:var(--grad);color:#fff;border-color:transparent}
+.lab-list button:hover{border-color:var(--brand)}
+.lab-stage{padding:22px;display:grid;gap:16px;justify-items:center;min-height:280px;align-content:start}
+.lab-eq{font-family:"Cairo",sans-serif;font-size:32px;font-weight:900;color:var(--brand)}
+.lab-steps{list-style:none;display:grid;gap:10px;width:100%}
+.lab-steps li{
+  background:var(--surface-2);border:1px dashed var(--line);border-radius:12px;padding:11px 16px;
+  font-size:16px;animation:fade .35s ease;display:flex;gap:10px;align-items:center
+}
+.lab-steps li .k{color:var(--accent);font-weight:900}
+.lab-steps li.ok{background:color-mix(in srgb,var(--accent) 12%,transparent);border-color:var(--accent)}
+
+/* اختبار سريع */
+.quiz{margin-top:34px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}
+.quiz h3{font-size:20px;text-align:center;margin-bottom:18px}
+.q-item{margin-bottom:20px}
+.q-item h4{font-size:16px;margin-bottom:10px}
+.q-opts{display:grid;gap:8px}
+.q-opt{
+  text-align:right;border:1px solid var(--line);background:var(--surface-2);color:var(--text);
+  padding:11px 16px;border-radius:12px;cursor:pointer;transition:.25s;font-size:14.8px
+}
+.q-opt:hover:not(:disabled){border-color:var(--brand)}
+.q-opt.right{background:color-mix(in srgb,var(--accent) 16%,transparent);border-color:var(--accent);font-weight:700}
+.q-opt.wrong{background:color-mix(in srgb,#ef4444 14%,transparent);border-color:#ef4444}
+.q-opt:disabled{cursor:default}
+.q-fb{margin-top:8px;font-size:14px;font-weight:700;color:var(--accent);min-height:22px}
+.quiz-score{
+  text-align:center;padding:16px;border-radius:16px;font-weight:800;font-size:17px;
+  background:color-mix(in srgb,var(--brand) 10%,transparent)
+}
+
+/* ---------- الأدوات ---------- */
+.tool-card{display:grid;gap:6px}
+.tool-card .t-ic{font-size:30px}
+.tool-card h4{font-size:17px}
+.tool-card p{color:var(--muted);font-size:14px}
+.tool-link{
+  margin-top:6px;justify-self:start;background:color-mix(in srgb,var(--brand) 10%,transparent);
+  color:var(--brand);text-decoration:none;font-weight:700;font-size:13.5px;
+  padding:6px 16px;border-radius:10px;transition:.25s
+}
+.tool-link:hover{background:var(--brand);color:#fff}
+
+/* ---------- التقييم ---------- */
+.eval-toolbar{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+#evalSearch{
+  flex:1;min-width:220px;padding:12px 18px;border-radius:14px;border:1px solid var(--line);
+  background:var(--surface);color:var(--text);font-size:15px;outline:none;transition:.25s
+}
+#evalSearch:focus{border-color:var(--brand);box-shadow:0 0 0 4px color-mix(in srgb,var(--brand) 14%,transparent)}
+.eval-progress{display:flex;align-items:center;gap:10px}
+.ring-chart{width:60px;height:60px;transform:rotate(-90deg)}
+.ring-chart-bg{fill:none;stroke:color-mix(in srgb,var(--brand) 14%,transparent);stroke-width:3.4}
+.ring-chart-fg{fill:none;stroke:var(--accent);stroke-width:3.4;stroke-linecap:round;transition:stroke-dasharray .5s}
+.eval-progress b{font-size:22px;color:var(--accent);display:block;line-height:1.2}
+.eval-progress small{color:var(--muted);font-size:12px}
+.eval-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+.eval-item{
+  display:flex;gap:10px;align-items:flex-start;background:var(--surface);
+  border:1px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;transition:.25s;font-size:14.3px
+}
+.eval-item:hover{border-color:var(--brand);transform:translateY(-2px)}
+.eval-item.hidden{display:none}
+.eval-item .box{
+  width:24px;height:24px;flex:0 0 24px;border-radius:8px;border:2px solid var(--line);
+  display:grid;place-items:center;color:#fff;font-size:12px;transition:.25s;margin-top:2px
+}
+.eval-item.checked{background:color-mix(in srgb,var(--accent) 9%,var(--surface));border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.eval-item.checked .box{background:var(--accent);border-color:var(--accent)}
+.eval-item.checked .e-text{text-decoration:line-through;color:var(--muted)}
+.e-num{color:var(--brand);font-weight:900;margin-left:2px}
+
+/* ---------- الختام ---------- */
+.notes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.note-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;text-align:center;box-shadow:var(--shadow);transition:.3s
+}
+.note-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.note-card span{font-size:32px;display:block;margin-bottom:8px}
+.note-card h4{font-size:16px;margin-bottom:4px}
+.note-card p{color:var(--muted);font-size:14px}
+.signatures{margin-top:30px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);text-align:center}
+.signatures h3{margin-bottom:18px}
+.sign-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:18px}
+.sign-row label{display:grid;gap:8px;font-weight:700;font-size:14.5px;text-align:right}
+.sign-row input{
+  border:none;border-bottom:2px dashed var(--line);background:transparent;color:var(--text);
+  padding:8px 4px;font-size:15px;outline:none;transition:.25s
+}
+.sign-row input:focus{border-bottom-color:var(--brand)}
+
+/* ---------- الفوتر ---------- */
+.site-footer{background:var(--surface);border-top:1px solid var(--line);padding:30px 0;text-align:center}
+.footer-inner p{font-family:"Cairo",sans-serif;font-weight:800;color:var(--brand);margin-bottom:6px}
+.footer-inner small{color:var(--muted)}
+
+/* زر العودة للأعلى */
+.to-top{
+  position:fixed;bottom:24px;left:24px;width:48px;height:48px;border-radius:16px;border:none;
+  background:var(--grad);color:#fff;font-size:20px;cursor:pointer;box-shadow:var(--shadow-lg);
+  opacity:0;visibility:hidden;transform:translateY(14px);transition:.35s;z-index:90
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+
+/* ---------- الظهور عند التمرير ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- الاستجابة ---------- */
+@media (max-width:1024px){
+  .main-nav{display:none;position:absolute;top:100%;right:0;left:0;background:var(--surface);
+    flex-direction:column;padding:12px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg)}
+  .main-nav.open{display:flex}
+  .nav-toggle{display:flex}
+  .two-col,.type-cards,.lab-body{grid-template-columns:1fr}
+  .header-inner{justify-content:space-between}
+}
+@media (max-width:640px){
+  .section{padding:60px 0}
+  .hero{padding:56px 0}
+  .stage-content{grid-template-columns:1fr}
+  .tab-panel{padding:20px}
+  .panel{padding:20px}
+  .timer-display{font-size:42px}
+}
+
+@media print{
+  .site-header,.to-top,.hero-cta,.stats-row,.idea-picker,.timer-wrap,.lab,.quiz,.plan-toolbar,.progress-bar{display:none!important}
+  body{background:#fff;color:#000}
+  .tab-panel{display:block!important}
+  .section{padding:20px 0;break-inside:avoid}
+  .reveal{opacity:1!important;transform:none!important}
+  .acc-body{max-height:none!important}
+}
+
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍🏫</text></svg>">
+</head>
+<body>
+
+<!-- شريط تقدّم القراءة -->
+<div class="progress-bar" id="scrollProgress"></div>
+
+<!-- الهيدر -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-logo">∑</span>
+      <span class="brand-text">
+        <strong>المعلمة الرقمية</strong>
+        <small>كرّاسة التحضير — رياضيات ثامن</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">الرئيسية</a>
+      <a href="#prep">التحضير الجيد</a>
+      <a href="#stages">مراحل الدرس</a>
+      <a href="#warmup">التمهيد</a>
+      <a href="#elements">عناصر التحضير</a>
+      <a href="#session">الحصة النموذجية</a>
+      <a href="#plan">الخطة الأسبوعية</a>
+      <a href="#lessons">الدروس</a>
+      <a href="#curriculum">المنهج الليبي</a>
+      <a href="#tools">الأدوات</a>
+      <a href="#evaluate">التقييم</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" title="الوضع الليلي" aria-label="تبديل الوضع الليلي">
+        <span class="ic-moon">🌙</span><span class="ic-sun">☀️</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= الواجهة الرئيسية ======================= -->
+<section class="hero" id="home">
+  <div class="hero-shapes" aria-hidden="true">
+    <span class="shape s1">+</span><span class="shape s2">÷</span><span class="shape s3">=</span>
+    <span class="shape s4">×</span><span class="shape s5">√</span><span class="shape s6">π</span>
+    <span class="shape s7">%</span><span class="shape s8">≤</span>
+  </div>
+  <div class="container hero-inner">
+    <p class="hero-badge">✨ بالعلم .... نبني الأجيال ✨</p>
+    <h1 class="hero-title">كرّاسة تحضير <span class="grad-text">المعلمة الرقمية</span></h1>
+    <p class="hero-sub">منهجية متكاملة للتحضير الجيد: خطوات، وأهمية، وعناصر، وحصص نموذجية، وخطة أسبوعية تفاعلية — لتعليم الرياضيات بأفضل صورة.</p>
+
+    <div class="teacher-card glass">
+      <div class="teacher-avatar">م.ع</div>
+      <div class="teacher-grid">
+        <div class="t-item"><span>المعلمة</span><strong>مريم عمران</strong></div>
+        <div class="t-item"><span>المادة</span><strong>الرياضيات</strong></div>
+        <div class="t-item"><span>الصف</span><strong>الثامن — التعليم الأساسي</strong></div>
+        <div class="t-item"><span>الفصل الدراسي</span><strong>الأول 2025 / 2026م</strong></div>
+        <div class="t-item"><span>المدرسة</span><strong>الإسراء للتعليم الأساسي</strong></div>
+        <div class="t-item"><span>المدينة</span><strong>زليتن — ليبيا</strong></div>
+        <div class="t-item"><span>عدد الطالبات</span><strong>23 طالبة</strong></div>
+        <div class="t-item"><span>الحصص الأسبوعية</span><strong>5 حصص</strong></div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#plan" class="btn btn-primary">ابدئي بالخطة الأسبوعية ←</a>
+      <a href="#lessons" class="btn btn-ghost">تحضيرات الدروس الستّين</a>
+      <a href="offline.html" download="المعلمة-الرقمية.html" class="btn btn-download">⬇️ حمّلي الموقع كاملاً (يعمل بدون إنترنت)</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat glass"><b class="counter" data-target="60">0</b><span>تحضير يومي</span></div>
+      <div class="stat glass"><b class="counter" data-target="20">0</b><span>أسبوع دراسي</span></div>
+      <div class="stat glass"><b class="counter" data-target="46">0</b><span>معيار تقييم</span></div>
+      <div class="stat glass"><b class="counter" data-target="15">0</b><span>فكرة تمهيد</span></div>
+      <div class="stat glass"><b class="counter" data-target="20">0</b><span>لعبة تفاعلية</span></div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- ======================= خطوات التحضير الجيد ======================= -->
+<section class="section" id="prep">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">💢 المقوم الأول</p>
+      <h2>خطوات التحضير الجيد</h2>
+      <p class="section-desc">خمس خطوات منظّمة تصنع الفرق بين حصة عشوائية وحصة نموذجية تُنجز أهدافها.</p>
+    </div>
+
+    <ol class="steps-grid">
+      <li class="step-card reveal"><span class="step-num">1</span><h3>قراءة الدرس</h3><p>قراءة الدرس المراد تدريسه بشكل جيد قبل الدخول إلى الصف.</p></li>
+      <li class="step-card reveal"><span class="step-num">2</span><h3>تحليل الدرس</h3><p>تحليل عناصر الدرس إلى أفكار، وحقائق، ومفاهيم.</p></li>
+      <li class="step-card reveal"><span class="step-num">3</span><h3>الاستعانة بالمصادر</h3><p>الرجوع إلى المصادر المناسبة لتوضيح ما أشكل عليه من أمور.</p></li>
+      <li class="step-card reveal"><span class="step-num">4</span><h3>الصورة الذهنية</h3><p>تكوين صورة ذهنية عن المادة المراد تدريسها.</p></li>
+      <li class="step-card reveal"><span class="step-num">5</span><h3>صياغة الأهداف</h3><p>صياغة الأهداف بدقة ومراعاة ما يمكن قياسه من أهداف.</p></li>
+    </ol>
+
+    <div class="two-col gap-lg">
+      <div class="panel reveal">
+        <h3 class="panel-title">📮 أهمية التحضير الجيد</h3>
+        <ul class="check-list">
+          <li>يشجّع المعلم على التعرف على الأهداف التربوية العامة.</li>
+          <li>يساعد المعلم على توضيح وتحقيق الأهداف التربوية العامة.</li>
+          <li>يوفّر الوسائل المعينة لإثارة الطلبة وتحفيز دوافعهم.</li>
+          <li>يقلّل مقدار المحاولة والخطأ في التدريس.</li>
+          <li>يُكسب المعلم احترامًا.</li>
+        </ul>
+      </div>
+      <div class="panel reveal">
+        <h3 class="panel-title">✨ فوائد التحضير</h3>
+        <ul class="check-list gold">
+          <li>تنظيم المعلم لأفكاره بشكل جيّد.</li>
+          <li>الدقّة في التدريس.</li>
+          <li>حسْن التحضير وعدم العشوائية.</li>
+          <li>ثقة المدرّس بنفسه بسبب تثبيته للمادة العلمية.</li>
+          <li>حسْن ضبط الوقت.</li>
+          <li>معرفة خفايا المادة العلمية.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel reveal mt-lg">
+      <h3 class="panel-title">📌 المقوّم الثاني: الإعداد المسبق للدرس</h3>
+      <p class="lead">من المُعْلَم أنَّ أيَّ عملٍ يرغب صاحبه في إنجاحه لابدّ أن يُخطَّط له تخطيطًا جيّدًا ومُسبقًا من جميع الجوانب. والتخطيط للتدريس منهجٌ وأسلوبٌ وطريقةٌ يُحقق الارتقاء بعملية التعليم، ويعين المعلِّم على مواجهة المواقف التعليمية والتغلّب على صعوباتها بثقةٍ وروحٍ معنويةٍ عالية.</p>
+      <div class="pill-row">
+        <span class="pill">ينظّم عمل المعلم ويرتّبه</span>
+        <span class="pill">يبعد الأداء عن الارتجالية</span>
+        <span class="pill">يرتّب عناصر الدرس ترتيبًا ميسّرًا</span>
+        <span class="pill">يجعله واعيًا بالصعوبات ومتوقّعًا لها</span>
+        <span class="pill">يجعل عمله متجدّدًا باستمرار</span>
+      </div>
+      <div class="type-cards">
+        <article class="type-card">
+          <h4>أولاً: التخطيط الذهني</h4>
+          <p>يفكّر المعلم في الأهداف السلوكية المطلوبة، وفي طريقة وأسلوب واستراتيجية التدريس الملائمة للدرس — وهو ما يسبق التخطيط الكتابي ويعطيه تصوّرًا مسبقًا.</p>
+        </article>
+        <article class="type-card">
+          <h4>ثانيًا: التخطيط الكتابي</h4>
+          <p>أفضل أنواعه التخطيط اليومي، يُدوَّن في دفتر تحضير الدروس، وأهم ما يُكتب فيه الأهداف الخاصة لأنها تحدّد الطريقة والإستراتيجية التي يتبّعها المعلم في درسه.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= مراحل الدرس ======================= -->
+<section class="section alt" id="stages">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">⏱️ مراحل الدرس الثلاث</p>
+      <h2>ما الفرق بين مراحل الدرس؟</h2>
+      <p class="section-desc">اضغطي على كل مرحلة لتتعرّفي على وظيفتها ودور المعلمة فيها.</p>
+    </div>
+
+    <div class="tabs" data-tabs="stages">
+      <div class="tab-bar" role="tablist">
+        <button class="tab-btn active" data-tab="t1">🔔 التهيئة</button>
+        <button class="tab-btn" data-tab="t2">📖 عرض الدرس</button>
+        <button class="tab-btn" data-tab="t3">🎯 غلق الدرس</button>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel active" data-panel="t1">
+          <div class="stage-content">
+            <div class="stage-icon">🌱</div>
+            <div>
+              <h3>التهيئة (التمهيد)</h3>
+              <p>هي عملية تجهيز وإعداد الطالب للدرس الجديد؛ إذ تُثير اهتمامه وتجعله متشوّقًا لعرض الدرس، وتربط خبراته السابقة بالمحتوى الجديد.</p>
+              <ul class="check-list">
+                <li>تبدأ بسؤال محفّز أو موقف من الحياة اليومية.</li>
+                <li>تستثير الفضول وتُهيّئ المناخ النفسي للتعلّم.</li>
+                <li>تستغرق نحو 5 دقائق من الحصة.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" data-panel="t2">
+          <div class="stage-content">
+            <div class="stage-icon">📚</div>
+            <div>
+              <h3>عرض الدرس</h3>
+              <p>تقديم الدرس نفسه: تنفيذ الأنشطة الصفية، وتطبيق الاستراتيجيات المناسبة، واستخدام التقنيات والوسائل المناسبة بمشاركة المتعلمين بفاعلية.</p>
+              <ul class="check-list">
+                <li>لا يقتصر دور المتعلّم على التلقي، بل يشارك ويُنفّذ.</li>
+                <li>يتعدد فيه النشاط وتتعدّد الوسائل.</li>
+                <li>يُوزَّع وقته على مراحل الدرس (15 دقيقة).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" data-panel="t3">
+          <div class="stage-content">
+            <div class="stage-icon">🏁</div>
+            <div>
+              <h3>غلق الدرس</h3>
+              <p>هي الأفعال والأقوال التي يصدرها المعلّم عند الرغبة في إنهاء الدرس التعليمي أو إنهاء جزء منه، وهي آخر خطوة من خطوات شرح الدرس.</p>
+              <ul class="check-list">
+                <li>تلخيص أهم عناصر الدرس وإبرازها.</li>
+                <li>تدوين الملخّص على السبورة عند الحاجة.</li>
+                <li>تقويم سريع ثم واجب منزلي مناسب (10 دقائق).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= أنواع التمهيد ======================= -->
+<section class="section" id="warmup">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">🎲 إبداع المعلمة</p>
+      <h2>من أنواع التمهيد للدرس</h2>
+      <p class="section-desc">15 فكرة تمهيد جاهزة لتشويق الطالبات وربطهنّ بالدرس.</p>
+    </div>
+
+    <div class="idea-picker reveal">
+      <button class="btn btn-primary" id="randomIdeaBtn">🎲 اصطيدي فكرة تمهيد عشوائية</button>
+      <div class="idea-card glass" id="ideaCard">
+        <span class="idea-tag">فكرة اليوم</span>
+        <h3 id="ideaTitle">الطرائف</h3>
+        <p id="ideaDesc">يطرح المعلم سؤالًا يُحدث العجب والدهشة، ويستقبل الإجابات ثم يقول: «لكن هناك إجابة صحيحة»… ثم يوضّح كيف يتم ذلك. مثال: كيف نحوّل ماء البحر إلى ماء شرب دون تقطير؟</p>
+      </div>
+    </div>
+
+    <div class="cards-grid" id="warmupGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= عناصر وخطوات تحضير الدرس ======================= -->
+<section class="section alt" id="elements">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">🔹 جوهر التحضير</p>
+      <h2>عناصر وخطوات تحضير الدرس النموذجي</h2>
+      <p class="section-desc">ستّة عناصر أساسية لكل درس — اضغطي على العنصر لعرض معاييره.</p>
+    </div>
+    <div class="accordion" id="elementsAcc"></div>
+  </div>
+</section>
+
+<!-- ======================= الحصة النموذجية + المؤقّت ======================= -->
+<section class="section" id="session">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">🔴 كيف أنفّذ حصة نموذجية؟</p>
+      <h2>عناصر الحصة النموذجية</h2>
+      <p class="section-desc">حصة تُوزَّع فيها الأنشطة على نحو 40–45 دقيقة، وتبتعد فيها عن الملل وتحفّز المشاركة.</p>
+    </div>
+
+    <!-- مؤقّت الحصة -->
+    <div class="timer-wrap reveal">
+      <div class="timer-box glass">
+        <h3>⏱️ مؤقّت الحصة الصفية</h3>
+        <div class="timer-display" id="timerDisplay">45:00</div>
+        <svg class="timer-ring" viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+          <circle class="ring-fg" id="timerRing" cx="60" cy="60" r="54"></circle>
+        </svg>
+        <p class="timer-phase" id="timerPhase">الحصة كاملة</p>
+        <div class="timer-controls">
+          <button class="btn btn-primary" id="timerStart">▶ بدء</button>
+          <button class="btn btn-ghost" id="timerReset">↺ إعادة</button>
+        </div>
+        <div class="timer-presets">
+          <button data-min="5"  data-phase="التمهيد">التمهيد 5 د</button>
+          <button data-min="15" data-phase="العرض والتقديم">العرض 15 د</button>
+          <button data-min="15" data-phase="التطبيق">التطبيق 15 د</button>
+          <button data-min="10" data-phase="التقويم">التقويم 10 د</button>
+          <button data-min="45" data-phase="الحصة كاملة">الحصة 45 د</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col gap-lg mt-lg">
+      <div class="panel reveal">
+        <h3 class="panel-title">💢 التخطيط الجيد</h3>
+        <ul class="check-list">
+          <li>كتابة الأهداف بشكل صحيح، شاملةً المجالات: المعرفي والانفعالي والنفس-حركي.</li>
+          <li>اختيار استراتيجيات التعليم المناسبة للموضوع.</li>
+          <li>استخدام أدوات ومصادر التعليم بشكل جيّد.</li>
+          <li>تنويع الأنشطة.</li>
+          <li>اشتراك جميع الطلبة في الأنشطة: فرديًا أو ضمن مجموعات متكافئة.</li>
+          <li>اختيار أدوات التقويم الفعّالة المناسبة للدرس.</li>
+        </ul>
+      </div>
+      <div class="panel reveal">
+        <h3 class="panel-title">🌟 عناصر نجاح الحصة النموذجية</h3>
+        <ul class="check-list gold">
+          <li>كتابة البيانات الرئيسية: عنوان الوحدة، موضوع الدرس، رقم الصفحة، التاريخ، الصف والشعبة.</li>
+          <li>اختيار تهيئة مناسبة ومشوّقة، وتوزيع الوقت بشكل جيّد.</li>
+          <li>التأكد من صحة المادة العلمية المعطاة للطلبة.</li>
+          <li>إثراء الفكرة الرئيسية بأفكار جديدة تُغني الموضوع.</li>
+          <li>استخدام التقنيات بالشكل الصحيح، وإدارة الصف بنجاح.</li>
+          <li>توزيع الأسئلة بما يضمن مشاركة الجميع، والتواصل الحيوي مع الطلبة.</li>
+          <li>التعزيز الفوري (لفظي أو مادي) والتغذية الراجعة والواجب المناسب.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel reveal mt-lg">
+      <h3 class="panel-title">🗓️ كيف أعدّ خطة فصلية؟</h3>
+      <ol class="flow-steps">
+        <li><span>1</span>احسب عدد الحصص خلال الفصل</li>
+        <li><span>2</span>قسّم دروس الكتاب حسب عدد الحصص</li>
+        <li><span>3</span>قدّر لكل درس عدد حصص مناسبًا</li>
+        <li><span>4</span>حدّد تواريخ كل حصة بشكل صحيح</li>
+        <li><span>5</span>وزّع الحصص حسب التواريخ</li>
+        <li><span>6</span>حدّد أهداف كل وحدة بالمصدر الصريح</li>
+        <li><span>7</span>حدّد أهداف كل درس بـ «أن + الفعل المضارع»</li>
+        <li><span>8</span>حدّد الأساليب المتبعة في كل حصة</li>
+      </ol>
+      <p class="note">💡 رؤوس أقلام فقط — للمعلمة المبتدئة أن تبدأ بنموذج جاهز ثم تطوّر خطّتها بلمستها الشخصية.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= الخطة الأسبوعية ======================= -->
+<section class="section alt" id="plan">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">📅 الفصل الدراسي الأول</p>
+      <h2>الخطة الشهرية والأسبوعية</h2>
+      <p class="section-desc">20 أسبوعًا دراسيًا — أدخلي علامة على كل أسبوع تمّ تنفيذه وستُحفظ تلقائيًا.</p>
+    </div>
+
+    <div class="plan-toolbar reveal">
+      <div class="month-filter" id="monthFilter"></div>
+      <div class="plan-progress">
+        <span>تقدّم التنفيذ: <b id="planPct">0%</b></span>
+        <div class="bar"><i id="planBar"></i></div>
+        <button class="mini-btn" id="planReset">إعادة تعيين</button>
+      </div>
+    </div>
+
+    <div class="weeks-grid" id="weeksGrid"></div>
+
+    <div class="panel reveal mt-lg">
+      <h3 class="panel-title">🎯 أهداف مادة الرياضيات — الفصل الأول</h3>
+      <div class="units-grid" id="unitsGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= تحضيرات الدروس ======================= -->
+<section class="section" id="lessons">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">📄 كرّاسة التحضير</p>
+      <h2>تحضيرات الدروس — الأسبوع الأول حتى العشرين</h2>
+      <p class="section-desc">60 تحضيراً يومياً (3 لكل أسبوع: مفاهيم، أمثلة وتدريبات، ثم مشكلات وتقويم). استخدمي فلتر الوحدات، ثم اختر الأسبوع، ثم اليوم المطلوب.</p>
+    </div>
+    <div class="unit-filter" id="unitFilter"></div>
+    <p class="lesson-count" id="lessonCount"></p>
+    <div class="tabs" data-tabs="lessons">
+      <div class="tab-bar scrollable" id="lessonTabs"></div>
+      <div class="tab-panels" id="lessonPanels"></div>
+    </div>
+
+    <!-- معامل المعادلات -->
+    <div class="lab reveal">
+      <div class="lab-head">
+        <h3>⚖️ معمل المعادلات: الحل خطوة بخطوة</h3>
+        <p>اختاري مثالاً ثم اضغطي «الخطوة التالية» لمتابعة الحل والتحقق.</p>
+      </div>
+      <div class="lab-body">
+        <div class="lab-list" id="labList"></div>
+        <div class="lab-stage glass">
+          <div class="lab-eq" id="labEq">س + 7 = 15</div>
+          <ol class="lab-steps" id="labSteps"></ol>
+          <button class="btn btn-primary" id="labNext">الخطوة التالية ←</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- اختبار سريع -->
+    <div class="quiz reveal" id="quiz">
+      <h3>📝 اختبري فهمك للكرّاسة</h3>
+      <div id="quizBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= المنهج الليبي ======================= -->
+<section class="section alt" id="curriculum">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">📘 المنهج الرسمي</p>
+      <h2>منهج الرياضيات — الصف الثامن (المنهاج الليبي)</h2>
+      <p class="section-desc">خريطة أبواب كتاب الرياضيات للصف الثامن وفق وزارة التربية والتعليم الليبية، مع ربط كل باب بتحضيراته الجاهزة على الموقع.</p>
+    </div>
+
+    <!-- ربط بكتاب دليل المعلم الرسمي -->
+    <a class="guide-card reveal" target="_blank" rel="noopener"
+       href="https://drive.google.com/file/d/19WkIPuKcsyUHzZnC8_hLA9TbyytsQJ21/view">
+      <div class="guide-top">
+        <span class="guide-emoji">📖</span>
+        <div class="guide-headings">
+          <h3>دليل المعلم — الرياضيات (الصف الثامن)</h3>
+          <p>المرجع الرسمي لمنهج ليبيا (221 صفحة) — اضغطي لفتح الكتاب كاملاً، وكل تحضير في الموقع يحوي شارة تدلّك على وحدته وصفحاته.</p>
+        </div>
+        <span class="guide-open">فتح الدليل ↗</span>
+      </div>
+      <ul class="guide-toc">
+        <li><b>ص 12</b> الوحدة الأولى: المعادلات الجبرية</li>
+        <li><b>ص 20</b> الوحدة الثانية: النسبة والتناسب والنسبة المئوية والمعاملات المالية والصورة المعيارية</li>
+        <li><b>ص 32</b> الوحدة الثالثة: مبادئ الهندسة</li>
+        <li><b>ص 40</b> الوحدة الرابعة: المضلعات</li>
+      </ul>
+    </a>
+
+    <div class="curriculum-grid" id="curriculumGrid"></div>
+    <div class="curriculum-note reveal">
+      <span>💡</span>
+      <p>الأبواب المعلّمة بـ«محضّر ✓» مغطّاة بالكامل بتحضيرات دروس جاهزة في قسم «تحضيرات الدروس» أعلاه، ومرتبطة بأسابيع الخطة الأسبوعية. باقي الأبواب من المنهج الرسمي وستُضاف لاحقاً.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= الأدوات الرقمية ======================= -->
+<section class="section" id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">🔧 التقنية في خدمة التعلّم</p>
+      <h2>الأدوات الرقمية الموصى بها</h2>
+      <p class="section-desc">استخدمي التقنية بحكمة: الهدف تعزيز الفهم، لا تشتيت الانتباه.</p>
+    </div>
+    <div class="cards-grid tools-grid" id="toolsGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= أسس تقييم المعلم ======================= -->
+<section class="section alt" id="evaluate">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">⭐ 46 معيارًا</p>
+      <h2>أسس تقييم المعلّم</h2>
+      <p class="section-desc">استخدميها لالتقائي الذاتي بعد كل حصة — علاماتك تُحفظ في متصفّحك.</p>
+    </div>
+
+    <div class="eval-toolbar reveal">
+      <input type="search" id="evalSearch" placeholder="ابحثي في معايير التقييم..." aria-label="بحث">
+      <div class="eval-progress">
+        <svg viewBox="0 0 36 36" class="ring-chart">
+          <path class="ring-chart-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+          <path class="ring-chart-fg" id="evalRing" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+        </svg>
+        <div><b id="evalCount">0</b><small>من 46 معيارًا</small></div>
+      </div>
+      <button class="mini-btn" id="evalReset">إعادة التعيين</button>
+    </div>
+
+    <div class="eval-grid" id="evalGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= الختام ======================= -->
+<section class="section" id="closing">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="kicker">💡 ملاحظات ختامية للمعلمة الرقمية</p>
+      <h2>لِنُكمل الطريق بإبداع</h2>
+    </div>
+    <div class="notes-grid">
+      <article class="note-card reveal"><span>🖥️</span><h4>استخدمي التقنية بحكمة</h4><p>الهدف تعزيز الفهم، لا تشتيت الانتباه.</p></article>
+      <article class="note-card reveal"><span>🎨</span><h4>نوّعي الأنشطة</h4><p>بين فردي وجماعي، ورقمي وتقليدي.</p></article>
+      <article class="note-card reveal"><span>📊</span><h4>وثّقي التقييم</h4><p>في كل حصة سجّلي ملاحظاتك.</p></article>
+      <article class="note-card reveal"><span>🤝</span><h4>تعاوني مع الزميلات</h4><p>تبادلي أوراق العمل والخبرات.</p></article>
+      <article class="note-card reveal"><span>💪</span><h4>كافئي نفسك</h4><p>أنتِ تبنين أجيالًا بالعلم.</p></article>
+    </div>
+
+    <div class="signatures reveal">
+      <h3>✍️ التوقيعات</h3>
+      <div class="sign-row">
+        <label>المعلمة: مريم عمران<input type="text" placeholder="......................" aria-label="توقيع المعلمة"></label>
+        <label>وكيل الشؤون التعليمية<input type="text" placeholder="......................" aria-label="توقيع الوكيل"></label>
+        <label>مدير المدرسة<input type="text" placeholder="......................" aria-label="توقيع المدير"></label>
+      </div>
+      <button class="btn btn-ghost" id="printBtn">🖨️ طباعة الكرّاسة</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>🌟 كل يوم خطوة نحو الهدف 🌟</p>
+    <small>كرّاسة تحضير المعلمة الرقمية — أ. مريم عمران | الرياضيات — الصف الثامن — الفصل الأول 2025/2026م</small>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="العودة للأعلى">↑</button>
+
+<script>
+/* ============ كرّاسة التحضير — المعلمة الرقمية | التفاعلات ============ */
+"use strict";
+const $  = (s, c = document) => c.querySelector(s);
+const $ = (s, c = document) => [...c.querySelectorAll(s)];
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+
+/* ---------------- بيانات: أنواع التمهيد ---------------- */
+const WARMUPS = [
+  { ic:"🎩", t:"الطرائف", d:"سؤال يُحدث العجب والدهشة، تُستقبل إجابات الطلاب ثم يقال: «لكن هناك إجابة صحيحة»… ثم يُوضّح كيف. مثال: كيف نحوّل ماء البحر إلى ماء شرب دون تقطير؟" },
+  { ic:"🎯", t:"إعلان أهداف الدرس", d:"يُكتب عنوان الدرس وأهدافه على السبورة، ويُخبر المتعلّم أنه في نهاية الحصة يتوقّع أن يتعلم ما يحقّق هذه الأهداف." },
+  { ic:"🗺️", t:"خريطة المفاهيم", d:"عرض الدرس بشكل خريطة مفاهيم ويناقش الطلاب فيها مع التوضيح والمناقشة." },
+  { ic:"🔤", t:"الكلمة الضائعة", d:"لعبة يعشقها الطلاب، تجذبهم للتفاعل، وقد تكون الكلمة الناتجة هي عنوان الدرس نفسه." },
+  { ic:"🔠", t:"الأحرف المبعثرة", d:"يُسأل طالب ويُسجَّل الجواب على السبورة، ثم يُطلب من الصف أخذ أوائل الحروف لتكوّن كلمة = عنوان الدرس." },
+  { ic:"🧩", t:"الصورة", d:"تقسيم الطلاب إلى مجموعات ومنح كل مجموعة صورة مقطّعة، وأسرع مجموعة تعيد تشكيلها." },
+  { ic:"💬", t:"أجمل تعليق", d:"عرض صورة وتسجيل تعليقات الطلاب على السبورة بحيث تكون مدخلًا للدرس." },
+  { ic:"💎", t:"الكنز", d:"توجيه الطلاب إلى الكنز المطلوب عبر أسئلة مُخفية في الصف، والكنز كل ما يتعلق بمضمون الدرس." },
+  { ic:"🎟️", t:"اسحب واربح", d:"أوراق في صندوق، كل طالبة تختار بطاقة وتقراها على الصف — مفيد لقياس المعلومات السابقة قبل الخبرة الجديدة." },
+  { ic:"❓", t:"الأسئلة التحفيزية", d:"طرح سؤال محفّز وتسجيل كل إجابة على السبورة دون حكم، ثم: «الإجابة الصحيحة سنعرفها من درس اليوم»." },
+  { ic:"📖", t:"سرد القصص", d:"حكي قصة تدور أحداثها حول موضوع الدرس، ومن خلالها يستنتج الطلاب عنوان الدرس وعناصره." },
+  { ic:"📰", t:"الأحداث الجارية", d:"قراءة خبر حديث من الصحف متعلق بالدرس ثم مناقشة الطلاب في تعريفه وعناصره." },
+  { ic:"🕌", t:"الآيات والأحاديث", d:"بدء الدرس بآية كريمة أو حديث أو قول مأثور مرتبط بالموضوع، مثل: «يُكور الليل على النهار» لدرس حركة الأرض." },
+  { ic:"🔬", t:"الأنشطة الاستقصائية", d:"نشاط عملي ممتع كتوزيع قطع متعفنة لفحصها بالميكروسكوب قبل درس «فطر عفن الخبز»." },
+  { ic:"🔗", t:"ربط الدرس السابق بالحالي", d:"تذكير بما درسناه ثم الإعلان عن أوجه التشابه والاختلاف في درس اليوم." }
+];
+
+/* ---------------- بيانات: عناصر تحضير الدرس ---------------- */
+const ELEMENTS = [
+  { t:"تحديد الأهداف", c:[
+    "أن تكون مرتبطة بالأهداف العامة للتربية، وللمرحلة، وللمادة.",
+    "أن تشتمل على المجالات الرئيسة: المعرفي، الانفعالي، النفس-حركي (معرفة – مهارة – وجدانية).",
+    "أن تصاغ صياغة سلوكية صحيحة: (أن + فعل إجرائي + المتعلم + وصف الخبرة التعلّمية المراد إتقانها)."
+  ]},
+  { t:"اختيار المحتوى", c:[
+    "أن يسهم في تحقيق أهداف الدرس.",
+    "أن يشمل الموضوع بصورة متوازنة بما يتلاءم مع زمن الحصة.",
+    "أن يشتمل على موضوعات واضحة وصحيحة (أرقام، تواريخ، أسماء).",
+    "أن تكون عناصره مرتّبة ترتيبًا منطقيًا.",
+    "أن يشتمل على جوانب تتعلق بالقيم والمبادئ الإسلامية."
+  ]},
+  { t:"اختيار الأساليب والأنشطة", c:[
+    "أن تكون متنوعة؛ فلا تقتصر على طريقة أو أسلوب دون آخر.",
+    "أن تراعي الفروق الفردية للمتعلّمين وتكون متعدّدة المستويات.",
+    "أن تشتمل على نشاط عملي في الفصل.",
+    "أن تكون مرتبطة بموضوع وأهداف الدرس."
+  ]},
+  { t:"تحديد الاستراتيجية", c:[
+    "التمهيد: مدخل ضروري يثير اهتمام المتعلمين ويجعلهم متشوقين لعرض الدرس.",
+    "العرض: عرض عناصر الدرس بمشاركة المتعلمين بفاعلية، مع تعدد الأنشطة واستخدام الوسائل بصورة طبيعية.",
+    "الخاتمة: تلخيص لأهم عناصر الدرس تُدوَّن على السبورة عند الحاجة حسب طبيعة المادة ومرحلة النمو."
+  ]},
+  { t:"اختيار الوسائل والأدوات التعليمية", c:[
+    "أن تكون ملائمة لموضوع الدرس ولمستوى المتعلّم.",
+    "أن تسهم في تحقيق أهداف الدرس وتوضيح المحتوى بفاعلية.",
+    "أن تكون متنوعة ومبتكرة وتشجّع المتعلمين على استخدامها."
+  ]},
+  { t:"اختيار أساليب التقويم", c:[
+    "أن يكون التقويم مرتبطًا بأهداف الدرس.",
+    "أدوات تقيس مدى تعلّم الطلبة واستفادتهم من موضوع الدرس.",
+    "تُوزَّع الأسئلة بما يضمن مشاركة جميع الطلاب على اختلاف مستوياتهم."
+  ]}
+];
+
+/* ---------------- بيانات: الخطة الأسبوعية ---------------- */
+const WEEKS = [
+  {m:"أكتوبر", w:"الأول",   t:"تمهيد: مراجعة العمليات على الأعداد"},
+  {m:"أكتوبر", w:"الثاني",  t:"معادلة — حل المعادلة (الجمع والطرح)"},
+  {m:"أكتوبر", w:"الثالث",  t:"حل المعادلة (الضرب والقسمة)"},
+  {m:"أكتوبر", w:"الرابع",  t:"حل المعادلات (أكثر من عملية)"},
+  {m:"نوفمبر", w:"الخامس",  t:"حل مشكلات باستخدام المعادلات"},
+  {m:"نوفمبر", w:"السادس",  t:"التحقق من صحة حل المعادلة"},
+  {m:"نوفمبر", w:"السابع",  t:"الأنماط العددية — الحد العام"},
+  {m:"نوفمبر", w:"الثامن",  t:"النسبة — كتابة النسب"},
+  {m:"ديسمبر", w:"التاسع",  t:"النسب بين قياسين"},
+  {m:"ديسمبر", w:"العاشر",  t:"التناسب الطردي والعكسي"},
+  {m:"ديسمبر", w:"الحادي عشر", t:"مقياس الرسم — المسافة الفعلية"},
+  {m:"ديسمبر", w:"الثاني عشر", t:"النسبة المئوية (ككسر وعدد عشري)"},
+  {m:"يناير",  w:"الثالث عشر", t:"النسبة المئوية من كمية"},
+  {m:"يناير",  w:"الرابع عشر", t:"مسائل: ربح — خسارة — خصم — عمولة"},
+  {m:"يناير",  w:"الخامس عشر", t:"الصورة المعيارية للعدد"},
+  {m:"يناير",  w:"السادس عشر", t:"مبادئ الهندسة — المنصفات"},
+  {m:"فبراير", w:"السابع عشر", t:"أنواع المثلثات — مجموع زوايا المثلث"},
+  {m:"فبراير", w:"الثامن عشر", t:"الزاوية الخارجة للمثلث"},
+  {m:"فبراير", w:"التاسع عشر", t:"الأشكال الرباعية وأنواعها"},
+  {m:"فبراير", w:"العشرون",  t:"المضلعات — مراجعة شاملة"}
+];
+
+/* ---------------- بيانات: أهداف الوحدات ---------------- */
+const UNITS = [
+  { t:"الوحدة الأولى: المعادلات الجبرية", l:[
+    "يحلّ المعادلات التي تتضمن الجمع أو الطرح",
+    "يحلّ المعادلات التي تتضمن عمليتي الضرب أو القسمة",
+    "يحلّ المعادلات التي تتضمن أكثر من عملية",
+    "يحلّ مشكلات باستخدام معادلات الدرجة الأولى في مجهول واحد",
+    "يتحقق من صحة حل المعادلة"
+  ]},
+  { t:"الوحدة الثانية: النسب والتناسب والنسبة المئوية", l:[
+    "يستخدم النسب للمقارنة بين كميتين",
+    "يكتب النسب ككسر عادي في أبسط صورة",
+    "يكتب النسب بين قياسين",
+    "يحلّ مسائل لفظية تتضمن النسبة والتناسب الطردي والعكسي",
+    "يحسب المسافة الفعلية بين مكانين على الخريطة",
+    "يعبر عن كمية كنسبة مئوية أو ككسر أو كعدد عشري",
+    "يحلّ مسائل على النسبة المئوية والربح والخسارة",
+    "يكتب عدداً في الصورة المعيارية"
+  ]},
+  { t:"الوحدة الثالثة: مبادئ الهندسة", l:[
+    "ينشئ منصف زاوية ومنصف عمودي ومستقيمات عمودية أو متوازية",
+    "يسمّي أنواع المثلثات",
+    "يجد قياسات الزوايا المجهولة للمثلث",
+    "يستخدم خواص الزاوية الخارجة للمثلث",
+    "يعرف أنواع الشكل الرباعي المختلفة",
+    "يستخدم خواص زوايا المستقيمات المتوازية"
+  ]},
+  { t:"الوحدة الرابعة: المضلعات", l:[
+    "يسمّي أنواع المضلعات حتى 10 أضلاع",
+    "ينشئ أشكالاً رباعية ومضلعات"
+  ]}
+];
+
+/* ---------------- بيانات: تحضيرات الدروس (20 درساً — درس لكل أسبوع) ---------------- */
+const U1 = "الوحدة الأولى: المعادلات والأنماط";
+const U2 = "الوحدة الثانية: النسب والنسبة المئوية";
+const U3 = "الوحدة الثالثة: مبادئ الهندسة";
+const U4 = "الوحدة الرابعة: المضلعات";
+/* ---------------- بيانات: تحضيرات الدروس اليومية (٦٠ تحضيراً — ٣ لكل أسبوع) ---------------- */
+const LESSONS = [
+  /* ===== الأسبوع 1: تمهيد — مراجعة العمليات على الأعداد ===== */
+  {
+    n:1, week:1, day:1, unit:U1, title:"مراجعة: الجمع والطرح على الأعداد",
+    obj:{
+      k:"أن تتعرف الطالبة قواعد الجمع والطرح على الأعداد الصحيحة والنسبية، وأثر الإشارة على الناتج.",
+      s:"أن تنفّذ الطالبة عمليات الجمع والطرح على الأعداد الصحيحة والنسبية بدقة وسرعة.",
+      a:"أن تُظهر الطالبة ثقة في الحساب، وتُقدّر إتقان الأساسيات استعداداً لوحدة المعادلات."
+    },
+    warm:"مسابقة ذهنية: يعرض المعلمّ 4 مسائل جمع وطرح سريعة، وأسرع طالبة إجابة تكسب «نجمة الإتقان».",
+    concepts:["الجمع يوازي نفسه بتغيير الترتيب: أ + ب = ب + أ","الطرح يكافئ الجمع بالمقلوب: أ − ب = أ + (−ب)","جمع عددين سالبين يعطي سالباً: (−3) + (−4) = −7","طرح عدد سالب يكافئ الجمع بالموجب: 5 − (−3) = 8"],
+    examples:["12 + (−5) = 7","−8 + (−6) = −14","9 − (−4) = 13","−15 + 20 = 5"],
+    hw:"حلّ 10 تمارين جمع وطرح على الأعداد الصحيحة والنسبية.",
+    diff:"للمتأخرات: جدول قواعد الإشارات ملوّن — للمتفوقات: سلاسل جمع وطرح من 3 أعداد."
+  },
+  {
+    n:2, week:1, day:2, unit:U1, title:"مراجعة: الضرب والقسمة وأولوية العمليات",
+    obj:{
+      k:"أن تتعرف الطالبة قواعد الضرب والقسمة بالإشارات، وترتيب تنفيذ العمليات (الأولوية).",
+      s:"أن تنفّذ الطالبة الضرب والقسمة، وتطبّق أولوية العمليات في تعبيرات مركّبة.",
+      a:"أن تُقدّر الطالبة أهمية الدقّة والترتيب في الحساب الصحيح."
+    },
+    warm:"تحدي «أي نتيجة صحيحة؟»: يُعرض تعبير مركّب مع 4 إجابات خاطئة شائعة، وتحدّد الطالبة الصحيحة.",
+    concepts:["قاعدة الإشارات في الضرب: (−)×(−) = (+) و (+)×(−) = (−)","القسمة على عدد سالب تتبع نفس قاعدة الإشارات","القسمة تكافئ الضرب بالمقلوب: أ ÷ ب = أ × (1/ب)","أولوية العمليات: الأقواس ← الأُسس ← الضرب/القسمة ← الجمع/الطرح","القسمة على الصفر غير معرّفة"],
+    examples:["−3 × (−4) = 12","45 ÷ (−9) = −5","2 + 3 × 4 = 14 ← الضرب أولاً","(18 − 6) ÷ 3 = 4"],
+    hw:"حلّ 10 تمارين ضرب وقسمة و5 تمارين أولوية عمليات.",
+    diff:"للمتأخرات: بطاقات ترتيب العمليات — للمتفوقات: تعبيرات مركّبة من 3 عمليات."
+  },
+  {
+    n:3, week:1, day:3, unit:U1, title:"مراجعة تطبيقية: مسائل على العمليات الأربع",
+    obj:{
+      k:"أن توظّف الطالبة العمليات الأربع في صياغة وحل مسائل حياتية قصيرة.",
+      s:"أن تحلّ الطالبة مسائل مركّبة متعدّدة الخطوات، وتتحقّق من صحة نتائجها.",
+      a:"أن تُظهر الطالبة حماساً وثقة، وتتعاون مع زميلاتها في الحل."
+    },
+    warm:"مسألة: «اشترت مدرسة 5 صناديق، في كل صندوق 12 كراسة، ثم وُزّع 20 كراسة. كم بقي؟» — مراجعة ترتيب العمليات في سياق واقعي.",
+    concepts:["ترجمة المسألة اللفظية إلى تعبير رياضي","تحديد ترتيب العمليات المناسب","التحقق من معقولية الناتج"],
+    table:[
+      ["التمهيد","مسائل ذهنية سريعة للمراجعة الشاملة","المشاركة والتنافس","5"],
+      ["العرض","حلّ نموذجي لمسألة مركّبة خطوة بخطوة","المتابعة والأسئلة","12"],
+      ["التطبيق","توزيع أوراق عمل مسائل متنوعة","حلّ تعاوني","18"],
+      ["التقويم","مسائل فردية قصيرة مع التحقق","الحل والإجابة","10"]
+    ],
+    exampleFull:{
+      q:"في مكتبة 8 رفوف، على كل رف 25 كتاباً، استُعار من أولها 40 كتاباً. كم كتاباً بقي؟",
+      steps:["الخطوة 1: مجموع الكتب: 8 × 25 = 200","الخطوة 2: طرح المستعار: 200 − 40 = 160","الناتج: بقي 160 كتاباً","التحقق: 160 + 40 = 200 ✓"]
+    },
+    hw:"حلّ 6 مسائل مركّبة على العمليات الأربع.",
+    diff:"للمتأخرات: مسائل بخطوات مساعدة — للمتفوقات: مسألة تRequire خطوة إضافية."
+  },
+
+  /* ===== الأسبوع 2: مفهوم المعادلة وحلّها بالجمع والطرح ===== */
+  {
+    n:4, week:2, day:1, unit:U1, title:"مفهوم المعادلة والمتغير",
+    obj:{
+      k:"أن تعرف الطالبة مفهوم المعادلة، والمتغير، والحد، والحدود المتشابهة، وتمييز المعادلة من الجملة المفتوحة والمغلقة.",
+      s:"أن تميّز الطالبة المعادلة من بين جمل رياضية متنوعة، وتحدّد حدودها.",
+      a:"أن تشارك الطالبة بفاعلية، وتُقدّر أهمية المعادلات في حلّ مشكلات الحياة."
+    },
+    warm:"طرح سؤال: «ما العدد الذي إذا أضفنا إليه 5 أصبح 12؟» — تسجيل الإجابات ثم: «هذا ما نسمّيه معادلة».",
+    concepts:["المعادلة: جملة رياضية تحتوي على علامة المساواة","المتغير: رمز يمثل عدداً مجهولاً (س، ص...)","الحد: عدد أو متغير أو حاصل ضربهما","الحدود المتشابهة: تحوي المتغير نفسه بنفس الأس","الجملة المفتوحة لا تحوي =، والمغلقة تحوي ="],
+    examples:["س + 7 = 15 ← فيها = فهي معادلة","5 + 3 ← جملة مفتوحة","2س − 4 = 10 ← معادلة بمتحول واحد"],
+    hw:"تمييز 10 جمل: أيها معادلة وأيها مفتوحة، وتحديد حدودها.",
+    diff:"للمتأخرات: بطاقات ملوّنة بالتمثيل البصري — للمتفوقات: كتابة 3 معادلات تمثّل مواقف حياتية."
+  },
+  {
+    n:5, week:2, day:2, unit:U1, title:"حلّ المعادلات بالجمع والطرح",
+    obj:{
+      k:"أن تتعرّف الطالبة خاصيتي الجمع والطرح للمساواة وقاعدة حفظ التوازن.",
+      s:"أن تحلّ الطالبة معادلات تتضمن الجمع والطرح بخطوات متسلسلة.",
+      a:"أن تتحلّى الطالبة بالدقّة في تنفيذ خطوات الحل."
+    },
+    warm:"نشاط الميزان: يُوزَّع المتغيّر (س) و3 في كفة، و8 في الكفة الأخرى — «ماذا نضيف لنتوازن؟».",
+    concepts:["خاصية الجمع للمساواة: إضافة العدد نفسه للطرفين تبقيهما متساويين","خاصية الطرح للمساواة: طرح العدد نفسه من الطرفين يبقيهما متساويين","لحلّ س + ب = ج نطرح ب من الطرفين","لحلّ س − ب = ج نضيف ب للطرفين"],
+    examples:["س + 7 = 15 ← س = 15 − 7 = 8","ص − 4 = 10 ← ص = 10 + 4 = 14","س + (−3) = 9 ← س = 9 + 3 = 12"],
+    hw:"حلّ 8 معادلات بالجمع والطرح من الكتاب.",
+    diff:"للمتأخرات: خطوات مكتوبة مسبقاً — للمتفوقات: معادلة ذات حدود سالبة."
+  },
+  {
+    n:6, week:2, day:3, unit:U1, title:"مسائل وتحقق من حل المعادلات",
+    obj:{
+      k:"أن تكتب الطالبة معادلة من مسألة لفظية بسيطة بالجمع والطرح.",
+      s:"أن تحلّ الطالبة المسائل، وتتحقّق من الحل بالتعويض.",
+      a:"أن تُقدّر الطالبة دور المعادلات في نمذجة مواقف الحياة."
+    },
+    warm:"مسألة: «عند أحمد 12 قلماً، أخذ لزميله بعض الأقلام فبقي 7. كم أخذ؟» — كيف نكتبها معادلة؟",
+    concepts:["تحديد المجهول واختيار رمز له","«يزيد على» = +، «ينقص عن» = −","التحقق: تعويض الحل في المعادلة الأصلية"],
+    table:[
+      ["التمهيد","عرض مسألة حياتية وتحويلها لمعادلة","النقاش والمشاركة","5"],
+      ["العرض","شرح نموذج التحويل خطوة بخطوة","المتابعة والتسجيل","12"],
+      ["التطبيق","مسائل قصيرة على المجموعات","حلّ تعاوني وتحقق","18"],
+      ["التقويم","مسألة فردية والتحقق من الحل","الحل والإجابة","10"]
+    ],
+    exampleFull:{
+      q:"لدى سارة بعض الدنانير، اشترت بها كتاباً بـ 15 د.ل فبقي لها 20 د.ل. كم كانت لديها؟",
+      steps:["ليكن المبلغ = س","المعادلة: س − 15 = 20","س = 20 + 15 = 35","إذن كانت لديها 35 د.ل","التحقق: 35 − 15 = 20 ✓"]
+    },
+    hw:"حلّ 5 مسائل بالجمع والطرح مع كتابة التحقق.",
+    diff:"للمتأخرات: مسائل بأرقام بسيطة — للمتفوقات: مسألتان مترابطتان."
+  },
+
+  /* ===== الأسبوع 3: حل المعادلات بالضرب والقسمة ===== */
+  {
+    n:7, week:3, day:1, unit:U1, title:"خاصيتي الضرب والقسمة للمساواة",
+    obj:{
+      k:"أن تتعرّف الطالبة خاصيتي الضرب والقسمة للمساواة.",
+      s:"أن تطبّق الطالبة هاتين الخاصيتين في حلّ معادلات بسيطة.",
+      a:"أن تطوّر الطالبة ثقة بنفسها، وتُقدّر أهمية التوازن في الحل."
+    },
+    warm:"مراجعة سريعة لمعادلة جمع/طرح من الحصة السابقة، ثم: «ماذا لو كان المتغيّر مضروباً في رقم؟»",
+    concepts:["خاصية الضرب: ضرب الطرفين في العدد نفسه يبقيهما متكافئين","خاصية القسمة: قسمة الطرفين على العدد نفسه تبقيهما متكافئين","لحلّ أ × س = ج نقسم الطرفين على أ","لحلّ س ÷ أ = ج نضرب الطرفين في أ"],
+    examples:["3س = 21 ← س = 21 ÷ 3 = 7","ص ÷ 4 = 6 ← ص = 6 × 4 = 24","−2س = 10 ← س = −5"],
+    hw:"حلّ 8 معادلات بالضرب والقسمة.",
+    diff:"للمتأخرات: خطوات مساعدة — للمتفوقات: معادلة تجمع الضرب مع الجمع."
+  },
+  {
+    n:8, week:3, day:2, unit:U1, title:"حلّ معادلات الضرب والقسمة تطبيقياً",
+    obj:{
+      k:"أن تميّز الطالبة الحالات التي تُحلّ بالضرب عن تلك التي تُحلّ بالقسمة.",
+      s:"أن تحلّ الطالبة مجموعة معادلات متنوّعة وتتحقّق من نتائجها.",
+      a:"أن تلتزم الطالبة بالدقّة وتدوّن خطواتها بوضوح."
+    },
+    warm:"لعبة «صواب أو خطأ»: يُعرض حلّ معادلة، وتحدد الطالبة صحته وتصحّح الخطأ إن وُجد.",
+    concepts:["التمييز: المتغيّر مضروب ← اقسم، المتغيّر مقسوم ← اضرب","كتابة كل خطوة على حدة","التحقق النهائي بالتعويض"],
+    examples:["5ص = 45 ← ص = 9","س ÷ 6 = 7 ← س = 42","−4س = 28 ← س = −7","ص ÷ (−3) = 5 ← ص = −15"],
+    hw:"حلّ 10 معادلات متنوّعة مع التحقق.",
+    diff:"للمتأخرات: جدول يميّز نوع العملية — للمتفوقات: معادلات بأعداد عشرية."
+  },
+  {
+    n:9, week:3, day:3, unit:U1, title:"المعادلات الكسرية والتحقق",
+    obj:{
+      k:"أن تتعرّف الطالبة حلّ معادلات فيها الكسر (قسمة على متغيّر).",
+      s:"أن تحلّ الطالبة معادلات كسرية مستخدمة المعاملة بالمقلوب.",
+      a:"أن تُظهر الطالبة صبراً ودقة في التعامل مع الكسور."
+    },
+    warm:"سؤال: «س ÷ 3 = 5 — كيف نجد س؟» — الربط بفكرة ضرب الطرفين في 3.",
+    concepts:["القسمة على كسر = الضرب بمقلوبه","لحلّ س ÷ أ = ج نضرب الطرفين في أ","الكتابة كضرب: س/أ = ج تعني س = ج × أ"],
+    examples:["س ÷ 4 = 5 ← س = 20","س ÷ 3 = 7 ← س = 21","ص ÷ 5 = 2 ← ص = 10"],
+    table:[
+      ["التمهيد","مراجعة معادلة ضرب سريعة","المشاركة","5"],
+      ["العرض","شرح المعادلة الكسرية والمقلوب","المتابعة","12"],
+      ["التطبيق","مسائل كسرية على المجموعات","حلّ تعاوني وتحقق","18"],
+      ["التقويم","مسألة فردية والتحقق","الإجابة","10"]
+    ],
+    hw:"حلّ 6 معادلات كسرية مع التحقق.",
+    diff:"للمتأخرات: مثال موجّه كاملاً — للمتفوقات: معادلة تجمع كسر وجمع."
+  },
+
+  /* ===== الأسبوع 4: حل المعادلات بأكثر من عملية ===== */
+  {
+    n:10, week:4, day:1, unit:U1, title:"استراتيجية حل المعادلات متعدّدة العمليات",
+    obj:{
+      k:"أن تتعرّف الطالبة ترتيب خطوات حل المعادلات متعدّدة العمليات.",
+      s:"أن تحلّ الطالبة معادلة من نوع (أ س + ب = ج) بترتيب صحيح.",
+      a:"أن تلتزم الطالبة بالصبر والدقّة خطوة بخطوة."
+    },
+    warm:"لعبة «أكملي الخطوة»: تُعرض معادلة ناقصة، ويتنافس على تحديد الخطوة التالية.",
+    concepts:["الاستراتيجية: أولاً إزالة الحد الثابت (جمع/طرح)، ثم إزالة المعامل (ضرب/قسمة)","العمل على حد واحد في كل خطوة","التحقق النهائي"],
+    examples:["2س + 3 = 11 ← اطرح 3 ← 2س = 8 ← اقسم على 2 ← س = 4","5ص − 4 = 16 ← أضف 4 ← 5ص = 20 ← ص = 4"],
+    hw:"حلّ 6 معادلات من خطوتين.",
+    diff:"للمتأخرات: مخطط تدفّق للخطوات — للمتفوقات: معادلة بحدود سالبة."
+  },
+  {
+    n:11, week:4, day:2, unit:U1, title:"تطبيقات على حل المعادلات المركّبة",
+    obj:{
+      k:"أن تطبّق الطالبة الاستراتيجية على معادلات متنوّعة.",
+      s:"أن تحلّ الطالبة معادلات تجمع الضرب/القسمة مع الجمع/الطرح.",
+      a:"أن تُظهر الطالبة إتقاناً وثقة متزايدة."
+    },
+    warm:"تحدي زمني: حلّ معادلة مركّبة في دقيقة واحدة — مراجعة الاستراتيجية.",
+    concepts:["إعادة كتابة المعادلة قبل الحل","إزالة الأقواس أولاً إن وُجدت","تجميع الحدود المتشابهة"],
+    examples:["3س + 5 = 20 ← 3س = 15 ← س = 5","2ص − 7 = 9 ← 2ص = 16 ← ص = 8","4س + 2 = 2س + 10 ← 2س = 8 ← س = 4"],
+    hw:"حلّ 8 معادلات مركّبة متدرّجة.",
+    diff:"للمتأخرات: تدريب على خطوة واحدة كل مرة — للمتفوقات: معادلة بها حدّان متشابهان."
+  },
+  {
+    n:12, week:4, day:3, unit:U1, title:"مسائل وتحقق على المعادلات المركّبة",
+    obj:{
+      k:"أن تكتب الطالبة معادلة مركّبة من مسألة.",
+      s:"أن تحلّ الطالبة المسائل وتحقّق من الحل.",
+      a:"أن تُقدّر الطالبة جدوى المعادلات في المشكلات المركّبة."
+    },
+    warm:"مسألة: «في صف 40 طالباً، عدد البنات يزيد على الأولاد بـ 4. كم كل منهما؟»",
+    concepts:["وضع المتغيّر وتمثيل الآخر بدلالة","بناء المعادلة من العلاقة المذكورة","التحقق والتأكد من المعقولية"],
+    table:[
+      ["التمهيد","عرض مسألة وتحليل علاقاتها","النقاش","5"],
+      ["العرض","نموذج حلّ كامل بخطوات التحقق","المتابعة","12"],
+      ["التطبيق","مسائل مشابهة على المجموعات","الحل التعاوني","18"],
+      ["التقويم","مسألة فردية شاملة","الإجابة","10"]
+    ],
+    exampleFull:{
+      q:"في حديقة عدد من الأشجار، صندوقان لكل شجرة. إذا كان مجموع عدد الأشجار والصناديق 24، فكم شجرة؟",
+      steps:["ليكن عدد الأشجار = س، فالصناديق = 2س","المعادلة: س + 2س = 24","3س = 24 ← س = 8","إذن عدد الأشجار 8 والصناديق 16","التحقق: 8 + 16 = 24 ✓"]
+    },
+    hw:"حلّ 5 مسائل مركّبة مع التحقق.",
+    diff:"للمتأخرات: مسائل بأرقام صغيرة — للمتفوقات: مسألة بعلاقة ثلاثة كميات."
+  },
+
+  /* ===== الأسبوع 5: حل مشكلات باستخدام المعادلات ===== */
+  {
+    n:13, week:5, day:1, unit:U1, title:"تحويل المسائل اللفظية إلى معادلات",
+    obj:{
+      k:"أن تتعرّف الطالبة مفردات التحويل: «يزيد/ينقص، مجموع، فرق، ضعف...».",
+      s:"أن تكتب الطالبة معادلة من مسألة لفظية بخطوة الترجمة.",
+      a:"أن تُقدّر الطالبة أهمية لغة الرياضيات في الوصف الدقيق."
+    },
+    warm:"عرض مسألة قصيرة وسؤال: «كيف ننقل كلمات المسألة إلى رموز رياضية؟»",
+    concepts:["«يزيد على» = +، «ينقص عن» = −","«المجموع» = جمع، «الفرق» = طرح","«ضعف» = ×2، «نصف» = ÷2","اختيار المتغيّر بذكاء لتبسيط المعادلة"],
+    examples:["«يزيد على 5» ← س + 5","«ضعفه ناقص 3» ← 2س − 3","«مجموعه 20» ← س + ص = 20"],
+    hw:"ترجمة 8 جمل لفظية إلى معادلات.",
+    diff:"للمتأخرات: قائمة مصطلحات مرجعيّة — للمتفوقات: مسألة بترجمة أكثر من علاقة."
+  },
+  {
+    n:14, week:5, day:2, unit:U1, title:"نموذج (افهمي — خططي — حلي — تحققي)",
+    obj:{
+      k:"أن تتعرّف الطالبة نموذج حلّ المشكلات الأربع.",
+      s:"أن تطبّق الطالبة النموذج على مسألة حياتية كاملة.",
+      a:"أن تُظهر الطالبة منهجية منظّمة في حلّ المشكلات."
+    },
+    warm:"عرض النموذج الأربعة على السبورة مع رمز بصري لكل خطوة.",
+    concepts:["افهمي: اقرئي وحدّدي المطلوب والمعلوم","خططي: اختر المتغيّر وابنِ المعادلة","حلي: نفّذ الخطوات بدقة","تحققي: عوّض وتأكّد من المعقولية"],
+    examples:["تطبيق النموذج على مسألة بسيطة خطوة بخطوة","مناقشة أخطاء شائعة في كل مرحلة"],
+    hw:"حلّ مسألتان بنموذج الأربع خطوات مع كتابة كل خطوة.",
+    diff:"للمتأخرات: قالب أربع خطوات مطبوع — للمتفوقات: مسألة تحتاج خطوة تخطيط إضافية."
+  },
+  {
+    n:15, week:5, day:3, unit:U1, title:"مسائل حياتية متنوعة بالمعادلات",
+    obj:{
+      k:"أن توظّف الطالبة النموذج في مسائل متنوّعة.",
+      s:"أن تحلّ الطالبة مسائل عمر وكميات ومواقف شراء.",
+      a:"أن تُظهر الطالبة متعة الحل وثقة عالية."
+    },
+    warm:"سؤال تحفيزي: «كم عمرك إذا كان عمر والدك ضعف عمرك ومجموعكما 54؟»",
+    concepts:["مسائل العمر: العلاقة بين العمرَين","مسائل الكميات: الاتجاهات والمركّبات","التحقق من معقولية الحل"],
+    table:[
+      ["التمهيد","مسألة محفّزة ممتعة","التشويق والمشاركة","5"],
+      ["العرض","حلّ نموذج عمر كامل بخطوات","المتابعة","12"],
+      ["التطبيق","مسائل متنوعة على المجموعات","حلّ تعاوني","18"],
+      ["التقويم","مسألة فردية والتحقق","الإجابة","10"]
+    ],
+    exampleFull:{
+      q:"يزيد عمر أخ على عمر أخته بـ 6 سنوات، ومجموع عمريهما 24. فعمر كل منهما؟",
+      steps:["ليكن عمر الأخت = س، وعمر الأخ = س + 6","المعادلة: س + (س + 6) = 24","2س + 6 = 24 ← 2س = 18 ← س = 9","إذن الأخت 9 سنوات والأخ 15 سنة","التحقق: 9 + 15 = 24 ✓"]
+    },
+    hw:"حلّ 5 مسائل حياتية متنوعة.",
+    diff:"للمتأخرات: مسألة واحدة موجّهة — للمتفوقات: مسألتان مرتبطتان."
+  },
+
+  /* ===== الأسبوع 6: التحقق من صحة حل المعادلة ===== */
+  {
+    n:16, week:6, day:1, unit:U1, title:"فكرة التحقق بالتعويض",
+    obj:{
+      k:"أن تتعرّف الطالبة طريقة التحقق من صحة الحل بالتعويض.",
+      s:"أن تتحقّق الطالبة من حل معادلة بسيطة بالتعويض.",
+      a:"أن تتحلّى الطالبة بالدقّة العلمية والتأكد من نتائجها."
+    },
+    warm:"يُعرض حلّ معادلة مقصود الخطأ، ويسأل: «هل الحل صحيح؟ كيف نتأكد؟»",
+    concepts:["التحقق = تعويض قيمة المتغيّر في المعادلة الأصلية","إن تساوى الطرفان فالحل صحيح ✓","إن اختلفا فالحل خطأ ويُعاد"],
+    examples:["تحقّق من س=8 لـ س+7=15 ← 8+7=15 ✓","تحقّق من ص=14 لـ ص−4=10 ← 14−4=10 ✓","تحقّق من س=7 لـ 3س=21 ← 3×7=21 ✓"],
+    hw:"التحقق من 6 حلول معطاة.",
+    diff:"للمتأخرات: جدول طرح الطرفين — للمتفوقات: تحقق من حل خاطئ وتحديد الخطأ."
+  },
+  {
+    n:17, week:6, day:2, unit:U1, title:"تطبيقات التحقق",
+    obj:{
+      k:"أن تطبّق الطالبة التحقق على معادلات متنوّعة.",
+      s:"أن تتحقّق الطالبة من حلول معادلات الضرب والقسمة والمركّبة.",
+      a:"أن تُظهر الطالبة عادة التحقق كجزء من الحل."
+    },
+    warm:"مسابقة: من يتحقّق من معادلته بأقل خطوات وأدقّ إجابة.",
+    concepts:["إجراء التحقق بعد كل حلّ","كتابة التحقق بترتيب واضح","اعتبار التحقق جزءاً من الحل لا خارجه"],
+    examples:["التحقّق من حل 2س+3=11 ← س=4","التحقّق من حل 3س=21 ← س=7","التحقّق من حل س÷4=5 ← س=20"],
+    hw:"التحقق من 8 حلول معطاة مع كتابة الخطوات.",
+    diff:"للمتأخرات: أمثلة نموذجية — للمتفوقات: معادلة ذات حل سالب والتحقق منه."
+  },
+  {
+    n:18, week:6, day:3, unit:U1, title:"اكتشاف الأخطاء وإصلاحها",
+    obj:{
+      k:"أن تكتسب الطالبة مهارة اكتشاف الخطأ في حل جاهز.",
+      s:"أن تصحّح الطالبة حلولاً خاطئة وتعيد الحلّ بشكل صحيح.",
+      a:"أن تُظهر الطالبة حسّاً نقدياً وثقة في التحليل."
+    },
+    warm:"«صواب أو خطأ؟»: تُعرض 4 حلول خاطئة شائعة، وتحدد الطالبة الخطأ وتصحّحه.",
+    concepts:["أشهر الأخطاء: نسيان إزالة الحد، خطأ الإشارة، القسمة بدل الضرب","استخدام التحقق لاكتشاف الخطأ","إعادة الحل بخطوات مرتبة"],
+    examples:["2س+3=11 خطأ: س=11−3=8 (نسيان القسمة) ← صحيح: س=4","ص−4=10 خطأ: ص=10−4=6 ← صحيح: ص=14"],
+    table:[
+      ["التمهيد","عرض حلول خاطئة والنقاش","الاكتشاف","5"],
+      ["العرض","تصحيح نموذجي بخطوات","المتابعة","12"],
+      ["التطبيق","تصحيح مجموعة حلول خاطئة","عمل تعاوني","18"],
+      ["التقويم","مسألة والتأكد من صحّة الحل","الإجابة","10"]
+    ],
+    hw:"تصحيح 5 حلول خاطئة مع إعادة الحل.",
+    diff:"للمتأخرات: تحديد نوع الخطأ فقط — للمتفوقات: كتابة حل صحيح بديل."
+  },
+
+  /* ===== الأسبوع 7: الأنماط العددية والحدّ العام ===== */
+  {
+    n:19, week:7, day:1, unit:U1, title:"مفهوم النمط العددي",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم النمط العددي والحد.",
+      s:"أن تُكمل الطالبة أنماطاً عددية متنوعة.",
+      a:"أن تُظهر الطالبة إعجاباً بجمال النظام في الأعداد."
+    },
+    warm:"عرض نمط بصري ▲▲■▲▲■ ثم: «ما الشكل التالي؟» — الانتقال لأنماط الأعداد.",
+    concepts:["النمط العددي: ترتيب أعداد يتبع قاعدة معيّنة","الحد: كل عدد في النمط","إكمال النمط بإيجاد القاعدة","الفرق الثابت في الأنماط الحسابية"],
+    examples:["2، 5، 8، 11، ... ← التالي 14","4، 7، 10، ... ← التالي 13","نمط بصري: ○△○△... التالي ○"],
+    hw:"إكمال 5 أنماط عددية.",
+    diff:"للمتأخرات: أنماط بفروق بسيطة — للمتفوقات: أنماط بمخططين متداخلين."
+  },
+  {
+    n:20, week:7, day:2, unit:U1, title:"استخراج القاعدة والحدّ العام",
+    obj:{
+      k:"أن تستخرج الطالبة قاعدة النمط وتحدّد فرقها الثابت.",
+      s:"أن تكتب الطالبة الحدّ العام للنمط بصيغة تدلّ على الرقم الترتيبي (ن).",
+      a:"أن تُقدّر الطالبة قدرة الترميز الرياضي على التبسيط."
+    },
+    warm:"سؤال: «كيف نكتب الحد العشرين دون أن نعدد كل الحدود؟» — الهدف: الحدّ العام.",
+    concepts:["الرقم الترتيبي (ن) للاحترار في النمط","الحدّ العام: صيغة تعطي أي حد بترتيبه","النمط الحسابي: الحد = الفرق × ن + ثابت","كتابة الحدّ العام من المثال"],
+    examples:["نمط 3، 6، 9، 12... الفرق 3 ← الحدّ العام = 3ن","نمط 2، 5، 8، 11... الفرق 3 ← الحدّ العام = 3ن − 1","نمط 4، 7، 10... الحدّ العام = 3ن + 1"],
+    hw:"كتابة الحدّ العام لـ4 أنماط.",
+    diff:"للمتأخرات: نمط الفرق الثابت فقط — للمتفوقات: نمط يتضاءل أو يتنامى."
+  },
+  {
+    n:21, week:7, day:3, unit:U1, title:"تطبيقات وتنبؤ بحدود النمط",
+    obj:{
+      k:"أن توظّف الطالبة الحدّ العام في إيجاد حدود محدّدة.",
+      s:"أن تجد الطالبة حدّاً بترتيبه، وترتيب حدّ بقيته.",
+      a:"أن تُظهر الطالبة ثقة في التعامل مع الرموز."
+    },
+    warm:"تحدٍّ: «ما الحد العاشر في 3، 6، 9...؟» بسرعة — استخدام الحدّ العام.",
+    concepts:["تعويض الرقم الترتيبي في الحدّ العام","إيجاد ترتيب حدّ من قيمته","التحقق من صحة الحدّ العام"],
+    examples:["الحد العاشر في 2، 5، 8... = 3×10 − 1 = 29","في 4، 7، 10... الحد 34: 3ن+1=34 ← ن=11","تحقّق: الحد الأول = 3(1)−1 = 2 ✓"],
+    table:[
+      ["التمهيد","تحدٍّ سريع بالحدّ العام","المشاركة","5"],
+      ["العرض","إيجاد حدّ وترتيب حدّ نموذجياً","المتابعة","12"],
+      ["التطبيق","تمارين تنبؤ على المجموعات","حلّ تعاوني","18"],
+      ["التقويم","مسألة نمط فردية","الإجابة","10"]
+    ],
+    hw:"إيجاد 5 حدود محددة وترتيب حدّ بقيته.",
+    diff:"للمتأخرات: حدود قريبة — للمتفوقات: حدود كبيرة الترتيب."
+  },
+
+  /* ===== الأسبوع 8: النسبة وكتابتها ===== */
+  {
+    n:22, week:8, day:1, unit:U2, title:"مفهوم النسبة وطرق كتابتها",
+    obj:{
+      k:"أن تعرف الطالبة مفهوم النسبة وطرق كتابتها المختلفة.",
+      s:"أن تكتب الطالبة النسب بصيغ: كسر، فاصلة، نسبة (أ:ب).",
+      a:"أن تُقدّر الطالبة أهمية النسبة في المقارنة بين الكميات."
+    },
+    warm:"سؤال: «في الصف 20 طالبة و15 طالباً، كيف نقارن عددهم؟» — الهدف: فكرة النسبة.",
+    concepts:["النسبة: مقارنة كميتين بالقسمة","صيغ النسبة: أ:ب أو «أ إلى ب» أو أ/ب","النسبة تُبسّط ككسر عادي","أي نسبة تُكتب بأبسط صورة"],
+    examples:["نسبة 15 إلى 20 = 15/20 = 3/4","4:6 تُبسّط إلى 2:3","نسبة 12 ذكور إلى 8 إناث = 3:2"],
+    hw:"كتابة وتبسيط 8 نسب.",
+    diff:"للمتأخرات: نسب بأعداد صغيرة — للمتفوقات: نسب بأعداد كبيرة أو كسور."
+  },
+  {
+    n:23, week:8, day:2, unit:U2, title:"تبسيط النسب والتحقق",
+    obj:{
+      k:"أن تتعرّف الطالبة تبسيط النسب بالقاسم المشترك الأكبر.",
+      s:"أن تبسّط الطالبة النسب إلى أبسط صورة.",
+      a:"أن تُظهر الطالبة دقة وأناقة في الكتابة الرياضية."
+    },
+    warm:"مسابقة: من يبسّط النسبة أسرع وأدقّ.",
+    concepts:["القاسم المشترك الأكبر","القسمة على الحدّ والمقام نفسهما","النسبة المبسّطة أوضح للمقارنة"],
+    examples:["18:24 = 3:4 (قسمة على 6)","10/15 = 2/3","40:100 = 2:5"],
+    hw:"تبسيط 10 نسب.",
+    diff:"للمتأخرات: خطوة القسمة مساعدة — للمتفوقات: نسبة من كسور."
+  },
+  {
+    n:24, week:8, day:3, unit:U2, title:"تطبيقات ومقارنة النسب",
+    obj:{
+      k:"أن توظّف الطالبة النسب في مقارنات حياتية.",
+      s:"أن تقارن الطالبة بين نسبتين وتحدّد أكبرها.",
+      a:"أن تُقدّر الطالبة دور النسب في قرارات الشراء والمقارنة."
+    },
+    warm:"سؤال: «أي عرض أفضل: خصم 20٪ أم 25٪؟ وكيف نقارن بالنسبة؟»",
+    concepts:["مقارنة النسب بتحويلها لقسم واحد","النسبة في مقارنة الأسعار والكميات","التعبير عن نسبة جزء إلى كل"],
+    examples:["مقارنة 3:4 و 5:7 ← تحويل لمقام واحد","نسبة 8 إلى 20 = 2:5 = 40٪","مقارنة كميتين بالنسبة"],
+    table:[
+      ["التمهيد","مسألة مقارنة عروض","النقاش","5"],
+      ["العرض","تحويل النسب للمقارنة","المتابعة","12"],
+      ["التطبيق","مسائل مقارنة تعاونية","الحل","18"],
+      ["التقويم","سؤال مقارنة فردي","الإجابة","10"]
+    ],
+    hw:"حلّ 5 مسائل مقارنة نسب.",
+    diff:"للمتأخرات: مقارنة نسب متساوية المقام — للمتفوقات: مقارنة ثلاث نسب."
+  },
+
+  /* ===== الأسبوع 9: النسب بين قياسين ===== */
+  {
+    n:25, week:9, day:1, unit:U2, title:"مفهوم النسب بين وحدات القياس",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم النسب بين وحدتين للقياس.",
+      s:"أن تكتب الطالبة نسب التحويل بين الوحدات الشائعة.",
+      a:"أن تُقدّر الطالبة أهمية القياس في حياتها."
+    },
+    warm:"سؤال: «أي أطول: 1 متر أم 90 سنتيمتراً؟ وما العلاقة بينهما؟»",
+    concepts:["النسبة بين قياسين = 1 عندما تكون الوحدتان متكافئتين","1 م = 100 سم ← النسبة 100سم : 1م","وحدة أصغر × النسبة = وحدة أكبر"],
+    examples:["1 كم = 1000 م ← النسبة 1000","1 كجم = 1000 غ","1 ساعة = 60 دقيقة"],
+    hw:"كتابة نسب التحويل لـ6 وحدات.",
+    diff:"للمتأخرات: وحدات شائعة فقط — للمتفوقات: وحدات القياس الطويلة والمختلطة."
+  },
+  {
+    n:26, week:9, day:2, unit:U2, title:"التحويل بين الوحدات بالنسبة",
+    obj:{
+      k:"أن تتعرّف الطالبة طريقة التحويل بالضرب والقسمة على النسبة.",
+      s:"أن تحوّل الطالبة بين الوحدات بدقة.",
+      a:"أن تُظهر الطالبة دقة في الحساب والتحويل."
+    },
+    warm:"تحدي: «حوّل 2.5 كم إلى متر بسرعة» — من ينجح يكسب.",
+    concepts:["من كبير إلى صغير: اضرب في النسبة","من صغير إلى كبير: اقسم على النسبة","كتابة خطوات التحويل بوضوح"],
+    examples:["3.5 كم = 3.5 × 1000 = 3500 م","2500 غ = 2500 ÷ 1000 = 2.5 كجم","1.5 ساعة = 90 دقيقة"],
+    hw:"تحويل 10 قيم بين وحدات.",
+    diff:"للمتأخرات: تحويل بسيط بخطوة — للمتفوقات: تحويل متسلسل عبر وحدتين."
+  },
+  {
+    n:27, week:9, day:3, unit:U2, title:"تطبيقات حياتية على تحويل الوحدات",
+    obj:{
+      k:"أن توظّف الطالبة التحويل في مواقف واقعية.",
+      s:"أن تحلّ الطالبة مسائل المسافات والأوزان والزمن.",
+      a:"أن تُقدّر الطالبة جدوى التحويل في الحياة اليومية."
+    },
+    warm:"مسألة: «قطع سيارة 3.2 كم، ثم 1500 م. ما المسافة الإجمالية بالمتر؟»",
+    concepts:["توحيد الوحدات قبل الجمع أو المقارنة","المسافة الكلية بتوحيد الوحدة","التحقق من معقولية الناتج"],
+    examples:["3.2 كم + 1500 م = 3200 + 1500 = 4700 م","وزن 2.5 كجم + 750 غ = 3250 غ","مدة 1.5 ساعة + 30 دقيقة = 120 دقيقة"],
+    table:[
+      ["التمهيد","مسألة توحيد وحدات","النقاش","5"],
+      ["العرض","حلّ نموذجي متكامل","المتابعة","12"],
+      ["التطبيق","مسائل متنوعة تعاونية","الحل","18"],
+      ["التقويم","مسألة فردية","الإجابة","10"]
+    ],
+    exampleFull:{
+      q:"سافر أحمد 2.5 كم بالسيارة، ثم 800 م بالحافلة، ثم 1 كم مشياً. ما المسافة الكلية بالمتر؟",
+      steps:["توحيد الوحدات بالمتر: 2.5 كم = 2500 م، و1 كم = 1000 م","الجمع: 2500 + 800 + 1000 = 4300 م","الناتج: 4300 متراً (أي 4.3 كم)","التحقق: 4300 م = 4.3 كم ✓"]
+    },
+    hw:"حلّ 5 مسائل توحيد وتحويل وحدات.",
+    diff:"للمتأخرات: وحدتان فقط — للمتفوقات: مسألة بأربع وحدات مختلفة."
+  },
+
+  /* ===== الأسبوع 10: التناسب الطردي والعكسي ===== */
+  {
+    n:28, week:10, day:1, unit:U2, title:"التمييز بين التناسب الطردي والعكسي",
+    obj:{
+      k:"أن تميّز الطالبة بين التناسب الطردي والعكسي.",
+      s:"أن تصنّف الطالبة مسائل إلى طردية أو عكسية.",
+      a:"أن تُقدّر الطالبة انتشار التناسب في الحياة."
+    },
+    warm:"سؤالان: «3 أقلام بـ6 دنانير، 5 أقلام؟» و«4 عمال في 6 أيام، 8 عمال؟» — ما الفرق في التغيّر؟",
+    concepts:["الطردي: يزداد أحدهما فيزداد الآخر بنفس النسبة","العكسي: يزداد أحدهما فينقص الآخر","معيار التصنيف: هل يتحركان في الاتجاه نفسه أم المعاكس؟"],
+    examples:["الأقلام والسعر ← طردي","عمال وأيام العمل ← عكسي","السرعة والزمن عند مسافة ثابتة ← عكسي"],
+    hw:"تصنيف 8 مسائل إلى طردية وعكسية.",
+    diff:"للمتأخرات: أمثلة محسوسة — للمتفوقات: مسألة يصعب تصنيفها وتُناقش."
+  },
+  {
+    n:29, week:10, day:2, unit:U2, title:"حلّ مسائل التناسب الطردي",
+    obj:{
+      k:"أن تتعرّف الطالبة المعادلة الطرفية للتناسب الطردي.",
+      s:"أن تحلّ الطالبة مسائل تناسب طردي.",
+      a:"أن تُظهر الطالبة مهارة في نمذجة المواقف."
+    },
+    warm:"حلّ مسألة الأقلام: «3 أقلام بـ6 د، 5 أقلام؟» — بناء النسبة.",
+    concepts:["الطردي: أ/ب = ج/د","ضرب الطرفين التقابلين = ضرب الطرفين المختلفين","إيجاد المجهول بالتعويض"],
+    examples:["3:6 = 5:س ← 3س = 30 ← س = 10","5 كم في 30 دقيقة ← 90 كم في؟","2 دفاتر بـ8 د ← 7 دفاتر بـ28 د"],
+    hw:"حلّ 6 مسائل تناسب طردي.",
+    diff:"للمتأخرات: خطوات مساعدة — للمتفوقات: مسألة طردي بثلاث كميات."
+  },
+  {
+    n:30, week:10, day:3, unit:U2, title:"حلّ مسائل التناسب العكسي",
+    obj:{
+      k:"أن تتعرّف الطالبة مبدأ التناسب العكسي.",
+      s:"أن تحلّ الطالبة مسائل تناسب عكسي.",
+      a:"أن تُقدّر الطالبة دقّة التفكير في تحليل العلاقات."
+    },
+    warm:"مسألة العمال: «4 عمال ينجزون في 6 أيام، 8 عمال في كم يوم؟» — لماذا يقلّ الزمن؟",
+    concepts:["العكسي: أ × ب = ج × د","ضرب الكميتين المتقابلتين يساوي ثابتاً","العكسي: كلما زاد أحدهما نقص الآخر"],
+    examples:["4×6 = 8×د ← د = 3 أيام","6 عمال في 10 أيام ← 12 عمال في 5 أيام","سرعة × زمن = مسافة ثابتة"],
+    hw:"حلّ 5 مسائل تناسب عكسي.",
+    diff:"للمتأخرات: مسألة موجّهة — للمتفوقات: مسألة تجمع طرد وعكسي."
+  },
+
+  /* ===== الأسبوع 11: مقياس الرسم والمسافة الفعلية ===== */
+  {
+    n:31, week:11, day:1, unit:U2, title:"مفهوم مقياس الرسم",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم مقياس الرسم.",
+      s:"أن تقرأ الطالبة مقياس الرسم وتفسّره.",
+      a:"أن تُقدّر الطالبة أهمية الخرائط في تحديد المسافات."
+    },
+    warm:"عرض خريطة للحي وسؤال: «كيف نعرف المسافة الحقيقية بين مدرستنا والمسجد من الخريطة؟»",
+    concepts:["مقياس الرسم: نسبة المسافة على الرسم إلى المسافة الحقيقية","مقياس 1:10000 يعني 1 سم على الرسم = 10000 سم فعلياً","قراءة المقياس من مفتاح الخريطة"],
+    examples:["1:5000 ← كل 1 سم = 5000 سم = 50 م","1:100000 ← كل 1 سم = 1 كم","تفسير مقياس مكتوب كمفتاح"],
+    hw:"تفسير 4 مقاييس رسم مكتوبة.",
+    diff:"للمتأخرات: مقاييس بسيطة — للمتفوقات: مقياس مختلط وتحويلاته."
+  },
+  {
+    n:32, week:11, day:2, unit:U2, title:"حساب المسافة الفعلية",
+    obj:{
+      k:"أن تتعرّف الطالبة العلاقة: المسافة الفعلية = المسافة على الرسم × المقياس.",
+      s:"أن تحسب الطالبة المسافة الفعلية بين مكانيين.",
+      a:"أن تُظهر الطالبة دقة في القياس والحساب."
+    },
+    warm:"تدريب عملي: قياس المسافة بين نقطتين على خريطة ثم تقدير الحقيقية.",
+    concepts:["المسافة الفعلية = المسافة على الرسم × المقياس","المسافة على الرسم = المسافة الفعلية ÷ المقياس","التحقق بردّ الوحدات للوحدة الأصلية"],
+    examples:["مقياس 1:5000 و6 سم ← فعلي = 6×5000 = 30000 سم = 300 م","مقياس 1:100000 و3 سم ← فعلي = 300000 سم = 3 كم","مسافة حقيقية 2 كم بمقياس 1:100000 ← على الرسم 2 سم"],
+    hw:"حساب 6 مسافات فعلية.",
+    diff:"للمتأخرات: مقياس 1:1000 فقط — للمتفوقات: المسافة العكسية من الفعلية للرسم."
+  },
+  {
+    n:33, week:11, day:3, unit:U2, title:"تطبيقات على الخرائط والمسافات",
+    obj:{
+      k:"أن توظّف الطالبة المقياس في قراءة الخرائط.",
+      s:"أن تحلّ الطالبة مسائل مسافات على خرائط.",
+      a:"أن تُقدّر الطالبة جدوى الخرائط في التنقّل."
+    },
+    warm:"عرض خريطة مدينة وسؤال: «كم كم بين منطقتين إذا كانت المسافة على الخريطة 5 سم والمقياس 1:200000؟»",
+    concepts:["قياس المسافة على الخريطة بالمسطرة","التحويل إلى وحدة مناسبة (م أو كم)","مقارنة مسافات وتحديد الأقصر"],
+    examples:["5 سم × 200000 = 1000000 سم = 10 كم","مقارنة مسافتين على خريطة واحدة","رسم مسار وإيجاد طوله"],
+    table:[
+      ["التمهيد","سؤال محفّز على خريطة","النقاش","5"],
+      ["العرض","حلّ نموذجي لمسافة فعلية","المتابعة","12"],
+      ["التطبيق","مسائل خرائط تعاونية","القياس والحل","18"],
+      ["التقويم","مسألة مقياس فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 5 مسائل مسافات على خرائط.",
+    diff:"للمتأخرات: مقياس واحد ثابت — للمتفوقات: خريطة بمقياس مفتاحي متعدد."
+  },
+
+  /* ===== الأسبوع 12: النسبة المئوية (كسر وعدد عشري) ===== */
+  {
+    n:34, week:12, day:1, unit:U2, title:"مفهوم النسبة المئوية",
+    obj:{
+      k:"أن تعرف الطالبة مفهوم النسبة المئوية.",
+      s:"أن تعبّر الطالبة عن كميات بالنسبة المئوية.",
+      a:"أن تلاحظ الطالبة انتشار النسبة المئوية في الأسواق والإعلانات."
+    },
+    warm:"عرض إعلان تخفيض 20٪ وسؤال: «ماذا يعني 20٪ بالضبط؟»",
+    concepts:["النسبة المئوية: نسبة من كل 100 (٪ = من 100)","النسبة المئوية = جزء ÷ كل × 100","1٪ = 1/100 = 0.01"],
+    examples:["نسبة 25 من 100 = 25٪","10 من 50 = 20٪","20 من 40 = 50٪"],
+    hw:"تعبير 8 كميات بالنسبة المئوية.",
+    diff:"للمتأخرات: من 100 مباشرة — للمتفوقات: من كل غير 100."
+  },
+  {
+    n:35, week:12, day:2, unit:U2, title:"التحويل بين النسبة والكسر والعدد العشري",
+    obj:{
+      k:"أن تتعرّف الطالبة العلاقة بين النسبة والكسر والعدد العشري.",
+      s:"أن تحوّل الطالبة بين النماذج الثلاثة بدقة.",
+      a:"أن تُظهر الطالبة مرونة في التنقل بين الصيغ."
+    },
+    warm:"مسابقة تحويل: من يحوّل 50٪ إلى كسر وعشري أسرع.",
+    concepts:["النسبة ← كسر: قسمة على 100","النسبة ← عشري: إزالة ٪ وتحريك الفاصلة خانتين","الكسر ← نسبة: ضرب في 100 ÷ المقام","العشري ← نسبة: ×100"],
+    examples:["40٪ = 40/100 = 0.4","7٪ = 0.07","0.4 = 40٪","3/5 = 60٪"],
+    hw:"تحويل 12 قيمة بين الصيغ الثلاث.",
+    diff:"للمتأخرات: قيم سهلة الفاصلة — للمتفوقات: كسور عشوية ونسب جزئية."
+  },
+  {
+    n:36, week:12, day:3, unit:U2, title:"تطبيقات على النسبة المئوية",
+    obj:{
+      k:"أن توظّف الطالبة النسبة المئوية في مواقف حياتية.",
+      s:"أن تحلّ الطالبة مسائل تحويل ومقارنة بالنسبة المئوية.",
+      a:"أن تُقدّر الطالبة أهمية النسبة المئوية في القرارات."
+    },
+    warm:"سؤال: «أي أكبر: 30٪ من 200 أم 25٪ من 240؟»",
+    concepts:["حساب نسبة جزء من كل","مقارنة كميات بالنسبة المئوية","النسبة المئوية في الدرجات والنتائج"],
+    examples:["30٪ من 200 = 60","25٪ من 240 = 60 ← متساويتان","60 من 80 = 75٪"],
+    table:[
+      ["التمهيد","مسألة مقارنة نسب","النقاش","5"],
+      ["العرض","حلول نسب مئوية متنوعة","المتابعة","12"],
+      ["التطبيق","مسائل تعاونية","الحل","18"],
+      ["التقويم","مسألة فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 6 مسائل نسبة مئوية متنوعة.",
+    diff:"للمتأخرات: نسب من مئة — للمتفوقات: مقارنة ثلاث نسب مئوية."
+  },
+
+  /* ===== الأسبوع 13: النسبة المئوية من كمية ===== */
+  {
+    n:37, week:13, day:1, unit:U2, title:"حساب نسبة مئوية من كمية",
+    obj:{
+      k:"أن تتعرّف الطالبة طريقة إيجاد النسبة المئوية من كمية.",
+      s:"أن تحسب الطالبة نسبة مئوية من كمية معطاة.",
+      a:"أن تُظهر الطالبة دقة في الحساب."
+    },
+    warm:"مسألة: «سعر قميص 200 د.ل وعليه خصم 15٪. كم يُخصم؟»",
+    concepts:["نسبة المائة من كمية = (الكمية × النسبة) ÷ 100","الكمية × (النسبة ÷ 100)","الخصم = النسبة المئوية × السعر"],
+    examples:["15٪ من 200 = (200×15)/100 = 30","25٪ من 80 = 20","40٪ من 500 = 200"],
+    hw:"حساب 8 نسب مئوية من كميات.",
+    diff:"للمتأخرات: نسبة × كمية ÷ 100 — للمتفوقات: نسب جزئية ك 12.5٪."
+  },
+  {
+    n:38, week:13, day:2, unit:U2, title:"طرق متعدّدة لحساب النسبة المئوية",
+    obj:{
+      k:"أن تتعرّف الطالبة طرقاً متعدّدة لحساب النسبة المئوية.",
+      s:"أن تختار الطالبة الطريقة الأنسب لكل مسألة.",
+      a:"أن تُظهر الطالبة مرونة وذكاء في الحساب الذهني."
+    },
+    warm:"حساب ذهني سريع: «10٪ من 300؟ 1٪ من 500؟» — بناء المهارة.",
+    concepts:["الطريقة المباشرة: (كمية × نسبة) ÷ 100","الطريقة الذهنية: أوجد 10٪ ثم اضرب أو اقسم","أوجد 1٪ ثم اضرب في النسبة"],
+    examples:["10٪ من 250 = 25 (ذهني)","20٪ من 400 = 2×(10٪) = 80","5٪ من 600 = نصف 10٪ = 30"],
+    hw:"حلّ 8 مسائل بالطريقة الأنسب.",
+    diff:"للمتأخرات: الطريقة المباشرة — للمتفوقات: حساب ذهني بنسب مركّبة."
+  },
+  {
+    n:39, week:13, day:3, unit:U2, title:"مسائل الخصم والسعر بعد الخصم",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم الخصم ونسبة الخصم.",
+      s:"أن تحسب الطالبة قيمة الخصم والسعر بعد الخصم.",
+      a:"أن تُقدّر الطالبة جدوى فهم الخصومات في الشراء."
+    },
+    warm:"مسألة تسوق: «ثوب بسعر 300 د.ل وعليه خصم 20٪. كم يدفع المشتري؟»",
+    concepts:["الخصم = نسبة الخصم × السعر الأصلي","السعر بعد الخصم = السعر − الخصم","الخصم = السعر × (100 − النسبة) ÷ 100"],
+    examples:["خصم 20٪ على 300 = 60 ← بعد الخصم 240","خصم 15٪ على 200 = 30 ← بعد الخصم 170","خصم 10٪ على 500 = 50 ← بعد الخصم 450"],
+    table:[
+      ["التمهيد","مسألة تسوق محفّزة","النقاش","5"],
+      ["العرض","حساب الخصم خطوة بخطوة","المتابعة","12"],
+      ["التطبيق","مسائل خصومات تعاونية","الحل","18"],
+      ["التقويم","مسألة خصم فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 6 مسائل خصم وسعر بعد الخصم.",
+    diff:"للمتأخرات: نسبة واحدة — للمتفوقات: خصم متتالٍ على سعر."
+  },
+
+  /* ===== الأسبوع 14: الربح والخسارة والخصم والعمولة ===== */
+  {
+    n:40, week:14, day:1, unit:U2, title:"الربح والخسارة",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهومي الربح والخسارة ونسبتهما.",
+      s:"أن تحسب الطالبة الربح أو الخسارة ونسبته المئوية.",
+      a:"أن تُقدّر الطالبة أهمية هذه المفاهيم في التجارة."
+    },
+    warm:"سؤال: «اشترى تاجر هاتفاً بـ500 د.ل وباعه بـ650 د.ل. ما ربحه؟ وما نسبة ربحه؟»",
+    concepts:["الربح = سعر البيع − سعر الشراء","الخسارة = سعر الشراء − سعر البيع","نسبة الربح = (الربح ÷ سعر الشراء) × 100"],
+    examples:["ربح: 650 − 500 = 150، ونسبة الربح = 30٪","خسارة: اشترى بـ400 وباع بـ350 ← خسارة 50","نسبة الخسارة = (50 ÷ 400) × 100 = 12.5٪"],
+    hw:"حساب 6 مسائل ربح وخسارة.",
+    diff:"للمتأخرات: الربح المطلق فقط — للمتفوقات: نسبة الربح المعقدة."
+  },
+  {
+    n:41, week:14, day:2, unit:U2, title:"الخصم (مراجعة وتوسّع)",
+    obj:{
+      k:"أن تُتقن الطالبة حساب الخصم بطرق متعدّدة.",
+      s:"أن تحلّ الطالبة مسائل خصم متنوّعة.",
+      a:"أن تُظهر الطالبة حنكة في قراءة العروض."
+    },
+    warm:"مقارنة عرضين: «خصم 20٪ على 250 د.ل» و«خصم 50 د.ل مباشرة» — أيهما أفضل؟",
+    concepts:["الخصم = نسبة × سعر","السعر بعد الخصم = السعر − الخصم","مقارنة العروض بالحساب"],
+    examples:["20٪ من 250 = 50 ← بعد الخصم 200","قارن مع خصم 50 مباشر: متساويان","خصم 10٪ على 180 = 18 ← بعد الخصم 162"],
+    hw:"حلّ 6 مسائل خصم ومقارنة عروض.",
+    diff:"للمتأخرات: نسبة واحدة — للمتفوقات: مقارنة عرضين مختلفين."
+  },
+  {
+    n:42, week:14, day:3, unit:U2, title:"العمولة",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم العمولة.",
+      s:"أن تحسب الطالبة قيمة العمولة على البيع.",
+      a:"أن تُقدّر الطالبة مفهوم العمولة في أعمال البيع والوساطة."
+    },
+    warm:"سؤال: «وسيط باع هاتفاً بـ1000 د.ل وعمولته 5٪. كم يأخذ؟»",
+    concepts:["العمولة = نسبة العمولة × قيمة البيع","العمولة = (قيمة البيع × النسبة) ÷ 100","صافي ما يأخذ البائع = البيع − العمولة"],
+    examples:["عمولة 5٪ على 1000 = 50","عمولة 10٪ على 400 = 40","صافي البائع من بيع 800 بعمولة 5٪ = 760"],
+    table:[
+      ["التمهيد","مسألة الوسيط والعمولة","النقاش","5"],
+      ["العرض","حساب العمولة وصافي البيع","المتابعة","12"],
+      ["التطبيق","مسائل عمولة تعاونية","الحل","18"],
+      ["التقويم","مسألة عمولة فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 6 مسائل عمولة وربح وخسارة.",
+    diff:"للمتأخرات: عمولة واحدة — للمتفوقات: مسألة تجمع عمولة وربح."
+  },
+
+  /* ===== الأسبوع 15: الصورة المعيارية للعدد ===== */
+  {
+    n:43, week:15, day:1, unit:U2, title:"مفهوم الصورة المعيارية للعدد",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم الصورة المعيارية للعدد.",
+      s:"أن تكتب الطالبة الأعداد الكبيرة في صورة معيارية.",
+      a:"أن تُقدّر الطالبة فائدة الصورة المعيارية في التبسيط."
+    },
+    warm:"سؤال: «كيف نكتب عدد سكان مدينة ضخماً بطريقة مختصرة؟» — الهدف: الصورة المعيارية.",
+    concepts:["الصورة المعيارية: عدد من 1 إلى 10 مضروب في 10 مرفوعة لقوة صحيحة","س × 10^ن حيث 1 ≤ س < 10","التدوير: تحريك الفاصلة"],
+    examples:["45000 = 4.5 × 10^4","720000 = 7.2 × 10^5","900 = 9 × 10^2"],
+    hw:"كتابة 8 أعداد كبيرة في صورة معيارية.",
+    diff:"للمتأخرات: أعداد بسيطة — للمتفوقات: أعداد بقوة سالبة."
+  },
+  {
+    n:44, week:15, day:2, unit:U2, title:"تحويل الأعداد الكبيرة والصغيرة",
+    obj:{
+      k:"أن تتعرّف الطالبة قواعد تحريك الفاصلة.",
+      s:"أن تحوّل الطالبة أعداداً كبيرة وصغيرة إلى صورة معيارية.",
+      a:"أن تُظهر الطالبة دقة في تحديد القوة."
+    },
+    warm:"تدريب: «أين توضع الفاصلة في 0.0032؟»",
+    concepts:["إلى اليسار ← قوة موجبة","إلى اليمين ← قوة سالبة","عدّ خطوات الفاصلة = عدد القوة"],
+    examples:["0.0032 = 3.2 × 10^-3 (3 خطوات يمين)","25600 = 2.56 × 10^4 (3 خطوات يسار)","0.0005 = 5 × 10^-4"],
+    hw:"تحويل 10 أعداد إلى صورة معيارية.",
+    diff:"للمتأخرات: عدّ الخطوات ببطء — للمتفوقات: أعداد بكسور."
+  },
+  {
+    n:45, week:15, day:3, unit:U2, title:"العمليات على الأعداد في صورة معيارية",
+    obj:{
+      k:"أن تُجري الطالبة عمليات على أعداد في صورة معيارية.",
+      s:"أن تضرب وتقسم الطالبة أعداداً معيارية.",
+      a:"أن تُقدّر الطالبة سهولة الحساب بالصورة المعيارية."
+    },
+    warm:"سؤال: «كيف نضرب 2×10^3 في 3×10^2 بسهولة؟»",
+    concepts:["الضرب: اضرب الأعداد ثم اجمع القوى","القسمة: اقسم الأعداد ثم اطرح القوى","إعادة الصورة المعيارية عند اللزوم"],
+    examples:["(2×10^3) × (3×10^2) = 6×10^5","(6×10^5) ÷ (2×10^2) = 3×10^3","(4×10^3) × (5×10^3) = 20×10^6 = 2×10^7"],
+    table:[
+      ["التمهيد","مراجعة القوى السريعة","المشاركة","5"],
+      ["العرض","قواعد الضرب والقسمة","المتابعة","12"],
+      ["التطبيق","تمارين عمليات تعاونية","الحل","18"],
+      ["التقويم","مسألة فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 6 عمليات على أعداد معيارية.",
+    diff:"للمتأخرات: ضرب فقط — للمتفوقات: عمليات مركّبة وتدوير الناتج."
+  },
+
+  /* ===== الأسبوع 16: مبادئ الهندسة — المنصفات ===== */
+  {
+    n:46, week:16, day:1, unit:U3, title:"منصف الزاوية",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم منصف الزاوية.",
+      s:"أن تُنشئ الطالبة منصف زاوية بالمسطرة والفرجار.",
+      a:"أن تُظهر الطالبة دقة وأناقة في الرسم الهندسي."
+    },
+    warm:"عرض أدوات الهندسة وسؤال: «كيف نقسم زاوية إلى قسمين متساويين؟»",
+    concepts:["منصف الزاوية: شعاع يقسم الزاوية إلى زاويتين متساويتين","الزاوية المقسمة = نصف الزاوية الأصلية","خطوات الإنشاء بالفرجار"],
+    examples:["منصف زاوية قائمة ← كل 45°","منصف زاوية 60° ← كل 30°","منصف زاوية 80° ← كل 40°"],
+    hw:"إنشاء 3 منصفات زوايا.",
+    diff:"للمتأخرات: إنشاء موجّه خطوة بخطوة — للمتفوقات: منصف زاوية مركّبة."
+  },
+  {
+    n:47, week:16, day:2, unit:U3, title:"منصف العمودي والمستقيمات المتوازية",
+    obj:{
+      k:"أن تتعرّف الطالبة منصف العمودي والمستقيمات المتوازية.",
+      s:"أن تُنشئ الطالبة منصف قطعة مستقيمة، وتميّز المتوازيين.",
+      a:"أن تُظهر الطالبة تميّزاً هندسياً ودقة."
+    },
+    warm:"سؤال: «كيف نجد منتصف قطعة مستقيمة؟» و«متى يكون خطّان متوازيين؟»",
+    concepts:["منصف العمودي: عمودي ينصف قطعة مستقيمة","منتصف القطعة = نقطة تساوي البعدين عن طرفيها","المستقيمان المتوازيان لا يتقاطعان"],
+    examples:["قطعة طولها 10 سم ← منتصفها 5 سم من كل طرف","إنشاء منصف عمودي بفرجار","تمييز متوازيين على رسم"],
+    hw:"إنشاء منصفين عموديين وتمييز أزواج متوازية.",
+    diff:"للمتأخرات: إنشاء مبسّط — للمتفوقات: منصف عمودي على منتصف قطعة."
+  },
+  {
+    n:48, week:16, day:3, unit:U3, title:"العمودية والتطبيقات الهندسية",
+    obj:{
+      k:"أن تتعرّف الطالبة شرط العمودية وزاوية القائمة.",
+      s:"أن تميّز الطالبة بين المتوازي والعمودي على رسم.",
+      a:"أن تُقدّر الطالبة تطبيقات المنصفات في البناء والتصميم."
+    },
+    warm:"عرض صور (باب، سلم، مسطرة زاوية) وسؤال: «أين العمودية والتوازي في حياتنا؟»",
+    concepts:["العمودية: التقاطع بزاوية قائمة 90°","زاويتان متكاملتان مجموعهما 90°","المنصفات في القياس والبناء"],
+    examples:["قياس زاوية قائمة بمسطرة الزوايا","تمييز عموديين: يصنعان 90°","تطبيق: تقسيم مساحة إلى أجزاء متساوية"],
+    table:[
+      ["التمهيد","عرض تطبيقات واقعية","النقاش","5"],
+      ["العرض","تمييز عمودي/متوازي نموذجي","المتابعة","12"],
+      ["التطبيق","تمارين تمييز وإنشاء تعاونية","الرسم","18"],
+      ["التقويم","سؤال تمييز فردي","الإجابة","10"]
+    ],
+    hw:"تمييز 5 أزواج عمودية و5 متوازية على رسم.",
+    diff:"للمتأخرات: رسم واضح بالألوان — للمتفوقات: إنشاء مركّب يجمع المنصفات."
+  },
+
+  /* ===== الأسبوع 17: أنواع المثلثات ومجموع زواياها ===== */
+  {
+    n:49, week:17, day:1, unit:U4, title:"أنواع المثلثات",
+    obj:{
+      k:"أن تُسمّي الطالبة أنواع المثلثات حسب الأضلاع وحسب الزوايا.",
+      s:"أن تُصنّف الطالبة المثلثات المعطاة.",
+      a:"أن تُظهر الطالبة إعجاباً بالتناظر الهندسي."
+    },
+    warm:"عرض مثلثات متنوعة وسؤال: «ما الفرق بين هذه المثلثات؟»",
+    types:["حسب الأضلاع: متساوي الأضلاع، متساوي الساقين، مختلف الأضلاع","حسب الزوايا: قائم، حاد، منفرج"],
+    concepts:["متساوي الأضلاع: 3 أضلاع متساوية وزواياه 60°","متساوي الساقين: ضلعان متساويان وزاويتان متساويتان","المثلث القائم: زاوية قائمة"],
+    examples:["مثلث أضلاعه 5،5،5 ← متساوي الأضلاع","مثلث زاويته 90° ← قائم","مثلث بزاوية منفرجة ← منفرج"],
+    hw:"تصنيف 8 مثلثات.",
+    diff:"للمتأخرات: صور ملوّنة — للمتفوقات: مثلث ينتمي لتصنيفين."
+  },
+  {
+    n:50, week:17, day:2, unit:U4, title:"مجموع زوايا المثلث",
+    obj:{
+      k:"أن تتعرّف الطالبة أن مجموع زوايا المثلث = 180°.",
+      s:"أن تحسب الطالبة زاوية مجهولة في مثلث.",
+      a:"أن تُظهر الطالبة دقة في الحساب الهندسي."
+    },
+    warm:"سؤال: «مجموع الزوايا 180° — لو زاويتان 60° و70° فما الثالثة؟»",
+    concepts:["مجموع زوايا المثلث = 180°","إيجاد الزاوية المجهولة بالطرح من 180","المثلث متساوي الساقين: زاويتان متساويتان"],
+    examples:["60° + 70° ← الثالثة = 50°","مثلث قائم وزاويته الحادة 30° ← الأخرى 60°","متساوي الساقين ورأسه 40° ← قاعدتان 70°"],
+    hw:"حلّ 6 مسائل على مجموع زوايا المثلث.",
+    diff:"للمتأخرات: رقمان معطيان — للمتفوقات: مثلث متساوي الساقين بزاوية رأس."
+  },
+  {
+    n:51, week:17, day:3, unit:U4, title:"تطبيقات على مثلثات ومجموع الزوايا",
+    obj:{
+      k:"أن توظّف الطالبة مجموع الزوايا في مسائل مركّبة.",
+      s:"أن تحلّ الطالبة مسائل تجمع أنواع المثلثات ومجموع زواياه.",
+      a:"أن تُظهر الطالبة ثقة في الحل الهندسي."
+    },
+    warm:"مسألة: «مثلث متساوي الساقين وزاوية رأسه 40°، ما مجموع قاعدتيه؟»",
+    concepts:["دمج المفاهيم: النوع + مجموع الزوايا","الزاوية الداخلية القائمة في المثلث القائم","التحقق من صحة الزوايا (مجموع 180)"],
+    examples:["متساوي الساقين رأسه 40° ← كل قاعدة 70°","مثلث قائم وزاويتان 30°،60°","مثلث حاد كل زوايا 60° (متساوي الأضلاع)"],
+    table:[
+      ["التمهيد","مسألة تحفيزية","النقاش","5"],
+      ["العرض","حلول نماذج مركّبة","المتابعة","12"],
+      ["التطبيق","مسائل تعاونية","الحل","18"],
+      ["التقويم","مسألة فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 5 مسائل مركّبة على المثلثات.",
+    diff:"للمتأخرات: مسألة واحدة بخطوات — للمتفوقات: مسألة بثلاث زوايا مجهولة."
+  },
+
+  /* ===== الأسبوع 18: الزاوية الخارجة للمثلث ===== */
+  {
+    n:52, week:18, day:1, unit:U4, title:"مفهوم الزاوية الخارجية",
+    obj:{
+      k:"أن تتعرّف الطالبة الزاوية الخارجية للمثلث.",
+      s:"أن تميّز الطالبة الزوايا الداخلية والخارجية على رسم.",
+      a:"أن تُظهر الطالبة فضولاً لاستكشاف العلاقات الهندسية."
+    },
+    warm:"عرض مثلث مدّ أحد أضلاعه وسؤال: «ما العلاقة بين الزاوية الخارجية والداخلية؟»",
+    concepts:["الزاوية الخارجية: تتكوّن باستمرار أحد أضلاع المثلث","الزاوية الداخلية والخارجية متكاملتان (مجموعهما 180°)","عدّ الزوايا الخارجية: واحدة لكل رأس"],
+    examples:["زاوية داخلية 120° ← مكملتها الخارجية 60°","زاوية داخلية 70° ← خارجية 110°","تعرّف على الزوايا الخارجية في رسم"],
+    hw:"تحديد 6 زوايا خارجية وحساب مكملاتها.",
+    diff:"للمتأخرات: رسم ملوّن — للمتفوقات: عدة زوايا خارجية دفعة واحدة."
+  },
+  {
+    n:53, week:18, day:2, unit:U4, title:"خاصية الزاوية الخارجية",
+    obj:{
+      k:"أن تتعرّف الطالبة خاصية الزاوية الخارجية للمثلث.",
+      s:"أن تحسب الطالبة الزاوية الخارجية بمجموع الزاويتين البعيدتين.",
+      a:"أن تُقدّر الطالبة عمق العلاقات الهندسية."
+    },
+    warm:"سؤال: «كيف نحسب الزاوية الخارجية دون قياس؟» — الهدف: الخاصية.",
+    concepts:["خاصية الزاوية الخارجية = مجموع الزاويتين الداخليتين البعيدتين","الزاوية الخارجية = 180 − الزاوية الداخلية المقابلة","مجموع الزوايا الخارجية للمثلث = 360°"],
+    examples:["زاوية خارجية = 50° + 60° = 110°","زاوية داخلية 130° ← خارجيتها 50°","مجموع الزوايا الخارجية = 360°"],
+    hw:"حساب 6 زوايا خارجية.",
+    diff:"للمتأخرات: خاصية مباشرة — للمتفوقات: خاصية مع مجموع الزوايا الداخلية."
+  },
+  {
+    n:54, week:18, day:3, unit:U4, title:"تطبيقات على الزوايا الخارجية",
+    obj:{
+      k:"أن توظّف الطالبة خاصية الزاوية الخارجية في المسائل.",
+      s:"أن تحلّ الطالبة مسائل تجمع الزوايا الداخلية والخارجية.",
+      a:"أن تُظهر الطالبة مهارة في التحليل الهندسي."
+    },
+    warm:"مسألة: «زاوية خارجية 110°، إحدى الزاويتين البعيدتين 60°، ما الأخرى؟»",
+    concepts:["تركيب المعادلة الهندسية","استخدام الخاصية والعلاقات المتكاملة","التحقق من النتيجة"],
+    examples:["110 = 60 + ز ← ز = 50°","زاوية داخلية 90° ← خارجية 90°","مجموع 3 زوايا خارجية = 360° (مثلث)"],
+    table:[
+      ["التمهيد","مسألة تحدي","النقاش","5"],
+      ["العرض","حلول نماذج مركّبة","المتابعة","12"],
+      ["التطبيق","مسائل تعاونية","الحل","18"],
+      ["التقويم","مسألة فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 5 مسائل زوايا خارجية مركّبة.",
+    diff:"للمتأخرات: زاوية واحدة مجهولة — للمتفوقات: زاويتان مجهولتان."
+  },
+
+  /* ===== الأسبوع 19: الأشكال الرباعية وأنواعها ===== */
+  {
+    n:55, week:19, day:1, unit:U4, title:"أنواع الأشكال الرباعية",
+    obj:{
+      k:"أن تُسمّي الطالبة أنواع الأشكال الرباعية.",
+      s:"أن تُصنّف الطالبة الرباعيات المعطاة.",
+      a:"أن تلاحظ الطالبة انتشار الرباعيات في محيطها."
+    },
+    warm:"عرض صور (باب، شاشة، سهم إشارة) وسؤال: «ما أشكالها الرباعية؟»",
+    concepts:["المستطيل: 4 زوايا قائمة وأضلاعه المتقابلة متساوية","المربع: 4 زوايا قائمة و4 أضلاع متساوية","المعين: 4 أضلاع متساوية","المتوازي أضلاع: أضلاعه المتقابلة متوازية ومتساوية","الشبه منحرف: ضلعان متوازيان فقط"],
+    examples:["الباب مستطيل","لوح الإعلانات شبه منحرف","أضلاع المربع متساوية جميعها"],
+    hw:"تصنيف 6 أشكال رباعية.",
+    diff:"للمتأخرات: صور محسوسة — للمتفوقات: شكل ينتمي لأكثر من نوع."
+  },
+  {
+    n:56, week:19, day:2, unit:U4, title:"خصائص الرباعيات وتمييزها",
+    obj:{
+      k:"أن تتعرّف الطالبة خصائص كل شكل رباعي.",
+      s:"أن تميّز الطالبة بين المربع والمستطيل والمعين والمتوازي.",
+      a:"أن تُظهر الطالبة دقة في الملاحظة والتمييز."
+    },
+    warm:"جدول مقارنة: ما الفرق بين المربع والمستطيل؟",
+    concepts:["المربع يجتمع فيه خصائص المستطيل والمعين","المستطيل: زواياه قائمة وأضلاعه المتقابلة متساوية","المعين: أضلاعه متساوية وزواياه غير بالضرورة قائمة","المتوازي: أضلاعه المتقابلة متوازية ومتساوية"],
+    examples:["المربع: أضلاع متساوية + زوايا قائمة","المعين: أضلاع متساوية فقط","المستطيل: زوايا قائمة + أضلاع متقابلة متساوية"],
+    hw:"مقارنة 4 أشكال رباعية في جدول خصائص.",
+    diff:"للمتأخرات: خصائص مكتوبة — للمتفوقات: تبرير إجابات بخاصية."
+  },
+  {
+    n:57, week:19, day:3, unit:U4, title:"مجموع زوايا الرباعي وتطبيقاته",
+    obj:{
+      k:"أن تتعرّف الطالبة أن مجموع زوايا الرباعي = 360°.",
+      s:"أن تحسب الطالبة زاوية مجهولة في رباعي.",
+      a:"أن توظّف الطالبة الخاصية في مسائل هندسية."
+    },
+    warm:"سؤال: «مجموع زوايا أي رباعي 360° — لو ثلاث زوايا 80°،90°،100° فما الرابعة؟»",
+    concepts:["مجموع زوايا الرباعي = 360° (مثلثان)","إيجاد الزاوية المجهولة بالطرح من 360","تطبيقات: المربع 4×90=360"],
+    examples:["80+90+100 ← الرابعة = 90°","مربع: كل زاوية 90°","مستطيل: زاويتان 70° و110° يتناسبان"],
+    table:[
+      ["التمهيد","مسألة مجموع الزوايا","النقاش","5"],
+      ["العرض","حلّ نموذجي للرباعي","المتابعة","12"],
+      ["التطبيق","مسائل تعاونية","الحل","18"],
+      ["التقويم","مسألة فردية","الإجابة","10"]
+    ],
+    hw:"حلّ 6 مسائل على مجموع زوايا الرباعي.",
+    diff:"للمتأخرات: ثلاث زوايا معطاة — للمتفوقات: رباعي بزاويتين مجهولتين."
+  },
+
+  /* ===== الأسبوع 20: المضلعات ومراجعة شاملة ===== */
+  {
+    n:58, week:20, day:1, unit:U4, title:"المضلع ومضلع منتظمه",
+    obj:{
+      k:"أن تتعرّف الطالبة مفهوم المضلع والمضلع المنتظم.",
+      s:"أن تُسمّي الطالبة المضلعات حتى 10 أضلاع.",
+      a:"أن تُظهر الطالبة تميّزاً هندسياً واسعاً."
+    },
+    warm:"عرض مضلعات (مثلث، رباعي، خماسي، سداسي...) وسؤال: «ما الفرق بينها؟»",
+    concepts:["المضلع: شكل مغلق له 3 أضلاع فأكثر","مضلع منتظم: أضلاعه وزواياه متساوية","تسمية المضلع بعدد أضلاعه"],
+    examples:["المثلث: 3 أضلاع","الرباعي: 4 أضلاع","السداسي: 6 أضلاع","العشاري: 10 أضلاع"],
+    hw:"تسمية 8 مضلعات بعدد أضلاعها.",
+    diff:"للمتأخرات: صور ملوّنة — للمتفوقات: المضلع المنتظم وخصائصه."
+  },
+  {
+    n:59, week:20, day:2, unit:U4, title:"مجموع زوايا المضلع",
+    obj:{
+      k:"أن تتعرّف الطالبة قاعدة مجموع زوايا المضلع (ن − 2) × 180°.",
+      s:"أن تحسب الطالبة مجموع زوايا مضلع وأحد زواياه.",
+      a:"أن تُظهر الطالبة قدرة على التعميم الرياضي."
+    },
+    warm:"سؤال: «كيف نحسب مجموع زوايا أي مضلع بعدد أضلاعه ن؟»",
+    concepts:["مجموع زوايا مضلع ن أضلاع = (ن − 2) × 180°","الزاوية الداخلية لمضلع منتظم = المجموع ÷ ن","التمثيل بتقسيم المضلع إلى مثلثات"],
+    examples:["سداسي: (6−2)×180 = 720°","عشاري: (10−2)×180 = 1440°","سداسي منتظم: 720 ÷ 6 = 120°"],
+    hw:"حساب مجموع زوايا 6 مضلعات وزاوية منتظم منها.",
+    diff:"للمتأخرات: مضلعات صغيرة — للمتفوقات: مضلع 15 ضلعاً ومنتظم."
+  },
+  {
+    n:60, week:20, day:3, unit:U4, title:"مراجعة شاملة للمنهج (اختبار تقويمي)",
+    obj:{
+      k:"أن تراجع الطالبة مفاهيم المعادلات والنسب والهندسة والمضلعات.",
+      s:"أن تحلّ الطالبة اختباراً شاملاً متنوّعاً.",
+      a:"أن تُظهر الطالبة ثقة وإتقاناً و استعداداً للاختبار النهائي."
+    },
+    warm:"مسابقة تفاعلية سريعة تجمع أسئلة من الوحدات الأربع.",
+    concepts:["مراجعة: المعادلات والأنماط","مراجعة: النسب والنسبة المئوية","مراجعة: الهندسة والمضلعات","استراتيجيات المراجعة الفعّالة"],
+    table:[
+      ["التمهيد","مسابقة تفاعلية شاملة","المشاركة والتنافس","5"],
+      ["العرض","أبرز القواعد والمفاتيح","المراجعة","12"],
+      ["التطبيق","اختبار شامل متنوّع","الحل الفردي","18"],
+      ["التقويم","تصحيح ومناقشة النتائج","المناقشة","10"]
+    ],
+    examples:["معادلة: 3س + 5 = 20 ← س = 5","نسبة: 15:20 = 3:4","مثلث: زاويتان 50°،60° ← الثالثة 70°","مضلع سداسي: مجموع الزوايا 720°"],
+    hw:"مراجعة الوحدات استعداداً للاختبار النهائي.",
+    diff:"للمتأخرات: مراجعة المفاهيم الأساسية — للمتفوقات: أسئلة تفكير عليا وتحدٍّ إثرائي."
+  }
+];
+
+/* ---------------- بيانات: المنهج الليبي (الرياضيات — الصف الثامن) ---------------- */
+const CURRICULUM = [
+  {
+    ch:"الباب الأول", title:"المعادلات الجبرية والأنماط العددية", status:"prepared",
+    weeks:"الأسبوع 1 - 7", lessons:"21 تحضيراً يومياً",
+    topics:[
+      "مراجعة العمليات على الأعداد الصحيحة والنسبية",
+      "مفهوم المعادلة وحلّها بالجمع والطرح",
+      "حلّ المعادلات بالضرب والقسمة",
+      "حلّ المعادلات بأكثر من عملية",
+      "حلّ مشكلات باستخدام المعادلات",
+      "التحقق من صحة حلّ المعادلة",
+      "الأنماط العددية والحد العام"
+    ]
+  },
+  {
+    ch:"الباب الثاني", title:"النسب والتناسب والنسبة المئوية", status:"prepared",
+    weeks:"الأسبوع 8 - 15", lessons:"24 تحضيراً يومياً",
+    topics:[
+      "كتابة النسب وتبسيطها",
+      "النسب بين قياسين",
+      "التناسب الطردي والعكسي",
+      "مقياس الرسم والمسافة الفعلية",
+      "النسبة المئوية (كسر وعدد عشري)",
+      "النسبة المئوية من كمية",
+      "مسائل: ربح، خسارة، خصم، عمولة",
+      "الصورة المعيارية للعدد"
+    ]
+  },
+  {
+    ch:"الباب الثالث", title:"مبادئ الهندسة", status:"prepared",
+    weeks:"الأسبوع 16", lessons:"3 تحضيرات يومية",
+    topics:[
+      "منصف الزاوية ومنصف العمودي",
+      "المستقيمات المتوازية والعمودية",
+      "العمودية والتطبيقات الهندسية"
+    ]
+  },
+  {
+    ch:"الباب الرابع", title:"المضلعات", status:"prepared",
+    weeks:"الأسبوع 17 - 20", lessons:"12 تحضيراً يومياً",
+    topics:[
+      "أنواع المثلثات ومجموع زواياها",
+      "الزاوية الخارجة للمثلث",
+      "الأشكال الرباعية وأنواعها",
+      "المضلع ومضلع منتظمه ومجموع زواياه",
+      "المراجعة الشاملة للوحدات السابقة"
+    ]
+  },
+  {
+    ch:"الباب الخامس", title:"الجذور التربيعية والأعداد الحقيقية", status:"soon",
+    weeks:"ضمن المنهج الرسمي", lessons:"",
+    topics:[
+      "الجذور التربيعية والتكعيبية",
+      "الجذور الصماء",
+      "نظرية فيثاغورس",
+      "الأعداد الحقيقية"
+    ]
+  },
+  {
+    ch:"الباب السادس", title:"الدائرة", status:"soon",
+    weeks:"ضمن المنهج الرسمي", lessons:"",
+    topics:[
+      "عناصر الدائرة",
+      "محيط الدائرة",
+      "مساحة الدائرة والقطاع"
+    ]
+  },
+  {
+    ch:"الباب السابع", title:"الإحصاء والاحتمالات", status:"soon",
+    weeks:"ضمن المنهج الرسمي", lessons:"",
+    topics:[
+      "جمع البيانات وتنظيمها",
+      "المتوسط والوسيط والمنوال",
+      "الرسوم البيانية",
+      "الاحتمال"
+    ]
+  }
+];
+
+/* ---------------- بيانات: معمل المعادلات ---------------- */
+const LAB = [
+  { label:"مثال 1: س + 7 = 15", eq:"س + 7 = 15", steps:[
+    {k:"الهدف", v:"نريد إزالة العدد 7 من الطرف الأيسر"},
+    {k:"الخطوة", v:"س + 7 − 7 = 15 − 7  (نطبّق خاصية الطرح للمساواة)"},
+    {k:"الناتج", v:"س = 8"},
+    {k:"التحقق", v:"8 + 7 = 15 ✓"}
+  ]},
+  { label:"مثال 2: ص − 4 = 10", eq:"ص − 4 = 10", steps:[
+    {k:"الهدف", v:"نريد إزالة العدد 4 من الطرف الأيسر"},
+    {k:"الخطوة", v:"ص − 4 + 4 = 10 + 4  (نطبّق خاصية الجمع للمساواة)"},
+    {k:"الناتج", v:"ص = 14"},
+    {k:"التحقق", v:"14 − 4 = 10 ✓"}
+  ]},
+  { label:"مثال 3: 3س = 21", eq:"3س = 21", steps:[
+    {k:"الهدف", v:"المضروب فيه 3 — نقسم الطرفين على 3"},
+    {k:"الخطوة", v:"3س ÷ 3 = 21 ÷ 3  (خاصية القسمة للمساواة)"},
+    {k:"الناتج", v:"س = 7"},
+    {k:"التحقق", v:"3 × 7 = 21 ✓"}
+  ]},
+  { label:"مثال 4: ص ÷ 4 = 6", eq:"ص ÷ 4 = 6", steps:[
+    {k:"الهدف", v:"نريد إزالة القسمة على 4 — نضرب الطرفين في 4"},
+    {k:"الخطوة", v:"(ص ÷ 4) × 4 = 6 × 4"},
+    {k:"الناتج", v:"ص = 24"},
+    {k:"التحقق", v:"24 ÷ 4 = 6 ✓"}
+  ]},
+  { label:"مثال 5: 2س + 3 = 11", eq:"2س + 3 = 11", steps:[
+    {k:"الخطوة 1", v:"2س + 3 − 3 = 11 − 3"},
+    {k:"الخطوة 2", v:"2س = 8"},
+    {k:"الخطوة 3", v:"2س ÷ 2 = 8 ÷ 2"},
+    {k:"الناتج", v:"س = 4"},
+    {k:"التحقق", v:"2(4) + 3 = 11 ✓"}
+  ]}
+];
+
+/* ---------------- بيانات: الأدوات الرقمية ---------------- */
+const TOOLS = [
+  { ic:"🔷", t:"GeoGebra", d:"رسم المعادلات والخطوط البيانية", u:"https://www.geogebra.org", h:"geogebra.org" },
+  { ic:"📈", t:"Desmos", d:"حاسبة بيانية تفاعلية", u:"https://www.desmos.com", h:"desmos.com" },
+  { ic:"🧪", t:"PhET Math", d:"محاكاة ميزان المعادلات", u:"https://phet.colorado.edu/ar", h:"phet.colorado.edu" },
+  { ic:"🎯", t:"Kahoot", d:"اختبارات تفاعلية ممتعة", u:"https://kahoot.com", h:"kahoot.com" },
+  { ic:"📝", t:"Quizizz", d:"اختبارات فردية ممتعة", u:"https://quizizz.com", h:"quizizz.com" },
+  { ic:"🏫", t:"Google Classroom", d:"إدارة الفصل الرقمي", u:"https://classroom.google.com", h:"classroom.google.com" },
+  { ic:"🎨", t:"Canva", d:"تصميم أوراق العمل والعروض", u:"https://www.canva.com", h:"canva.com" },
+  { ic:"🧮", t:"Microsoft Math Solver", d:"حلّ المعادلات خطوة بخطوة", u:"https://mathsolver.microsoft.com", h:"mathsolver.microsoft.com" }
+];
+
+/* ---------------- بيانات: 46 معيار تقييم ---------------- */
+const EVAL = [
+  "المهارة في عرض الدرس وإدارة الصف","قدرة المعلم على جذب انتباه الطلاب","ضبط الفصل وتفاعل الطلاب",
+  "استخدام الحوافز التشجيعية","الالتزام باستخدام اللغة العربية الفصحى ووضوح الصوت","البعد عن استخدام الألفاظ والتعابير العامية",
+  "تجنّب الأخطاء اللغوية عند التحدث أو الكتابة","وضوح الصوت ومناسبته للموقف التربوي","الإلمام بالمادة العلمية والاهتمام بالنمو المعرفي",
+  "الدقّة عند استخدام المصطلحات العلمية","ملاءمة توزيع المنهج للزمن","الالتزام بتدريس جميع المواضيع المقرّرة في المنهج",
+  "تكامل التحضير ومطابقته للأسس التربوية","مناسبة طريقة العرض","الإعداد الكتابي اليومي للدروس",
+  "وضوح الأهداف الخاصة وتحقيقها","تحديد الأهداف الخاصة للدرس","توظيف المهارات والمعارف السابقة عند عرض الدرس",
+  "توظيف الثواب والعقاب للتربية وليس للانتقام","الإلمام بالأسس التربوية في إعداد الدروس وتطبيقها","تحديد الطريقة المناسبة لموضوع الدرس",
+  "الدقّة في تحديد الأهداف السلوكية","تحديد الوسائل والأمثلة والنشاطات المساعدة على التعليم","استخدام السبورة والكتب المدرسية والوسائل التعليمية",
+  "تنظيم السبورة","وضوح الخط","متابعة أنشطة الكتاب",
+  "الاستخدام الأمثل للوسائل التعليمية","الاهتمام بالطلاب ومتابعة تقويمهم","تنظيم سجل متابعة الطلاب",
+  "متابعة الطلاب سلوكياً وعلمياً","رعاية الطلاب المتفوقين","الاهتمام بالواجبات والتطبيقات والعناية بتصحيحها",
+  "التصحيح المستمر وحلّ الواجبات والتطبيقات داخل الصف","مستوى تحصيل الطلاب العلمي","استجابة الطلاب لأسئلة المدرّس ومشاركتهم في النقاش",
+  "المؤشرات الإيجابية لنتائج الطلاب في الاختبارات التحصيلية","إجراء الاختبارات القصيرة والوقوف على مستوياتهم من خلال النتائج","تقبّل التوجيه",
+  "تقبّل النقد","جودة صياغة أسئلة الاختبارات وتقدير الدرجات","توفّر الشروط الواجب مراعاتها في أسئلة التقويم",
+  "المهارة في تقدير الدرجات وتوزيعها","السلوك العام (القدوة الحسنة)","تنفيذ التوجيهات وتحمّل المسؤولية",
+  "المحافظة على أوقات الدوام والحصص"
+];
+
+/* ---------------- بيانات: الاختبار السريع ---------------- */
+const QUIZ = [
+  { q:"كم دقيقة يُخصَّص للتمهيد في تحضير الدرس الأول؟",
+    o:["5 دقائق ✓","10 دقائق","15 دقيقة","20 دقيقة"], a:0,
+    fb:"في جدول سير الحصة: التمهيد 5 دقائق، العرض 15، التطبيق 15، التقويم 10." },
+  { q:"أيٌّ ممّا يلي ليس عنصراً من عناصر تحضير الدرس؟",
+    o:["تحديد الأهداف","اختيار المحتوى","كتابة التقرير الأسبوعي ✓","اختيار أساليب التقويم"], a:2,
+    fb:"عناصر التحضير الستّة: الأهداف، المحتوى، الأساليب والأنشطة، الاستراتيجية، الوسائل، التقويم." },
+  { q:"ما الخاصية المستخدمة في حلّ المعادلة: س + 7 = 15؟",
+    o:["خاصية الطرح للمساواة ✓","خاصية الضرب للمساواة","خاصية القسمة للمساواة","لا شيء مما سبق"], a:0,
+    fb:"نطرح 7 من طرفي المعادلة: س + 7 − 7 = 15 − 7 ← س = 8." },
+  { q:"كم عدد أسس تقييم المعلّم في هذه الكرّاسة؟",
+    o:["24 معياراً","36 معياراً","46 معياراً ✓","50 معياراً"], a:2,
+    fb:"الكرّاسة تضمّ 46 معياراً تبدأ بمهارة العرض وتنتهي بالمحافظة على أوقات الدوام." },
+  { q:"أي نوع من التخطيط يُعدّ مناسبًا للأحداث الطارئة والمستجدّات؟",
+    o:["التخطيط الذهني","التخطيط اليومي الكتابي ✓","التخطيط السنوي","لا أحد من هذه الأنواع"], a:1,
+    fb:"«التخطيط اليومي يجعل المعلم مدركاً لما سيؤديه أولاً بأول، ويمكنه الإضافة أو الحذف أو التعديل على ضوء المستجدات»." }
+];
+
+/* ================= العرض ================= */
+
+// بطاقات التمهيد
+$("#warmupGrid").innerHTML = WARMUPS.map(w => `
+  <article class="warm-card reveal" data-idea="${w.t}">
+    <span class="w-ic">${w.ic}</span>
+    <h4>${w.t}</h4>
+    <p>${w.d}</p>
+  </article>`).join("");
+
+// الأكورديون: عناصر التحضير
+$("#elementsAcc").innerHTML = ELEMENTS.map((e, i) => `
+  <div class="acc-item reveal">
+    <button class="acc-head" aria-expanded="false">
+      <span class="acc-n">${i + 1}</span>
+      <h3>${e.t}</h3>
+      <span class="acc-arrow">▾</span>
+    </button>
+    <div class="acc-body">
+      <div class="acc-inner">
+        <ul class="check-list">${e.c.map(x => `<li>${x}</li>`).join("")}</ul>
+      </div>
+    </div>
+  </div>`).join("");
+
+// الأسابيع
+$("#weeksGrid").innerHTML = WEEKS.map((w, i) => `
+  <article class="week-card reveal" data-i="${i}" data-month="${w.m}">
+    <button class="week-check" aria-label="تمّ تنفيذ الأسبوع ${i + 1}">✓</button>
+    <div>
+      <div class="week-meta"><span class="w-month">${w.m}</span><span class="w-num">الأسبوع ${w.w}</span></div>
+      <div class="w-topic">${w.t}</div>
+    </div>
+  </article>`).join("");
+
+// الوحدات
+$("#unitsGrid").innerHTML = UNITS.map(u => `
+  <div class="unit"><h4>${u.t}</h4><ul>${u.l.map(x => `<li>${x}</li>`).join("")}</ul></div>`).join("");
+
+// تبويبات الدروس + فلتر الوحدات (تنظيم أسبوعي — 3 أيام لكل أسبوع)
+const UNITS_LIST = [...new Set(LESSONS.map(l => l.unit))];
+$("#unitFilter").innerHTML =
+  `<button class="on" data-unit="all">الكل (${LESSONS.length})</button>` +
+  UNITS_LIST.map(u => {
+    const c = LESSONS.filter(l => l.unit === u).length;
+    return `<button data-unit="${u}">${u} (${c})</button>`;
+  }).join("");
+
+// تجميع الدروس حسب الأسبوع
+const WEEKS_LIST = [...new Set(LESSONS.map(l => l.week))].map(w => ({
+  week: w,
+  unit: LESSONS.find(l => l.week === w).unit,
+  lessons: LESSONS.filter(l => l.week === w)
+}));
+
+function showUnit(unit){
+  const weeks = unit === "all" ? WEEKS_LIST : WEEKS_LIST.filter(w => w.unit === unit);
+  const vis = weeks.map(w => w.week);
+  $("#lessonTabs .tab-btn").forEach(b =>
+    b.style.display = vis.includes(+b.dataset.week) ? "" : "none");
+  $("#lessonPanels .tab-panel").forEach(p =>
+    p.style.display = vis.includes(+p.dataset.week) ? "" : "none");
+  const first = weeks[0];
+  if(first){
+    $("#lessonTabs .tab-btn").forEach(b => b.classList.toggle("active", +b.dataset.week === first.week));
+    $("#lessonPanels .tab-panel").forEach(p => p.classList.toggle("active", +p.dataset.week === first.week));
+  }
+  const total = weeks.reduce((s, w) => s + w.lessons.length, 0);
+  $("#lessonCount").textContent =
+    `${total} تحضيراً يومياً (${weeks.length} أسبوعاً) — ${unit === "all" ? "جميع الوحدات" : unit}`;
+}
+$("#unitFilter").addEventListener("click", e => {
+  const b = e.target.closest("button");
+  if(!b) return;
+  $("#unitFilter button").forEach(x => x.classList.toggle("on", x === b));
+  showUnit(b.dataset.unit);
+});
+
+// تبويبات الأسابيع
+$("#lessonTabs").innerHTML = WEEKS_LIST.map((w, i) =>
+  `<button class="tab-btn ${i === 0 ? "active" : ""}" data-tab="w${w.week}" data-week="${w.week}">الأسبوع ${w.week}</button>`).join("");
+
+const DAY_NAMES = {1:"اليوم الأول", 2:"اليوم الثاني", 3:"اليوم الثالث", 4:"اليوم الرابع", 5:"اليوم الخامس"};
+
+// مرجع دليل المعلم الرسمي لكل أسبوع — مبني على فهرس كتاب «دليل المعلم رياضيات الصف الثامن (ليبيا)»
+function guideRef(week){
+  if(week <= 7)   return {u:"الوحدة الأولى: المعادلات الجبرية", p:"12 - 19"};
+  if(week <= 15)  return {u:"الوحدة الثانية: النسبة والتناسب والنسبة المئوية", p:"20 - 31"};
+  if(week === 16) return {u:"الوحدة الثالثة: مبادئ الهندسة", p:"32 - 39"};
+  return {u:"الوحدة الرابعة: المضلعات", p:"40 - 52"};
+}
+
+const AIDS = {
+  1:"السبورة، بطاقات أعداد ملوّنة، أقلام وأوراق عمل، آلة حاسبة (للتحقق فقط)",
+  2:"السبورة، ميزان ورقي، بطاقات متغيّرات (س/ص)، أوراق عمل",
+  3:"السبورة، بطاقات أعداد، جدول خاصيتي الضرب والقسمة، أقلام ملوّنة",
+  4:"السبورة، بطاقات خطوات الحل، أوراق عمل متدرّجة الصعوبة",
+  5:"بطاقات مسائل، جدول نموذج (افهمي-خططي-حلي-تحققي)، أدوات عرض",
+  6:"بطاقات حلول (صحيحة/خاطئة)، السبورة، أقلام تصحيح ملوّنة",
+  7:"بطاقات أنماط، أرقام متحركة، مخطط بياني، بطاقة الرقم الترتيبي (ن)",
+  8:"بطاقات نسب، أشرطة ملوّنة للتبسيط، أوراق عمل",
+  9:"جدول تحويل الوحدات، أدوات قياس، خرائط مصغّرة، مسطرة",
+  10:"بطاقات مسائل (طردية/عكسية)، جدول تناسب، أوراق عمل",
+  11:"خرائط، مسطرة، مفتاح مقياس الرسم، أسطوانة شريطية",
+  12:"مئة دائرة (100 ش)، بطاقات نسب مئوية، آلة حاسبة",
+  13:"بطاقات نسب، جدول خصومات، بطاقات أسعار، أدوات عرض",
+  14:"بطاقات أسعار، جدول ربح/خسارة/عمولة، آلة حاسبة",
+  15:"بطاقات أعداد كبيرة، جدول قوى العشرة، أداة تحريك الفاصلة",
+  16:"أدوات هندسية (مسطرة، فرجار، منقلة)، أشكال هندسية مجسّمة، ورق مقوّى",
+  17:"أشكال مثلثات ملوّنة، منقلة، بطاقة قياس الزوايا، ألوان",
+  18:"أشكال مثلثات، منقلة، بطاقات زوايا داخلية/خارجية ملوّنة",
+  19:"أشكال رباعية ملوّنة، منقلة، أوراق عمل، ألوان",
+  20:"مضلعات ملوّنة بأحجام مختلفة، بطاقات أسئلة مراجعة، جدول تقويم"
+};
+const GAMES = {
+  1:{name:"سباق الحساب الخاطف", how:"تقسم الطالبات فريقين، تُلقي المعلّمة سؤالاً حسابياً سريعاً، وأسرع فريق يرفع لوحته بالجواب الصحيح يكسب نقطة."},
+  2:{name:"ميزان التوازن", how:"يُرسم ميزان بمعادلة على السبورة، ولكل خطوة (جمع/طرح على الطرفين) تتحرك كفّتا الميزان معاً — من يُكمل التوازن بشكل صحيح يكسب «قلباً»."},
+  3:{name:"سباق حل المعادلات", how:"تطرح معادلات بالضرب والقسمة، والفائز هو من يصل إلى قيمة المتغيّر أسرع مع كتابة خطوات الحل بترتيب صحيح."},
+  4:{name:"صيد المعادلات", how:"تُعلّق بطاقات معادلات حول الفصل، وكل طالبة «تصطاد» معادلة، تحلّها، وتضع بطاقتها في السلة الصحيحة (الوحدة/الخطوة)."},
+  5:{name:"تاجر المسائل", how:"تقرأ المعلّمة مسألة لفظية، وعلى الطالبة أن تترجمها إلى معادلة صحيحة «كأنها تاجر» يحوّل الكلمات إلى أرقام، وأدقّ ترجمة يكسب نقطة."},
+  6:{name:"محقّق المعادلات", how:"تُعرض على لوحة حلول جاهزة (بعضها خاطئ)، وعلى الطالبات اكتشاف الخطأ وتبريره ثم التحقق — المحقّق الأكثر دقة يفوز."},
+  7:{name:"صيّاد الأنماط", how:"يُعرض نمط عدد، وتتنافس الطالبات على استخراج القاعدة وكتابة الحدّ العام قبل انتهاء الوقت — أسرع إجابة صحيحة تكسب نقطة."},
+  8:{name:"لعبة تبسيط النسب", how:"تُوزَّع بطاقات نسب غير مبسّطة، وعلى كل طالبة تبسيط نسبتها وإيجاد زميلتها التي تحمل النسبة المبسّطة المكافئة لتكوين «أزواج»."},
+  9:{name:"سباق التحويل", how:"تُعرض قيمة بوحدة، وتتنافس الطالبات على تحويلها للوحدة الأخرى (كيلومتر/متر...) بأسرع وقت ودقّة."},
+  10:{name:"ميزان التناسب", how:"تُطرح مسألة طردية أو عكسية، وعلى الطالبة تحديد نوعها ثم بناء التناسب الصحيح على الميزان الطردي/العكسي."},
+  11:{name:"مستكشف الخرائط", how:"تُعرض خريطة بمقياس معلوم، وتبحث الطالبات عن المسافة الفعلية بين نقطتين قياساً وحساباً — أدقّ إجابة تكسب «نجمة مستكشفة»."},
+  12:{name:"سوق التخفيضات", how:"بطاقات أسعار عليها نسبة تخفيض، وعلى كل طالبة حساب السعر بعد الخصم، ثم «شراء» بأدقّ سعر — من يحسب أسرع يكسب."},
+  13:{name:"حسابات الخصم السريع", how:"تتنافس الطالبات على إيجاد نسبة مئوية من كمية بأسرع طريقة ذهنية (10٪/1٠٪...)، والفائزة تكسب «نجمة الحساب الذهني»."},
+  14:{name:"تاجر الربح والعمولة", how:"سيناريو بيع وشراء: تُعطى الطالبة سعر شراء وبيع أو عمولة، وتحسب الربح/الخسارة/العمولة، وأدقّ وأسرع حساب يكسب."},
+  15:{name:"عالمة الأعداد الكبيرة", how:"تُعرض أعداد كبيرة وصغيرة، وتتنافس الطالبات على كتابتها صورة معيارية وتحديد قوة العشرة الصحيحة."},
+  16:{name:"لعبة المنصفات", how:"تُعطى أشكال هندسية وأدوات الإنشاء، وعلى كل طالبة إنشاء منصف زاوية/عمودي بشكل صحيح ثم عرضه أمام الصف للمراجعة."},
+  17:{name:"مصنّف المثلثات", how:"تُوزَّع بطاقات مثلثات ملوّنة، وكل طالبة تصنّفها (حسب الأضلاع والزوايا) وتضعها في الفئة الصحيحة تحت ضغط الوقت."},
+  18:{name:"لعبة الزوايا الخارجية", how:"تُعرض مثلثات بزوايا معلومة ومجهولة، وتتنافس الطالبات على إيجاد الزاويتين الخارجيتين/الداخليتين باستخدام الخاصية."},
+  19:{name:"بطاقات الرباعيات", how:"تُوزَّع بطاقات أشكال رباعية بخصائصها، وتُسابق الطالبات على مطابقة كل شكل باسمه وخصائصه الصحيحة."},
+  20:{name:"تحدي المضلعات", how:"مراجعة شاملة تفاعلية: أسئلة من كل الوحدات الأربع (معادلات، نسب، هندسة، مضلعات) بنظام المتسابقين — كل إجابة صحيحة تكسب نقطة لفريقها."}
+};
+const EXERCISES = {
+  1:["12 + (−5) = ؟","−8 + (−6) = ؟","9 − (−4) = ؟","−15 + 20 = ؟"],
+  2:["−3 × (−4) = ؟","45 ÷ (−9) = ؟","احسبي: 2 + 3 × 4","(18 − 6) ÷ 3 = ؟"],
+  3:["في كل صندوق 12 قلماً و5 صناديق، ثم وُزّع 20. كم بقي؟","ترجمي: 8 × 25 − 40","احسبي مع التحقق: (15 − 6) ÷ 3","اكتبي مسألة قصيرة من اختيارك"],
+  4:["أيّها معادلة: (س + 5 = 9) أو (3 + 4) أو (ص − 2 = 7)؟","حدّدي حدود: 2س + 3 = 8","تحققي: هل س = 3 يحقّق من س + 2 = 5؟","اكتبي معادلة تمثّل موقفاً من حياتك"],
+  5:["حلّي: س + 7 = 15","حلّي: ص − 4 = 10","حلّي: س + (−3) = 9","تحققي من الحل: س = 8 لـ س + 7 = 15"],
+  6:["عند علي 12 ديناراً أعطى بعضها فبقي 7. كم أعطى؟ (بمعادلة)","حلّي وتحققي: س − 15 = 20","حلّي: ص + 9 = 30","امثلي بمعادلة: «يزيد على 5»"],
+  7:["حلّي: 3س = 21","حلّي: ص ÷ 4 = 6","حلّي: −2س = 10","تحققي من الحل: س = 7 لـ 3س = 21"],
+  8:["حلّي: 5ص = 45","حلّي: س ÷ 6 = 7","حلّي: −4س = 28","حلّي: ص ÷ (−3) = 5"],
+  9:["حلّي: س ÷ 4 = 5","حلّي: س ÷ 3 = 7","حلّي: ص ÷ 5 = 2","تحققي من الحل بالتعويض"],
+  10:["حلّي: 2س + 3 = 11","حلّي: 5ص − 4 = 16","حدّدي الخطوة الأولى: 3س + 5 = 20","اكتبي خطوات الحل بترتيب"],
+  11:["حلّي: 3س + 5 = 20","حلّي: 2ص − 7 = 9","حلّي: 4س + 2 = 2س + 10","تحققي من الحل"],
+  12:["في صف 40 طالباً البنات يزيدون على الأولاد بـ4. كم كلٌّ؟","حلّي: 2س + 3 = 17","حلّي: 5س − 10 = 2س + 8","مسألة عمر قصيرة"],
+  13:["ترجمي: «يزيد على 5»","ترجمي: «ضعفه ناقص 3»","ترجمي: «مجموعه 20»","حلّي ما ترجمتِ"],
+  14:["طبّقي (افهمي-خططي-حلي-تحققي) على مسألة بسيطة","حدّدي المجهول والمعلوم في المسألة","ابني المعادلة من النص","تحققي من الحل"],
+  15:["عمر الأخ يزيد على أخته بـ6 ومجموعهما 24. كم كلٌّ؟","حلي مسألة شراء بسيطة","مسألة كميات قصيرة","مسألة من اختيارك بالنموذج"],
+  16:["تحققي: س = 8 لـ س + 7 = 15","تحققي: ص = 14 لـ ص − 4 = 10","هل 3س = 21 ← س = 6 صحيح؟ ولماذا؟","تحققي: س ÷ 4 = 5 ← س = 20"],
+  17:["تحققي من حل 2س + 3 = 11 ← س = 4","تحققي من حل 3س = 21 ← س = 7","تحققي من حل سالب","أكملي بقية خطوات التحقق"],
+  18:["صحّحي: 2س + 3 = 11 ← س = 8","صحّحي: ص − 4 = 10 ← ص = 6","أين الخطأ: 5س = 50 ← س = 100؟","أكتبي الحل الصحيح"],
+  19:["أكملي: 2، 5، 8، 11، ...","أكملي: 4، 7، 10، ...","ما القاعدة: 3، 6، 9، ...؟","أكملي النمط البصري: ○△○△..."],
+  20:["ما الحدّ العام لـ 3، 6، 9، ...؟","ما الحدّ العام لـ 2، 5، 8، ...؟","ما الفرق الثابت في 4، 7، 10، ...؟","اكتبي الحدّ العام للنمط"],
+  21:["ما الحد العاشر في 2، 5، 8، ...؟","في 4، 7، 10... الحد 34، ما ترتيبه؟","تحققي: الحدّ العام 3ن − 1","مسألة نمط قصيرة"],
+  22:["اكتبي 15:20 ككسر عادي","بسّطي 4:6","ما نسبة 12 ذكوراً إلى 8 إناث؟","اكتبي النسبتان (أ:ب) و(أ/ب)"],
+  23:["بسّطي 18:24","بسّطي 10/15","بسّطي 40:100","أيّها في أبسط صورة: 2:3 أم 4:6؟"],
+  24:["قارني: 3:4 و 5:7","نسبة 8 إلى 20 = ؟ (بسّطيها)","أيّهما أكبر: 2:5 أم 3:7؟","مسألة مقارنة نسب"],
+  25:["1 كيلومتر = ... متر","1 كيلوجرام = ... غرام","1 ساعة = ... دقيقة","ما نسبة 1 م : 100 سم؟"],
+  26:["3.5 كم = ... م","2500 غ = ... كجم","1.5 ساعة = ... دقيقة","حوّلي 2 متر = ... سنتيمتر"],
+  27:["3.2 كم + 1500 م = ؟ (بالمتر)","2.5 كجم + 750 غ = ؟","1.5 ساعة + 30 دقيقة = ؟ دقيقة","مسألة مسافة بتوحيد الوحدات"],
+  28:["3 أقلام بـ6 دنانير، 5 أقلام بـ؟ (طردي/عكسي)","4 عمال في 6 أيام، 8 عمال في؟","صنّفي: السعر والكمية","صنّفي: الأيام وعدد العمال"],
+  29:["3:6 = 5:س","5 كم في 30 دقيقة، 90 كم في؟","2 دفاتر بـ8 دنانير، 7 دفاتر بـ؟","مسألة تناسب طردي"],
+  30:["4 × 6 = 8 × د","6 عمال في 10 أيام، 12 عمال في؟","مسألة تناسب عكسي","مسألة تجمع طردياً وعكسياً"],
+  31:["فسّري مقياس الرسم 1:5000","1:100000 تعني ... لكل 1 سم","ما مدلول مقياس 1:50000؟","قارني بين مقياسين"],
+  32:["مقياس 1:5000 و6 سم ← المسافة الفعلية؟","مقياس 1:100000 و3 سم ← الفعلية؟","2 كم بمقياس 1:100000 ← على الرسم؟","مسألة مسافة على خريطة"],
+  33:["5 سم بمقياس 1:200000 ← الفعلية؟","قارني مسافتين على خريطة واحدة","مسألة قراءة خريطة","أوجد طول مسار معيّن"],
+  34:["نسبة 25 من 100 = ؟٪","10 من 50 = ؟٪","20 من 40 = ؟٪","عبّري: 3 من 8 بالنسبة المئوية"],
+  35:["40٪ = كسر + عدد عشري","7٪ = ؟ (كسر وعشري)","0.4 = ؟٪","3/5 = ؟٪"],
+  36:["30٪ من 200 = ؟","25٪ من 240 = ؟","60 من 80 = ؟٪","أيّهما أكبر: 30٪ من 200 أم 25٪ من 240؟"],
+  37:["15٪ من 200 = ؟","25٪ من 80 = ؟","40٪ من 500 = ؟","10٪ من 350 = ؟"],
+  38:["10٪ من 250 (ذهنياً)","20٪ من 400","5٪ من 600","احسبي بالطريقة الأنسب لك"],
+  39:["خصم 20٪ على 300 ← السعر بعد الخصم؟","خصم 15٪ على 200","خصم 10٪ على 500","أوجد قيمة الخصم والسعر بعد الخصم"],
+  40:["اشترى بـ500 وباع بـ650 ← الربح؟","نسبة الربح في المثال؟","اشترى بـ400 وباع بـ350 ← الخسارة؟","نسبة الخسارة؟"],
+  41:["خصم 20٪ على 250","قارني مع خصم 50 ديناراً مباشرة","خصم 10٪ على 180","أيّ عرض أفضل؟ ولماذا؟"],
+  42:["عمولة 5٪ على 1000","عمولة 10٪ على 400","بيع 800 بعمولة 5٪ ← صافي ما يأخذ البائع","مسألة عمولة"],
+  43:["45000 = صورة معيارية","720000 = ...","900 = ...","ما القوة في 3.2 × 10⁴؟"],
+  44:["0.0032 = صورة معيارية","25600 = ...","0.0005 = ...","حوّلي 120000 إلى صورة معيارية"],
+  45:["(2 × 10³) × (3 × 10²) = ؟","(6 × 10⁵) ÷ (2 × 10²) = ؟","(4 × 10³) × (5 × 10³) = ؟","أعيدي الناتج صورة معيارية"],
+  46:["منصف زاوية قائمة ← كل زاوية؟","منصف 60° ← كل زاوية؟","منصف 80° ← كل زاوية؟","أنشئي منصف زاوية بالفرجار"],
+  47:["قطعة طولها 10 سم ← منتصفها؟","أنشئي منصف عمودي لقطعة مستقيمة","متى يكون خطّان متوازيين؟","ميّزي أزواج المتوازيين على الرسم"],
+  48:["زاوية قائمة = ... درجة","زاويتان متكاملتان مجموعهما؟","ميّزي العمودي عن المتوازي","تطبيق إنشائي للعمودية"],
+  49:["صنّفي: مثلث أضلاعه 5، 5، 5","صنّفي: مثلث بزاوية 90°","صنّفي: مثلث بزاوية منفرجة","متساوي الساقين ← زاويتان؟"],
+  50:["زاويتان 60° و70° ← الثالثة؟","مثلث قائم وزاوية حادة 30° ← الأخرى؟","متساوي الساقين ورأسه 40° ← القاعدتان؟","مجموع زوايا المثلث = ؟"],
+  51:["متساوي الساقين ورأسه 40° ← القاعدتان؟","مثلث قائم بزاويتين 30° و60°","مثلث حادّ كل زواياه 60° ← نوعه؟","مسألة مركّبة على الزوايا"],
+  52:["زاوية داخلية 120° ← الخارجية؟","زاوية داخلية 70° ← الخارجية؟","حدّدي الزوايا الخارجية على الرسم","زاويتان متكاملتان مجموعهما؟"],
+  53:["زاوية خارجية = 50° + 60° ← ؟","زاوية داخلية 130° ← الخارجية؟","مجموع الزوايا الخارجية للمثلث = ؟","اذكري خاصية الزاوية الخارجية"],
+  54:["110° = 60° + ز ← ز = ؟","زاوية داخلية 90° ← الخارجية؟","مجموع 3 زوايا خارجية = ؟","مسألة مركّبة على الزوايا الخارجية"],
+  55:["الباب = أيّ رباعي؟","صنّفي: رباعي 4 أضلاع متساوية","صنّفي: رباعي 4 زوايا قائمة","رباعي بضعيين متوازيين فقط ←؟"],
+  56:["المربع يجتمع فيه خصائص؟","المستطيل: زواياه وأضلاعه؟","المعين: أضلاعه؟","المتوازي أضلاع: أضلاعه المتقابلة؟"],
+  57:["3 زوايا 80°، 90°، 100° ← الرابعة؟","مربع: مجموع زواياه = ؟","رباعي بزاويتين مجهولتين","مجموع زوايا الرباعي = ؟"],
+  58:["المثلث = ؟ أضلاع","الرباعي = ? أضلاع","الشكل السداسي = ؟ أضلاع","الشكل العشاري = ؟ أضلاع"],
+  59:["سداسي: (6 − 2) × 180 = ؟","عشاري: مجموع زواياه = ؟","سداسي منتظم: زاوية واحدة = ؟","مضلع 15 ضلعاً: مجموع زواياه؟"],
+  60:["حلّي: 3س + 5 = 20","بسّطي: 15:20","مثلث بزاويتين 50° و60° ← الثالثة؟","مضلع سداسي ← مجموع زواياه؟"]
+};
+
+const EXIT = {
+  1:"إجبي بسرعة: (−7) + 12 = ؟ — و 9 − (−4) = ؟",
+  2:"ما الناتج: −3 × (−4) = ؟ — و 2 + 3 × 4 = ؟",
+  3:"ترجمي واحسبي: 8 × 25 − 40",
+  4:"أيّها معادلة: (س + 3 = 8) أم (2 + 5)؟ ولماذا؟",
+  5:"حلّي ذهنياً: س + 7 = 15 ← س = ؟",
+  6:"اكتبي معادلة تمثّل: «ينقص عن 4»",
+  7:"حلّي ذهنياً: 3س = 21 ← س = ؟",
+  8:"حلّي: ص ÷ 6 = 7 ← ص = ؟",
+  9:"س ÷ 4 = 5 ← س = ؟",
+  10:"ما الخطوة الأولى في حل: 2س + 3 = 11؟",
+  11:"حلّي: 2ص − 7 = 9 ← ص = ؟",
+  12:"ابني معادلة: «البنات يزيدون على الأولاد بـ4»",
+  13:"ترجمي: «ضعفه ناقص 3»",
+  14:"ما الخطوة الأولى في نموذج الحل الأربعة؟",
+  15:"اكتبي معادلة مسألة العمر (دون حل)",
+  16:"كيف نتحقق من صحة حلّ المعادلة؟",
+  17:"تحققي: 3س = 21 ← س = 6، صحيح أم خطأ؟",
+  18:"أين الخطأ: 2س + 3 = 11 ← س = 8؟",
+  19:"أكملي: 3، 6، 9، ...",
+  20:"الحدّ العام لـ 5، 8، 11، ... = ؟",
+  21:"ما الحد الثامن في 2، 5، 8، ...؟",
+  22:"بسّطي: 12:16",
+  23:"بسّطي: 15:25",
+  24:"أيّهما أكبر: 1:2 أم 2:5؟",
+  25:"1 كيلومتر = ... متر",
+  26:"2.5 كم = ... م",
+  27:"1200 م = ... كم",
+  28:"4 عمال في 6 أيام، 8 عمال في؟ (طردي/عكسي)",
+  29:"3:6 = 5:س ← س = ؟",
+  30:"6 عمال في 10 أيام، 12 عمال في؟",
+  31:"ماذا يعني مقياس الرسم 1:5000؟",
+  32:"6 سم بمقياس 1:5000 ← المسافة الفعلية؟",
+  33:"3 سم بمقياس 1:100000 ← الفعلية؟",
+  34:"نسبة 15 من 100 = ؟٪",
+  35:"25٪ = كسر + عدد عشري",
+  36:"10٪ من 300 = ؟",
+  37:"20٪ من 150 = ؟",
+  38:"5٪ من 800 (ذهنياً)",
+  39:"خصم 10٪ على 200 ← بعد الخصم؟",
+  40:"اشترى بـ500 وباع بـ650 ← الربح؟",
+  41:"أيّ أفضل: خصم 20٪ على 200 أم خصم 40؟",
+  42:"عمولة 5٪ على 600 = ؟",
+  43:"50000 = ... × 10^ن",
+  44:"0.01 = ... × 10^ن",
+  45:"(2 × 10³) × (5 × 10²) = ؟",
+  46:"منصف زاوية 90° ← كل زاوية = ؟",
+  47:"منتصف قطعة طولها 8 سم ←؟",
+  48:"زاوية قائمة = ... درجة",
+  49:"مثلث بزاوية 90° ← نوعه؟",
+  50:"زاويتان 50° و60° ← الثالثة؟",
+  51:"متساوي الساقين ورأسه 50° ← القاعدتان؟",
+  52:"زاوية داخلية 110° ← خارجيتها؟",
+  53:"زاوية خارجية = 40° + 60° ←؟",
+  54:"زاوية داخلية 95° ← خارجيتها؟",
+  55:"رباعي أضلاعه 4 متساوية و4 زوايا قائمة ←؟",
+  56:"المربع يجتمع فيه خصائص؟",
+  57:"مجموع زوايا الرباعي = ... درجة",
+  58:"الشكل السداسي = ... أضلاع",
+  59:"مجموع زوايا السداسي = ... درجة",
+  60:"3س + 5 = 20 ← س = ؟"
+};
+const ASSESS = {
+  1:["تُميّز الإشارات في الجمع والطرح","تحسب بدقة وسرعة","تشارك بفاعلية في المسابقة"],
+  2:["تطبّق قواعد الضرب والقسمة بالإشارات","تحترم أولوية العمليات","تكتب خطوات الحل بترتيب"],
+  3:["ترجمي المسألة إلى تعبير رياضي","تختار الترتيب الصحيح للعمليات","تتحقق من معقولية الناتج"],
+  4:["تميّز المعادلة من الجمل المفتوحة والمغلقة","تحدّد حدود المعادلة","تربط المعادلة بمواقف حياتية"],
+  5:["تحافظ على توازن الطرفين","تنفّذ خطوات الحل متسلسلة","تكتب الحل بخط واضح"],
+  6:["تحوّل المسألة اللفظية إلى معادلة","تستعمل علامة المساواة بشكل صحيح","تتحقق من الحل بالتعويض"],
+  7:["تستخدم خاصية الضرب للمساواة","تنفّذ القسمة بدقة","تتحقّق من الحل"],
+  8:["تميّز الحالات التي تُحلّ بالقسمة","تنفّذ القسمة بالإشارات","تكتب الحل مرتباً"],
+  9:["تتعامل مع المعادلات الكسرية","تستعمل المقلوب بشكل صحيح","تتحقق من الناتج"],
+  10:["تُرتّب خطوات الحل (إزالة الحد ثم المعامل)","تنفّذ خطوة في كل مرة","تكتب الحل النهائي بوضوح"],
+  11:["تجمع الضرب مع الجمع/الطرح","تحلّ بخطوات متسلسلة","تتحقق من الناتج"],
+  12:["تُنجز المعادلات المركّبة","تبني المعادلة من المسألة","تتعاون مع زميلاتها"],
+  13:["تستعمل مفردات التحويل بدقة","تكتب المعادلة الصحيحة","تربط الرياضيات بلغتها"],
+  14:["تتبع نموذج الحل الأربعة","تُنجز كل خطوة منهجياً","تلتزم بالترتيب المنطقي"],
+  15:["تُنجز مسائل العمر والكميات","تكتب المعادلة بدقة","تتحقق من الحل ومعقوليته"],
+  16:["تُجري التحقق بالتعويض","تُميّز الحل الصحيح من الخاطئ","تتحلّى بالدقّة العلمية"],
+  17:["تُنجز التحقق من حلول متنوعة","تكتب خطوات التحقق","تعتبر التحقق جزءاً من الحل"],
+  18:["تكتشف الخطأ في حل جاهز","تُصحّح الخطأ وتبرره","تُنجز الحل الصحيح من جديد"],
+  19:["تُكمل أنماطاً عددية","تكتشف القاعدة","تُظهر إعجاباً بالنظام العددي"],
+  20:["تستخرج القاعدة والفرق الثابت","تكتب الحدّ العام","ترتبط بالرقم الترتيبي (ن)"],
+  21:["تُنجز بحدّ عام بثقة","تجد ترتيب حدّ بقيته","تتحقق من صحة الحدّ العام"],
+  22:["تكتب النسب بطرقها المختلفة","تُبسّط النسب","تقارن بين نسبتين"],
+  23:["تستخدم القاسم المشترك الأكبر","تُبسّط إلى أبسط صورة","تكتب بدقّة وأناقة"],
+  24:["تُنجز مقارنة نسب","تتوحّد لمقارنتها","تربط المقارنة بالحياة"],
+  25:["تكتب نسب التحويل","تربط الوحدات بعضها","تُظهر وعياً بالقياس"],
+  26:["تُحوّل بالضرب/القسمة على النسبة","تحفظ الوحدة صحيحة","تكتب خطوات التحويل"],
+  27:["توحّد الوحدات قبل الحساب","تحلّ مسافات وأوزان","تتحقق من معقولية الناتج"],
+  28:["تميّز التناسب الطردي والعكسي","تُصنّف المسائل","تحلّل العلاقات بدقة"],
+  29:["تبني التناسب الطردي","تحلّ بضرب الطرفين التقابلين","تكتب الحل مرتباً"],
+  30:["تبني التناسب العكسي","تحلّ المسائل العكسية","تحلّل تغيّر الكميات"],
+  31:["تفسّر مقياس الرسم وتحدّد مدلوله","تربط المقياس بالمسافة الفعلية","تقرأ مفتاح الخريطة"],
+  32:["تحسب المسافة الفعلية","تحفظ الوحدة المناسبة","تتحقق من الناتج"],
+  33:["تقرا الخرائط وتحسب المسافات","تقارن بين مسافات","تربط المقياس بالحياة"],
+  34:["تحدّد النسبة المئوية","تربط النسبة بالكسر","تلاحظ انتشارها في الحياة"],
+  35:["تحوّل بين النسبة والكسر والعشري","تُجري التحويل بدقة","تتكيّف مع الصيغ المختلفة"],
+  36:["تحسب نسبة مئوية من كمية","تستخدم الطريقة المناسبة","تحلّ مسائل تطبيقية"],
+  37:["تُنجز حسابات النسبة المئوية","تختار الطريقة الأنسب","تتدرّج في الصعوبة"],
+  38:["تحسب ذهنياً بنسب مركّبة","تستخدم الطرق الذهنية","تظهر مرونة في الحساب"],
+  39:["تحسب الخصم والسعر بعد الخصم","تفهم مفهوم الخصم","تربط بالتسوّق"],
+  40:["تحسب الربح/الخسارة ونسبتهما","تُميّز سعر الشراء والبيع","تربط بالتجارة"],
+  41:["تقارن بين عروض الخصم","تحدّد العرض الأنسب","تبرر اختيارها"],
+  42:["تحسب العمولة وصافي البيع","تفهم مفهوم العمولة","تحلّ مسائل واقعية"],
+  43:["تكتب الأعداد صورة معيارية","تحدّد القوة المناسبة","تُظهر وعياً بالأعداد الكبيرة"],
+  44:["تحوّل الأعداد الكبيرة والصغيرة","تحدد اتجاه الفاصلة","تكتب القوة بدقة"],
+  45:["تُجري عمليات على الأعداد المعيارية","تعيد كتابة الناتج صورة معيارية","تتقن قواعد القوى"],
+  46:["تنشئ منصف زاوية بدقة","تستخدم الأدوات الهندسية","تظهر دقة وأناقة في الرسم"],
+  47:["تنشئ منصف عمودي","تُميّز التوازي والعمودية","تتبع إجراءات الإنشاء"],
+  48:["تُميّز العمودية عن التوازي","تطبّق المفهوم على رسم","تُظهر تميّزاً هندسياً"],
+  49:["تُصنّف المثلثات حسب الأضلاع والزوايا","تذكر المصطلحات","تُظهر تميّزاً هندسياً"],
+  50:["تحسب زوايا مجهولة بمجموع 180","تستخدم خصائص المثلث","تكتب الحل بدقّة"],
+  51:["تحلّ مسائل مركّبة على الزوايا","تدمج المفاهيم","تتحقق من النتيجة"],
+  52:["تحدّد الزوايا الخارجية","تربط بالزاوية الداخلية المتكاملة","تقرأ الرسم بدقة"],
+  53:["تطبّق خاصية الزاوية الخارجية","تحسب الزوايا","تذكر الخاصية"],
+  54:["تحلّ مسائل الزوايا الخارجية","تربط الداخلية بالخارجية","تتحقق من النتيجة"],
+  55:["تُصنّف الأشكال الرباعية","تذكر خصائصها","تلاحظ انتشارها في المحيط"],
+  56:["تُميّز خصائص المربع والمستطيل والمعين","تذكر خصائص كل شكل","تبرر التصنيف بخاصية"],
+  57:["تحسب مجموع زوايا الرباعي","تجد زاوية مجهولة","تطبّق الخاصية"],
+  58:["تسمّي المضلعات بعدد أضلاعها","تُميّز المضلع المنتظم","تُظهر تميّساً واسعاً"],
+  59:["تحسب مجموع زوايا المضلع","تستخدم قاعدة (ن − 2) × 180","تحلّ مسائل متنوعة"],
+  60:["تراجع مفاهيم الوحدات الأربع","تحلّ اختباراً شاملاً","تُظهر ثقة وإتقاناً"]
+};
+
+function lessonBody(l){
+  const g = guideRef(l.week);
+  return `
+    <div class="lesson-head">
+      <h3>الدرس رقم (${l.n}): ${l.title}</h3>
+      <span class="chip">🗓️ ${l.week} — ${DAY_NAMES[l.day] || ("اليوم " + l.day)}</span>
+      <span class="chip">⏱️ زمن الحصة: 45 دقيقة</span>
+      <span class="chip">📖 ${l.unit}</span>
+      <a class="chip guide-chip" target="_blank" rel="noopener"
+         href="https://drive.google.com/file/d/19WkIPuKcsyUHzZnC8_hLA9TbyytsQJ21/view"
+         title="فتح دليل المعلم الرسمي (PDF)">📘 دليل المعلم: ${g.u} — ص ${g.p}</a>
+    </div>
+    <div class="objectives">
+      <div class="obj k"><h4>🎯 معرفي</h4><p>${l.obj.k}</p></div>
+      <div class="obj s"><h4>🛠️ مهاري</h4><p>${l.obj.s}</p></div>
+      <div class="obj a"><h4>💜 وجداني</h4><p>${l.obj.a}</p></div>
+    </div>
+    ${AIDS[l.week] ? `
+    <div class="lesson-block aid-block"><h4>🧰 الوسائل التعليمية (سيلة تعليمة)</h4><p>${AIDS[l.week]}</p></div>` : ""}
+    <div class="lesson-block"><h4>🔔 التمهيد</h4><p>${l.warm}</p></div>
+    <div class="lesson-block"><h4>📖 المفاهيم والمصطلحات</h4>
+      <ul class="check-list">${l.concepts.map(c => `<li>${c}</li>`).join("")}</ul>
+    </div>
+    ${l.types ? `
+    <div class="lesson-block"><h4>🏷️ أنواع المثلثات</h4>
+      <ul class="check-list gold">${l.types.map(c => `<li>${c}</li>`).join("")}</ul>
+    </div>` : ""}
+    ${l.table ? `
+    <div class="lesson-block"><h4>⏰ سير الحصة</h4>
+      <table class="session-table">
+        <thead><tr><th>المرحلة</th><th>دور المعلمة</th><th>دور الطالبات</th><th>الزمن (د)</th></tr></thead>
+        <tbody>${l.table.map(r => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join("")}</tbody>
+      </table>
+    </div>` : ""}
+    ${l.examples ? `
+    <div class="lesson-block"><h4>✍️ أمثلة محلولة</h4>
+      <ul class="check-list">${l.examples.map(x => `<li>${x}</li>`).join("")}</ul>
+    </div>` : ""}
+    ${l.exampleFull ? `
+    <div class="lesson-block"><h4>✍️ مثال محلول</h4>
+      <p><b>المسألة:</b> ${l.exampleFull.q}</p>
+      <ul class="check-list" style="margin-top:8px">${l.exampleFull.steps.map(x => `<li>${x}</li>`).join("")}</ul>
+    </div>` : ""}
+    ${EXERCISES[l.n] ? `
+    <div class="lesson-block ex-block"><h4>✏️ تمارين صفّية للطالبات</h4>
+      <ul class="check-list ex">${EXERCISES[l.n].map((x, i) => `<li><b>(${i+1})</b> ${x}</li>`).join("")}</ul>
+    </div>` : ""}
+    ${GAMES[l.week] ? `
+    <div class="lesson-block game-block"><h4>🎮 لعبة تفاعلية: ${GAMES[l.week].name}</h4><p>${GAMES[l.week].how}</p></div>` : ""}
+    ${ASSESS[l.n] ? `
+    <div class="lesson-block assess-block"><h4>📋 بطاقة الملاحظة والتقويم</h4>
+      <ul class="check-list assess">${(Array.isArray(ASSESS[l.n]) ? ASSESS[l.n] : [ASSESS[l.n]]).map(x => `<li><span class="tick">☐</span> ${x}</li>`).join("")}</ul>
+      <p class="assess-note">تُملأ المعلّمة هذا الجدول أثناء متابعة الطالبات، وعلامة ✓ عند إتقان المهارة.</p>
+    </div>` : ""}
+    <div class="lesson-block"><h4>📝 الواجب المنزلي</h4><p>${l.hw}</p></div>
+    ${EXIT[l.n] ? `
+    <div class="lesson-block exit-block"><h4>🎫 بطاقة الخروج (تذكرة نهاية الحصة)</h4>
+      <p class="exit-q">${EXIT[l.n]}</p>
+      <p class="assess-note">تُوزَّع في آخر دقيقتين، وتُجمع قبل انصراف الطالبات لمعرفة من فهم ومن يحتاج دعماً.</p>
+    </div>` : ""}
+    ${l.diff ? `<div class="lesson-block diff-block"><h4>🔁 الفروقات الفردية (التمييز والإثراء)</h4><p>${l.diff}</p></div>` : ""}`;
+}
+
+// لوحات الأسابيع + تبويبات الأيام داخل كل أسبوع
+$("#lessonPanels").innerHTML = WEEKS_LIST.map((w, i) => `
+  <div class="tab-panel ${i === 0 ? "active" : ""}" data-panel="w${w.week}" data-week="${w.week}">
+    <div class="day-tabs">
+      ${w.lessons.map((l, j) => `
+        <button class="day-btn ${j === 0 ? "active" : ""}" data-week="${w.week}" data-day="${l.day}">${DAY_NAMES[l.day] || ("اليوم " + l.day)}</button>`).join("")}
+    </div>
+    ${w.lessons.map((l, j) => `
+      <div class="day-panel ${j === 0 ? "active" : ""}" data-week="${w.week}" data-day="${l.day}">
+        ${lessonBody(l)}
+      </div>`).join("")}
+  </div>`).join("");
+
+// تفعيل تبويبات الأيام
+$("#lessonPanels").addEventListener("click", e => {
+  const btn = e.target.closest(".day-btn");
+  if(!btn) return;
+  const week = btn.dataset.week, day = btn.dataset.day;
+  $("#lessonPanels .day-btn[data-week='" + week + "']").forEach(b =>
+    b.classList.toggle("active", b === btn));
+  $("#lessonPanels .day-panel[data-week='" + week + "']").forEach(p =>
+    p.classList.toggle("active", p.dataset.day === day));
+});
+
+// تفعيل عدّاد الدروس الافتراضي
+showUnit("all");
+
+// المنهج الليبي
+$("#curriculumGrid").innerHTML = CURRICULUM.map(c => `
+  <article class="curr-card reveal ${c.status}">
+    <span class="curr-chip">${c.ch}</span>
+    <div class="curr-head">
+      <h4>${c.title}</h4>
+      <span class="curr-badge ${c.status}">${c.status === "prepared" ? "محضّر ✓" : "المنهج الكامل"}</span>
+    </div>
+    <div class="curr-weeks">🗓️ ${c.weeks}${c.lessons ? " · " + c.lessons : ""}</div>
+    <ul class="curr-topics">${c.topics.map(t => `<li>${t}</li>`).join("")}</ul>
+  </article>`).join("");
+
+// معمل المعادلات
+$("#labList").innerHTML = LAB.map((e, i) =>
+  `<button class="${i === 0 ? "on" : ""}" data-i="${i}">${e.label}</button>`).join("");
+
+// الأدوات
+$("#toolsGrid").innerHTML = TOOLS.map(t => `
+  <article class="tool-card reveal">
+    <span class="t-ic">${t.ic}</span>
+    <h4>${t.t}</h4>
+    <p>${t.d}</p>
+    <a class="tool-link" href="${t.u}" target="_blank" rel="noopener">${t.h} ↗</a>
+  </article>`).join("");
+
+// التقييم
+$("#evalGrid").innerHTML = EVAL.map((e, i) => `
+  <label class="eval-item" data-i="${i}">
+    <span class="box">✓</span>
+    <span class="e-text"><span class="e-num">${i + 1}.</span> ${e}</span>
+  </label>`).join("");
+
+// الاختبار
+$("#quizBody").innerHTML = QUIZ.map((q, i) => `
+  <div class="q-item" data-i="${i}">
+    <h4>${i + 1}. ${q.q}</h4>
+    <div class="q-opts">${q.o.map((o, j) => `<button class="q-opt" data-j="${j}">${o}</button>`).join("")}</div>
+    <p class="q-fb"></p>
+  </div>`).join("") + `<p class="quiz-score" id="quizScore" hidden></p>`;
+
+// أزرار فلتر الشهور
+const MONTHS = ["الكل", ...new Set(WEEKS.map(w => w.m))];
+$("#monthFilter").innerHTML = MONTHS.map((m, i) =>
+  `<button class="${i === 0 ? "on" : ""}" data-m="${m}">${m}</button>`).join("");
+
+/* ================= التفاعلات ================= */
+
+// 1) الوضع الليلي
+const themeBtn = $("#themeToggle");
+const savedTheme = store.get("mualima-theme", null);
+const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+themeBtn.addEventListener("click", () => {
+  const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  store.set("mualima-theme", next);
+});
+
+// 2) القائمة الجوّالة
+const nav = $("#mainNav");
+$("#navToggle").addEventListener("click", () => nav.classList.toggle("open"));
+nav.addEventListener("click", e => { if (e.target.tagName === "A") nav.classList.remove("open"); });
+
+// 3) شريط التقدّم + زر العودة
+const prog = $("#scrollProgress"), toTop = $("#toTop");
+addEventListener("scroll", () => {
+  const h = document.documentElement;
+  const max = h.scrollHeight - h.clientHeight;
+  prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+  toTop.classList.toggle("show", h.scrollTop > 500);
+}, { passive: true });
+toTop.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
+
+// 4) الظهور عند التمرير + تتبّع القسم النشط
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+}, { threshold: .12 });
+$(".reveal").forEach(el => io.observe(el));
+
+const spy = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (e.isIntersecting) {
+      $(".main-nav a").forEach(a =>
+        a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+    }
+  });
+}, { rootMargin: "-45% 0px -50% 0px" });
+$("main section[id], section.hero[id]").forEach(s => spy.observe(s));
+
+// 5) العدّادات
+const cio = new IntersectionObserver(es => {
+  es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, target = +el.dataset.target, dur = 1400, t0 = performance.now();
+    (function tick(t) {
+      const p = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+    cio.unobserve(el);
+  });
+}, { threshold: .6 });
+$(".counter").forEach(c => cio.observe(c));
+
+// 6) التبويبات العامة
+$("[data-tabs]").forEach(box => {
+  box.addEventListener("click", e => {
+    const btn = e.target.closest(".tab-btn");
+    if (!btn) return;
+    $(".tab-btn", box).forEach(b => b.classList.toggle("active", b === btn));
+    $(".tab-panel", box).forEach(p =>
+      p.classList.toggle("active", p.dataset.panel === btn.dataset.tab));
+  });
+});
+
+// 7) الأكورديون
+$("#elementsAcc").addEventListener("click", e => {
+  const head = e.target.closest(".acc-head");
+  if (!head) return;
+  const item = head.parentElement, body = $(".acc-body", item), open = item.classList.contains("open");
+  $(".acc-item").forEach(i => {
+    i.classList.remove("open");
+    $(".acc-body", i).style.maxHeight = null;
+    $(".acc-head", i).setAttribute("aria-expanded", "false");
+  });
+  if (!open) {
+    item.classList.add("open");
+    body.style.maxHeight = body.scrollHeight + "px";
+    head.setAttribute("aria-expanded", "true");
+  }
+});
+
+// 8) مولّد أفكار التمهيد
+const ideaCard = $("#ideaCard");
+$("#randomIdeaBtn").addEventListener("click", () => {
+  const pick = WARMUPS[Math.floor(Math.random() * WARMUPS.length)];
+  $("#ideaTitle").textContent = `${pick.ic} ${pick.t}`;
+  $("#ideaDesc").textContent = pick.d;
+  ideaCard.classList.remove("shake"); void ideaCard.offsetWidth; ideaCard.classList.add("shake");
+  $(".warm-card").forEach(c => c.classList.toggle("flash", c.dataset.idea === pick.t));
+});
+$("#warmupGrid").addEventListener("click", e => {
+  const card = e.target.closest(".warm-card");
+  if (!card) return;
+  const w = WARMUPS.find(x => x.t === card.dataset.idea);
+  $("#ideaTitle").textContent = `${w.ic} ${w.t}`;
+  $("#ideaDesc").textContent = w.d;
+  $(".warm-card").forEach(c => c.classList.remove("flash"));
+  card.classList.add("flash");
+  ideaCard.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+// 9) مؤقّت الحصة
+(function timer() {
+  const TOTAL = 45 * 60, CIRC = 2 * Math.PI * 54;
+  let left = TOTAL, running = false, iv = null;
+  const disp = $("#timerDisplay"), ring = $("#timerRing"), phase = $("#timerPhase"),
+        box = $(".timer-box"), startBtn = $("#timerStart");
+  const fmt = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+  const draw = () => {
+    disp.textContent = fmt(left);
+    ring.style.strokeDashoffset = CIRC * (1 - left / TOTAL);
+  };
+  const stop = () => { clearInterval(iv); running = false; startBtn.textContent = "▶ بدء"; };
+  const beep = () => {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      [0, .25, .5].forEach((d, i) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
+        o.frequency.value = 880; o.type = "sine";
+        g.gain.setValueAtTime(.001, ctx.currentTime + d);
+        g.gain.exponentialRampToValueAtTime(.3, ctx.currentTime + d + .02);
+        g.gain.exponentialRampToValueAtTime(.001, ctx.currentTime + d + .2);
+        o.start(ctx.currentTime + d); o.stop(ctx.currentTime + d + .22);
+      });
+    } catch {}
+  };
+  draw();
+  startBtn.addEventListener("click", () => {
+    if (running) { stop(); return; }
+    if (left <= 0) left = TOTAL;
+    running = true; startBtn.textContent = "⏸ إيقاف";
+    iv = setInterval(() => {
+      left--; draw();
+      if (left <= 0) {
+        stop(); box.classList.add("done"); beep();
+        phase.textContent = "انتهى الوقت! 🎉";
+      }
+    }, 1000);
+  });
+  $("#timerReset").addEventListener("click", () => {
+    stop(); left = TOTAL; box.classList.remove("done");
+    phase.textContent = "الحصة كاملة"; draw();
+    $(".timer-presets button").forEach(b => b.classList.remove("on"));
+  });
+  $(".timer-presets button").forEach(b => b.addEventListener("click", () => {
+    stop(); box.classList.remove("done");
+    left = +b.dataset.min * 60; phase.textContent = b.dataset.phase; draw();
+    $(".timer-presets button").forEach(x => x.classList.toggle("on", x === b));
+  }));
+})();
+
+// 10) الخطة الأسبوعية
+(function plan() {
+  let done = store.get("mualima-weeks", []);
+  const cards = $(".week-card"), pct = $("#planPct"), bar = $("#planBar");
+  const save = () => store.set("mualima-weeks", done);
+  const render = () => {
+    cards.forEach((c, i) => c.classList.toggle("done", done.includes(i)));
+    const p = Math.round(done.length / WEEKS.length * 100);
+    pct.textContent = p + "%"; bar.style.width = p + "%";
+  };
+  $("#weeksGrid").addEventListener("click", e => {
+    const btn = e.target.closest(".week-check");
+    if (!btn) return;
+    const i = +btn.closest(".week-card").dataset.i;
+    done = done.includes(i) ? done.filter(x => x !== i) : [...done, i];
+    save(); render();
+  });
+  $("#monthFilter").addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    $("#monthFilter button").forEach(x => x.classList.toggle("on", x === b));
+    cards.forEach(c =>
+      c.classList.toggle("hidden", b.dataset.m !== "الكل" && c.dataset.month !== b.dataset.m));
+  });
+  $("#planReset").addEventListener("click", () => { done = []; save(); render(); });
+  render();
+})();
+
+// 11) معمل المعادلات
+(function lab() {
+  let cur = 0, step = 0;
+  const eq = $("#labEq"), steps = $("#labSteps"), next = $("#labNext");
+  const render = () => {
+    const ex = LAB[cur];
+    eq.textContent = ex.eq;
+    steps.innerHTML = ex.steps.slice(0, step).map(s =>
+      `<li class="${s.k === "التحقق" ? "ok" : ""}"><span class="k">${s.k}:</span> ${s.v}</li>`).join("");
+    next.disabled = step >= ex.steps.length;
+    next.textContent = step >= ex.steps.length ? "اكتمل الحل ✓" : "الخطوة التالية ←";
+  };
+  $("#labList").addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    cur = +b.dataset.i; step = 1;
+    $("#labList button").forEach(x => x.classList.toggle("on", x === b));
+    render();
+  });
+  next.addEventListener("click", () => { if (step < LAB[cur].steps.length) { step++; render(); } });
+  render();
+})();
+
+// 12) أسس التقييم
+(function evalGrid() {
+  let checked = store.get("mualima-eval", []);
+  const items = $(".eval-item"), ring = $("#evalRing"), count = $("#evalCount");
+  const render = () => {
+    items.forEach((it, i) => it.classList.toggle("checked", checked.includes(i)));
+    const p = checked.length / EVAL.length * 100;
+    ring.setAttribute("stroke-dasharray", `${p}, 100`);
+    count.textContent = checked.length;
+  };
+  $("#evalGrid").addEventListener("click", e => {
+    const it = e.target.closest(".eval-item");
+    if (!it) return;
+    e.preventDefault();
+    const i = +it.dataset.i;
+    checked = checked.includes(i) ? checked.filter(x => x !== i) : [...checked, i];
+    store.set("mualima-eval", checked); render();
+  });
+  $("#evalSearch").addEventListener("input", e => {
+    const q = e.target.value.trim();
+    items.forEach((it, i) =>
+      it.classList.toggle("hidden", q && !EVAL[i].includes(q)));
+  });
+  $("#evalReset").addEventListener("click", () => {
+    checked = []; store.set("mualima-eval", checked); render();
+  });
+  render();
+})();
+
+// 13) الاختبار السريع
+(function quiz() {
+  const answers = {};
+  $("#quizBody").addEventListener("click", e => {
+    const opt = e.target.closest(".q-opt");
+    if (!opt) return;
+    const item = opt.closest(".q-item"), i = +item.dataset.i, j = +opt.dataset.j;
+    if (answers[i] !== undefined) return;
+    answers[i] = j;
+    const q = QUIZ[i];
+    $(".q-opt", item).forEach((b, k) => {
+      b.disabled = true;
+      if (k === q.a) b.classList.add("right");
+      if (k === j && j !== q.a) b.classList.add("wrong");
+    });
+    $(".q-fb", item).textContent = (j === q.a ? "✔ إجابة صحيحة! " : "✘ الإجابة الصحيحة: " + q.o[q.a].replace(" ✓", "") + " — ") + q.fb;
+    const done = Object.keys(answers).length;
+    if (done === QUIZ.length) {
+      const score = QUIZ.reduce((s, q, k) => s + (answers[k] === q.a ? 1 : 0), 0);
+      const el = $("#quizScore");
+      el.hidden = false;
+      el.textContent = `نتيجتك: ${score} من ${QUIZ.length} — ${score === QUIZ.length ? "ممتازة! 🌟" : "استعيدي الكرّاسة وحاولي مجدداً 💪"}`;
+    }
+  });
+})();
+
+// 14) الطباعة
+$("#printBtn").addEventListener("click", () => window.print());
+
+</script>
+</body>
+</html>
