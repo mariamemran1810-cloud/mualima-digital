@@ -358,8 +358,29 @@ button,input{font-family:inherit}
 .unit-filter button.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(91,61,245,.28)}
 .lesson-count{text-align:center;color:var(--muted);font-size:14px;margin-bottom:14px}
 .lesson-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+.guide-chip{
+  background:rgba(91,61,245,.1);border:1px solid rgba(91,61,245,.35);color:var(--brand);
+  font-weight:700;cursor:pointer;text-decoration:none;transition:.2s
+}
+.guide-chip:hover{background:var(--grad);color:#fff;border-color:transparent}
 
 /* ---------- المنهج الليبي ---------- */
+.guide-card{
+  display:block;background:var(--surface);border:1px solid var(--line);border-radius:20px;
+  padding:22px 24px;margin-bottom:26px;text-decoration:none;color:inherit;transition:.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,.06)
+}
+.guide-card:hover{border-color:var(--brand);transform:translateY(-3px);box-shadow:0 16px 34px rgba(91,61,245,.16)}
+.guide-top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.guide-emoji{font-size:34px;line-height:1}
+.guide-headings{flex:1;min-width:220px}
+.guide-headings h3{margin:0 0 6px;font-size:19px;font-weight:800}
+.guide-headings p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.guide-open{background:var(--grad);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;white-space:nowrap}
+.guide-toc{list-style:none;margin:16px 0 0;padding:16px 0 0;border-top:1px dashed var(--line);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.guide-toc li{font-size:13.5px;color:var(--muted);line-height:1.6;background:rgba(91,61,245,.05);padding:8px 12px;border-radius:10px}
+.guide-toc b{color:var(--brand);font-weight:800;margin-inline-end:6px}
 .curriculum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
 .curr-card{
   background:var(--surface);border:1px solid var(--line);border-radius:20px;
