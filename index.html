@@ -10,6 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍🏫</text></svg>">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#6d4bff">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
 
@@ -82,6 +88,7 @@
       <a href="#plan" class="btn btn-primary">ابدئي بالخطة الأسبوعية ←</a>
       <a href="#lessons" class="btn btn-ghost">تحضيرات الدروس الستّين</a>
       <a href="offline.html" download="المعلمة-الرقمية.html" class="btn btn-download">⬇️ حمّلي الموقع كاملاً (يعمل بدون إنترنت)</a>
+      <a href="#" id="installBtn" class="btn btn-install" style="display:none">📥 ثبّتي التطبيق على الهاتف</a>
     </div>
 
     <div class="stats-row">
@@ -512,5 +519,25 @@
 <button class="to-top" id="toTop" aria-label="العودة للأعلى">↑</button>
 
 <script src="app.js"></script>
+<script>
+/* تسجيل عامل الخدمة — يجعل الموقع يعمل بدون إنترنت */
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
+/* إظهار زر "تثبيت التطبيق" عند توفر البيئة */
+window.addEventListener("beforeinstallprompt", function (e) {
+  e.preventDefault();
+  var btn = document.getElementById("installBtn");
+  if (btn) {
+    btn.style.display = "inline-flex";
+    btn.addEventListener("click", function () {
+      e.prompt();
+      e.userChoice.then(function () { btn.style.display = "none"; });
+    });
+  }
+});
+</script>
 </body>
 </html>

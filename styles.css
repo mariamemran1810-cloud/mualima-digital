@@ -136,6 +136,11 @@ button,input{font-family:inherit}
   box-shadow:0 12px 26px rgba(16,184,120,.32);border:1.5px solid transparent
 }
 .btn-download:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(16,184,120,.42)}
+.btn-install{
+  background:linear-gradient(135deg,#6d4bff,#f45df0);color:#fff;
+  box-shadow:0 12px 26px rgba(109,75,255,.32);border:1.5px solid transparent
+}
+.btn-install:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(109,75,255,.42)}
 
 .stats-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:6px}
 .stat{padding:14px 22px;text-align:center;min-width:120px}

@@ -327,6 +327,11 @@ button,input{font-family:inherit}
   box-shadow:0 12px 26px rgba(16,184,120,.32);border:1.5px solid transparent
 }
 .btn-download:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(16,184,120,.42)}
+.btn-install{
+  background:linear-gradient(135deg,#6d4bff,#f45df0);color:#fff;
+  box-shadow:0 12px 26px rgba(109,75,255,.32);border:1.5px solid transparent
+}
+.btn-install:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(109,75,255,.42)}
 
 .stats-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:6px}
 .stat{padding:14px 22px;text-align:center;min-width:120px}
@@ -795,6 +800,12 @@ table.session-table tr:nth-child(even) td{background:color-mix(in srgb,var(--sur
 
 </style>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍🏫</text></svg>">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#6d4bff">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
 
@@ -867,6 +878,7 @@ table.session-table tr:nth-child(even) td{background:color-mix(in srgb,var(--sur
       <a href="#plan" class="btn btn-primary">ابدئي بالخطة الأسبوعية ←</a>
       <a href="#lessons" class="btn btn-ghost">تحضيرات الدروس الستّين</a>
       <a href="offline.html" download="المعلمة-الرقمية.html" class="btn btn-download">⬇️ حمّلي الموقع كاملاً (يعمل بدون إنترنت)</a>
+      <a href="#" id="installBtn" class="btn btn-install" style="display:none">📥 ثبّتي التطبيق على الهاتف</a>
     </div>
 
     <div class="stats-row">
@@ -3270,6 +3282,26 @@ $("#warmupGrid").addEventListener("click", e => {
 // 14) الطباعة
 $("#printBtn").addEventListener("click", () => window.print());
 
+</script>
+<script>
+/* تسجيل عامل الخدمة — يجعل الموقع يعمل بدون إنترنت */
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
+/* إظهار زر "تثبيت التطبيق" عند توفر البيئة */
+window.addEventListener("beforeinstallprompt", function (e) {
+  e.preventDefault();
+  var btn = document.getElementById("installBtn");
+  if (btn) {
+    btn.style.display = "inline-flex";
+    btn.addEventListener("click", function () {
+      e.prompt();
+      e.userChoice.then(function () { btn.style.display = "none"; });
+    });
+  }
+});
 </script>
 </body>
 </html>

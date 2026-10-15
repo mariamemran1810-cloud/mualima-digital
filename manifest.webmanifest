@@ -1,0 +1,17 @@
+{
+  "name": "المعلمة الرقمية — تحضير الرياضيات الصف الثامن",
+  "short_name": "المعلمة الرقمية",
+  "description": "كرّاسة تحضير الرياضيات — الصف الثامن — المنهج الليبي — تعمل بدون إنترنت.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f1020",
+  "theme_color": "#6d4bff",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
